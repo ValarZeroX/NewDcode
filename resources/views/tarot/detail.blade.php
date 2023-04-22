@@ -44,6 +44,7 @@
                         <h4>正位 - 金錢財物</h4>
                         <p> {!! $data['upright_finances'] !!}</p>
                         <hr />
+                        @include('../layouts/article')
                         <h3>逆位描述</h3>
                         <p>{!! $data['reversed_content'] !!}</p>
                         <h4>逆位 - 戀愛婚姻</h4>
