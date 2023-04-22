@@ -12,7 +12,6 @@
 </head>
 
 <body>
-
     <header>
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg fixed-top navbar-scroll">
