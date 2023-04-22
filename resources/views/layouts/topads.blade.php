@@ -1,4 +1,4 @@
-<div style="padding: 10px;">
+<div style="margin: 0 10px;">
     <div>
         <!-- 橫幅廣告 -->
         <ins class="adsbygoogle"
