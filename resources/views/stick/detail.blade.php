@@ -5,7 +5,7 @@
 
 @section('main')
 <div class="container">
-    <h3>{{$title}} - 解籤</h3>
+    <h3>{{$title}} - {{ $data['number_text'] }} - 解籤</h3>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/">Dcode</a></li>
