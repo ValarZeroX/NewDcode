@@ -31,9 +31,6 @@
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="/stick">詩籤</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#adoptions">星座</a>
-                        </li>
                     </ul>
 
                     <ul class="navbar-nav flex-row">

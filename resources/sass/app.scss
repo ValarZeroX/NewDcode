@@ -6,8 +6,11 @@ body {
     font-size: 14px;
     line-height: 1.42857143;
     color: #333;
-}
 
+}
+#main {
+    min-height: 1080px;
+}
 a {
     text-decoration: none;
     color: #3b71ca;
