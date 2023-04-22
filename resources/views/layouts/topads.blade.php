@@ -1,7 +1,7 @@
 <div>
     <!-- 橫幅廣告 -->
     <ins class="adsbygoogle"
-        style="display:block;width:1200px; height:250px;"
+        style="display:block;height:250px;"
         data-ad-client="ca-pub-9868429025931364"
         data-ad-slot="8542942724"
         data-ad-format="auto"
