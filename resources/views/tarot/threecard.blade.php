@@ -13,6 +13,7 @@
             <li class="breadcrumb-item active" aria-current="page">塔羅 - {{$title}}</li>
         </ol>
     </nav>
+    @include('../layouts/topads')
     <div class="alert alert-success" role="alert">
         <p>三張卡片方法提供有關您過去、現在和未來的訊息。</p>
         <p>專注於你的問題。選擇三張牌。卡片會回答你的問題。</p>

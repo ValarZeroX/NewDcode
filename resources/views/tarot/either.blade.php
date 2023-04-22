@@ -13,6 +13,7 @@
             <li class="breadcrumb-item active" aria-current="page">塔羅 - {{$title}}</li>
         </ol>
     </nav>
+    @include('../layouts/topads')
     <div class="alert alert-success" role="alert">
         <p>面臨二選一狀況時，最常用的占卜法。;例如:該選擇A君還是B君?該繼續升學或是就?諸如此類有關抉擇的問題，能夠提供相當好的建議與解答。</p>
         <p>五張卡片提供以下訊息: </p>

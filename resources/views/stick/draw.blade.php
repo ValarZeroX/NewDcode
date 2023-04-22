@@ -13,6 +13,7 @@
             <li class="breadcrumb-item active" aria-current="page">{{$title}} - 抽籤</li>
         </ol>
     </nav>
+    @include('../layouts/topads')
     <div class="card text-center">
         <div class="card-header"><strong>心誠則靈，在心中默念您的姓名、出生年月日、住址、求問事項後，點選求籤。</strong></div>
         <div class="card-body">

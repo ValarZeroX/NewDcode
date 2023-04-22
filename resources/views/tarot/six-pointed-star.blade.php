@@ -13,6 +13,7 @@
             <li class="breadcrumb-item active" aria-current="page">塔羅 - {{$title}}</li>
         </ol>
     </nav>
+    @include('../layouts/topads')
     <div class="alert alert-success" role="alert">
         <p>七張卡片提供以下訊息: </p>
         <ol>

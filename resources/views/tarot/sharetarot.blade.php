@@ -13,6 +13,7 @@
             <li class="breadcrumb-item active" aria-current="page">塔羅 - {{$title}}</li>
         </ol>
     </nav>
+    @include('../layouts/topads')
     <div class="d-flex justify-content-center result">
         @foreach ($data as $key => $value)
         <div class="tarot-card @if($value['reversed'] == 1) reversed @endif">

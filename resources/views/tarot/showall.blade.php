@@ -13,6 +13,7 @@
             <li class="breadcrumb-item" aria-current="page">{{$title}}</li>
         </ol>
     </nav>
+    @include('../layouts/topads')
     @foreach ($data as $keytype => $tarotarray)
     @if($keytype == 'Major')
     <h2>大阿爾克那</h2>

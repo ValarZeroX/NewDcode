@@ -4,12 +4,12 @@
 
 @section('main')
 <div class="container">
-    <h3 >DCode</h3>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item">Dcode</li>
         </ol>
     </nav>
+    @include('../layouts/topads')
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
         <div class="col">
             <div class="card shadow-sm">

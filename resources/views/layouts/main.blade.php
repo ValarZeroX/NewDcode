@@ -9,11 +9,11 @@
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-PJ6MBCZ');</script>
-    <!-- End Google Tag Manager -->
-    <!-- 自動廣告 -->
+    {{-- <!-- End Google Tag Manager -->
+    {{-- <!-- 自動廣告 -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9868429025931364"
     crossorigin="anonymous"></script>
-    <!-- End 自動廣告 -->
+    <!-- End 自動廣告 --> --}} --}}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -28,6 +28,10 @@
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <header>
+    <!-- 橫幅廣告 -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9868429025931364"
+     crossorigin="anonymous"></script>
+    <!-- 橫幅廣告 -->
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg fixed-top navbar-scroll">
             <div class="container">

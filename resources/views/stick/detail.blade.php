@@ -13,6 +13,7 @@
             <li class="breadcrumb-item active" aria-current="page">{{$title}} - 解籤</li>
         </ol>
     </nav>
+    @include('../layouts/topads')
     <div class="stick_well card">
         <div class="card-header-custom text-center stick_title"><strong>{{ $data['number_text'] }}</strong></div>
         <div class="card-header-custom text-center stick_title">

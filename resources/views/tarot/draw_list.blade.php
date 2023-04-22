@@ -13,6 +13,7 @@
             <li class="breadcrumb-item active" aria-current="page">塔羅占卜</li>
         </ol>
     </nav>
+    @include('../layouts/topads')
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
         @foreach ($data as $key => $value)
         <div class="col">

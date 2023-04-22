@@ -13,6 +13,7 @@
             <li class="breadcrumb-item active" aria-current="page">塔羅 - {{$data['name']}}</li>
         </ol>
     </nav>
+    @include('../layouts/topads')
     <div class="row row-cols-1">
         <div class="col">
             <div>

@@ -13,6 +13,7 @@
             <li class="breadcrumb-item active" aria-current="page">塔羅 - {{$title}}</li>
         </ol>
     </nav>
+    @include('../layouts/topads')
     <div class="alert alert-success" role="alert">
         <p>單張牌占卜法提供簡單簡潔的訊息，當需要更明確的答案時，這種類型的占卜會很有幫助。專注於你的問題。選擇一張卡。該卡將回答您的問題。</p>
     </div>
