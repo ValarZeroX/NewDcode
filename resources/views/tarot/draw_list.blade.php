@@ -18,7 +18,7 @@
         <div class="col">
             <div class="card shadow-sm">
                 <div class="image-container card-img-top">
-                    <img class="cards_image card-img-top" src="/images/tarot/{{$image[$key]}}">
+                    <img class="cards_image card-img-top" src="/images/tarot/{{$image[$key]}}" alt="塔羅">
                 </div>
                 <div class="card-header text-center">{{$value[0]}}</div>
                 <div class="card-body">
