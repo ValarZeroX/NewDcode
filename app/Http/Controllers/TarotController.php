@@ -178,4 +178,11 @@ class TarotController extends Controller
         $aTarotOneDaily = $this->oDailyRepositories->getOneDaily(1, rand(0, 21));
         return view('tarot/flirt', ['event' => true, 'data' => $aTarotOneDaily, 'title' => $this->aDict[9][0], 'maxcard' => 1, 'sub' => ['未來對你有什麼好處？現在是時候發現這一天的可能性了！'], 'type' => $this->aDict[9][3]]);
     }
+
+    public function getDaily()
+    {
+        $aAllTarot = $this->oTarotRepositories->getAllTarot(1);
+        $aOneCard = $this->oTarotServices->getOneCard($aAllTarot);
+        return view('tarot/daily', ['event' => true, 'data' => $aOneCard, 'title' => '每日塔羅占卜', 'maxcard' => 1]);
+    }
 }
