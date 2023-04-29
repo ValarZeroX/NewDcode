@@ -1,7 +1,7 @@
 {
     "1": {
         "number": 1,
-        "number_text": "觀音一百籤第一籤",
+        "number_text": "一籤",
         "subtitle": [
             "上籤。子宮"
         ],
@@ -155,7 +155,7 @@
     },
     "2": {
         "number": 2,
-        "number_text": "觀音一百籤第二籤",
+        "number_text": "二籤",
         "subtitle": [
             "下籤。子宮"
         ],
@@ -279,7 +279,7 @@
     },
     "3": {
         "number": 3,
-        "number_text": "觀音一百籤第三籤",
+        "number_text": "三籤",
         "subtitle": [
             "下籤。子宮"
         ],
@@ -427,7 +427,7 @@
     },
     "4": {
         "number": 4,
-        "number_text": "觀音一百籤第四籤",
+        "number_text": "四籤",
         "subtitle": [
             "上籤。子宮"
         ],
@@ -551,7 +551,7 @@
     },
     "5": {
         "number": 5,
-        "number_text": "觀音一百籤第五籤",
+        "number_text": "五籤",
         "subtitle": [
             "中籤。丑宮"
         ],
@@ -675,7 +675,7 @@
     },
     "6": {
         "number": 6,
-        "number_text": "觀音一百籤第六籤",
+        "number_text": "六籤",
         "subtitle": [
             "中籤。丑宮"
         ],
@@ -799,7 +799,7 @@
     },
     "7": {
         "number": 7,
-        "number_text": "觀音一百籤第七籤",
+        "number_text": "七籤",
         "subtitle": [
             "下籤。丑宮"
         ],
@@ -950,7 +950,7 @@
     },
     "8": {
         "number": 8,
-        "number_text": "觀音一百籤第八籤",
+        "number_text": "八籤",
         "subtitle": [
             "上籤。丑宮"
         ],
@@ -1098,7 +1098,7 @@
     },
     "9": {
         "number": 9,
-        "number_text": "觀音一百籤第九籤",
+        "number_text": "九籤",
         "subtitle": [
             "上籤。寅宮"
         ],
@@ -1237,7 +1237,7 @@
     },
     "10": {
         "number": 10,
-        "number_text": "觀音一百籤第十籤",
+        "number_text": "十籤",
         "subtitle": [
             "中籤。寅宮"
         ],
@@ -1379,7 +1379,7 @@
     },
     "11": {
         "number": 11,
-        "number_text": "觀音一百籤第十一籤",
+        "number_text": "十一籤",
         "subtitle": [
             "上籤。寅宮"
         ],
@@ -1494,7 +1494,7 @@
     },
     "12": {
         "number": 12,
-        "number_text": "觀音一百籤第十二籤",
+        "number_text": "十二籤",
         "subtitle": [
             "上籤。寅宮"
         ],
@@ -1615,7 +1615,7 @@
     },
     "13": {
         "number": 13,
-        "number_text": "觀音一百籤第十三籤",
+        "number_text": "十三籤",
         "subtitle": [
             "中籤。寅宮"
         ],
@@ -1742,7 +1742,7 @@
     },
     "14": {
         "number": 14,
-        "number_text": "觀音一百籤第十四籤",
+        "number_text": "十四籤",
         "subtitle": [
             "中籤。卯宮"
         ],
@@ -1878,7 +1878,7 @@
     },
     "15": {
         "number": 15,
-        "number_text": "觀音一百籤第十五籤",
+        "number_text": "十五籤",
         "subtitle": [
             "中籤。卯宮"
         ],
@@ -2012,7 +2012,7 @@
     },
     "16": {
         "number": 16,
-        "number_text": "觀音一百籤第十六籤",
+        "number_text": "十六籤",
         "subtitle": [
             "中籤。卯宮"
         ],
@@ -2169,7 +2169,7 @@
     },
     "17": {
         "number": 17,
-        "number_text": "觀音一百籤第十七籤",
+        "number_text": "十七籤",
         "subtitle": [
             "中籤。卯宮"
         ],
@@ -2275,7 +2275,7 @@
     },
     "18": {
         "number": 18,
-        "number_text": "觀音一百籤第十八籤",
+        "number_text": "十八籤",
         "subtitle": [
             "上籤。卯宮"
         ],
@@ -2435,7 +2435,7 @@
     },
     "19": {
         "number": 19,
-        "number_text": "觀音一百籤第十九籤",
+        "number_text": "十九籤",
         "subtitle": [
             "中籤。辰宮"
         ],
@@ -2550,7 +2550,7 @@
     },
     "20": {
         "number": 20,
-        "number_text": "觀音一百籤第二十籤",
+        "number_text": "二十籤",
         "subtitle": [
             "中籤。辰宮"
         ],
@@ -2668,7 +2668,7 @@
     },
     "21": {
         "number": 21,
-        "number_text": "觀音一百籤第二十一籤",
+        "number_text": "二十一籤",
         "subtitle": [
             "上籤。辰宮"
         ],
@@ -2792,7 +2792,7 @@
     },
     "22": {
         "number": 22,
-        "number_text": "觀音一百籤第二十二籤",
+        "number_text": "二十二籤",
         "subtitle": [
             "上籤。巳宮"
         ],
@@ -2922,7 +2922,7 @@
     },
     "23": {
         "number": 23,
-        "number_text": "觀音一百籤第二十三籤",
+        "number_text": "二十三籤",
         "subtitle": [
             "中籤。巳宮"
         ],
@@ -3076,7 +3076,7 @@
     },
     "24": {
         "number": 24,
-        "number_text": "觀音一百籤第二十四籤",
+        "number_text": "二十四籤",
         "subtitle": [
             "下籤。巳宮"
         ],
@@ -3197,7 +3197,7 @@
     },
     "25": {
         "number": 25,
-        "number_text": "觀音一百籤第二十五籤",
+        "number_text": "二十五籤",
         "subtitle": [
             "中籤。巳宮"
         ],
@@ -3324,7 +3324,7 @@
     },
     "26": {
         "number": 26,
-        "number_text": "觀音一百籤第二十六籤",
+        "number_text": "二十六籤",
         "subtitle": [
             "中籤。巳宮"
         ],
@@ -3463,7 +3463,7 @@
     },
     "27": {
         "number": 27,
-        "number_text": "觀音一百籤第二十七籤",
+        "number_text": "二十七籤",
         "subtitle": [
             "中籤。午宮"
         ],
@@ -3605,7 +3605,7 @@
     },
     "28": {
         "number": 28,
-        "number_text": "觀音一百籤第二十八籤",
+        "number_text": "二十八籤",
         "subtitle": [
             "中籤。午宮"
         ],
@@ -3723,7 +3723,7 @@
     },
     "29": {
         "number": 29,
-        "number_text": "觀音一百籤第二十九籤",
+        "number_text": "二十九籤",
         "subtitle": [
             "中籤。午宮"
         ],
@@ -3865,7 +3865,7 @@
     },
     "30": {
         "number": 30,
-        "number_text": "觀音一百籤第三十籤",
+        "number_text": "三十籤",
         "subtitle": [
             "中籤。午宮"
         ],
@@ -3971,7 +3971,7 @@
     },
     "31": {
         "number": 31,
-        "number_text": "觀音一百籤第三十一籤",
+        "number_text": "三十一籤",
         "subtitle": [
             "中籤。未宮"
         ],
@@ -4134,7 +4134,7 @@
     },
     "32": {
         "number": 32,
-        "number_text": "觀音一百籤第三十二籤",
+        "number_text": "三十二籤",
         "subtitle": [
             "中籤。未宮"
         ],
@@ -4281,7 +4281,7 @@
                     "從唐太宗對待馬周一事可以看出，太宗求賢的虔誠、禮賢的恭敬、用賢的如一、思賢的深情。所以天下賢才聚集朝廷，君臣共創大唐盛世之偉業。"
                 ],
                 [
-                    "觀音一百籤第八十三籤也有『馬周入都投旅店』故事"
+                    "八十三籤也有『馬周入都投旅店』故事"
                 ],
                 [
                     "雷雨師一百籤第六十五籤也有相同的『馬周獻策』故事"
@@ -4291,7 +4291,7 @@
     },
     "33": {
         "number": 33,
-        "number_text": "觀音一百籤第三十三籤",
+        "number_text": "三十三籤",
         "subtitle": [
             "中籤。未宮"
         ],
@@ -4400,7 +4400,7 @@
     },
     "34": {
         "number": 34,
-        "number_text": "觀音一百籤第三十四籤",
+        "number_text": "三十四籤",
         "subtitle": [
             "中籤。未宮"
         ],
@@ -4521,7 +4521,7 @@
     },
     "35": {
         "number": 35,
-        "number_text": "觀音一百籤第三十五籤",
+        "number_text": "三十五籤",
         "subtitle": [
             "中籤。申宮"
         ],
@@ -4624,7 +4624,7 @@
     },
     "36": {
         "number": 36,
-        "number_text": "觀音一百籤第三十六籤",
+        "number_text": "三十六籤",
         "subtitle": [
             "中籤。申宮"
         ],
@@ -4730,7 +4730,7 @@
     },
     "37": {
         "number": 37,
-        "number_text": "觀音一百籤第三十七籤",
+        "number_text": "三十七籤",
         "subtitle": [
             "中籤。申宮"
         ],
@@ -4854,7 +4854,7 @@
     },
     "38": {
         "number": 38,
-        "number_text": "觀音一百籤第三十八籤",
+        "number_text": "三十八籤",
         "subtitle": [
             "下籤。申宮"
         ],
@@ -4999,7 +4999,7 @@
     },
     "39": {
         "number": 39,
-        "number_text": "觀音一百籤第三十九籤",
+        "number_text": "三十九籤",
         "subtitle": [
             "下籤。酉宮"
         ],
@@ -5108,7 +5108,7 @@
     },
     "40": {
         "number": 40,
-        "number_text": "觀音一百籤第四十籤",
+        "number_text": "四十籤",
         "subtitle": [
             "中籤。酉宮"
         ],
@@ -5232,7 +5232,7 @@
     },
     "41": {
         "number": 41,
-        "number_text": "觀音一百籤第四十一籤",
+        "number_text": "四十一籤",
         "subtitle": [
             "中籤。酉宮"
         ],
@@ -5338,7 +5338,7 @@
     },
     "42": {
         "number": 42,
-        "number_text": "觀音一百籤第四十二籤",
+        "number_text": "四十二籤",
         "subtitle": [
             "上籤。酉宮"
         ],
@@ -5432,7 +5432,7 @@
     },
     "43": {
         "number": 43,
-        "number_text": "觀音一百籤第四十三籤",
+        "number_text": "四十三籤",
         "subtitle": [
             "上籤。戌宮"
         ],
@@ -5547,7 +5547,7 @@
     },
     "44": {
         "number": 44,
-        "number_text": "觀音一百籤第四十四籤",
+        "number_text": "四十四籤",
         "subtitle": [
             "中籤。戌宮"
         ],
@@ -5650,7 +5650,7 @@
     },
     "45": {
         "number": 45,
-        "number_text": "觀音一百籤第四十五籤",
+        "number_text": "四十五籤",
         "subtitle": [
             "上籤。戌宮"
         ],
@@ -5753,7 +5753,7 @@
     },
     "46": {
         "number": 46,
-        "number_text": "觀音一百籤第四十六籤",
+        "number_text": "四十六籤",
         "subtitle": [
             "中籤。戌宮"
         ],
@@ -5919,7 +5919,7 @@
     },
     "47": {
         "number": 47,
-        "number_text": "觀音一百籤第四十七籤",
+        "number_text": "四十七籤",
         "subtitle": [
             "上籤。亥宮"
         ],
@@ -6037,7 +6037,7 @@
     },
     "48": {
         "number": 48,
-        "number_text": "觀音一百籤第四十八籤",
+        "number_text": "四十八籤",
         "subtitle": [
             "中籤。亥宮"
         ],
@@ -6176,7 +6176,7 @@
     },
     "49": {
         "number": 49,
-        "number_text": "觀音一百籤第四十九籤",
+        "number_text": "四十九籤",
         "subtitle": [
             "中籤。亥宮"
         ],
@@ -6309,7 +6309,7 @@
     },
     "50": {
         "number": 50,
-        "number_text": "觀音一百籤第五十籤",
+        "number_text": "五十籤",
         "subtitle": [
             "中籤。亥宮"
         ],
@@ -6408,7 +6408,7 @@
                     "凡三徙。方成名。後不知所終。"
                 ],
                 [
-                    "觀音一百籤第五十六籤另有『范少伯泛舟五湖 』故事可參考。"
+                    "五十六籤另有『范少伯泛舟五湖 』故事可參考。"
                 ],
                 [
                     "2.三寶太監下西洋"
@@ -6427,7 +6427,7 @@
     },
     "51": {
         "number": 51,
-        "number_text": "觀音一百籤第五十一籤",
+        "number_text": "五十一籤",
         "subtitle": [
             "上籤。子宮"
         ],
@@ -6563,7 +6563,7 @@
     },
     "52": {
         "number": 52,
-        "number_text": "觀音一百籤第五十二籤",
+        "number_text": "五十二籤",
         "subtitle": [
             "中籤。子宮"
         ],
@@ -6660,7 +6660,7 @@
     },
     "53": {
         "number": 53,
-        "number_text": "觀音一百籤第五十三籤",
+        "number_text": "五十三籤",
         "subtitle": [
             "中籤。子宮"
         ],
@@ -6784,7 +6784,7 @@
     },
     "54": {
         "number": 54,
-        "number_text": "觀音一百籤第五十四籤",
+        "number_text": "五十四籤",
         "subtitle": [
             "下籤。子宮"
         ],
@@ -6896,7 +6896,7 @@
     },
     "55": {
         "number": 55,
-        "number_text": "觀音一百籤第五十五籤",
+        "number_text": "五十五籤",
         "subtitle": [
             "中籤。丑宮"
         ],
@@ -7029,7 +7029,7 @@
     },
     "56": {
         "number": 56,
-        "number_text": "觀音一百籤第五十六籤",
+        "number_text": "五十六籤",
         "subtitle": [
             "中籤。丑宮"
         ],
@@ -7149,14 +7149,14 @@
                     "吳國終被勾踐所滅。傳說吳被滅後，西施與范蠡泛舟五湖，不知所終。一直受到後人的懷念。"
                 ],
                 [
-                    "觀音一百籤第五十籤另有『陶朱歸五湖』故事可參考（范蠡即為後來之陶朱公）。"
+                    "五十籤另有『陶朱歸五湖』故事可參考（范蠡即為後來之陶朱公）。"
                 ]
             ]
         }
     },
     "57": {
         "number": 57,
-        "number_text": "觀音一百籤第五十七籤",
+        "number_text": "五十七籤",
         "subtitle": [
             "中籤。丑宮"
         ],
@@ -7301,7 +7301,7 @@
     },
     "58": {
         "number": 58,
-        "number_text": "觀音一百籤第五十八籤",
+        "number_text": "五十八籤",
         "subtitle": [
             "中籤。丑宮"
         ],
@@ -7461,7 +7461,7 @@
     },
     "59": {
         "number": 59,
-        "number_text": "觀音一百籤第五十九籤",
+        "number_text": "五十九籤",
         "subtitle": [
             "中籤。寅宮"
         ],
@@ -7597,7 +7597,7 @@
     },
     "60": {
         "number": 60,
-        "number_text": "觀音一百籤第六十籤",
+        "number_text": "六十籤",
         "subtitle": [
             "下籤。寅宮"
         ],
@@ -7706,7 +7706,7 @@
     },
     "61": {
         "number": 61,
-        "number_text": "觀音一百籤第六十一籤",
+        "number_text": "六十一籤",
         "subtitle": [
             "中籤。寅宮"
         ],
@@ -7848,7 +7848,7 @@
     },
     "62": {
         "number": 62,
-        "number_text": "觀音一百籤第六十二籤",
+        "number_text": "六十二籤",
         "subtitle": [
             "中籤。寅宮"
         ],
@@ -7969,7 +7969,7 @@
     },
     "63": {
         "number": 63,
-        "number_text": "觀音一百籤第六十三籤",
+        "number_text": "六十三籤",
         "subtitle": [
             "中籤。卯宮"
         ],
@@ -8105,7 +8105,7 @@
     },
     "64": {
         "number": 64,
-        "number_text": "觀音一百籤第六十四籤",
+        "number_text": "六十四籤",
         "subtitle": [
             "下籤。卯宮"
         ],
@@ -8250,7 +8250,7 @@
     },
     "65": {
         "number": 65,
-        "number_text": "觀音一百籤第六十五籤",
+        "number_text": "六十五籤",
         "subtitle": [
             "下籤。卯宮"
         ],
@@ -8362,7 +8362,7 @@
     },
     "66": {
         "number": 66,
-        "number_text": "觀音一百籤第六十六籤",
+        "number_text": "六十六籤",
         "subtitle": [
             "下籤。卯宮"
         ],
@@ -8471,7 +8471,7 @@
     },
     "67": {
         "number": 67,
-        "number_text": "觀音一百籤第六十七籤",
+        "number_text": "六十七籤",
         "subtitle": [
             "上籤。卯宮"
         ],
@@ -8619,7 +8619,7 @@
     },
     "68": {
         "number": 68,
-        "number_text": "觀音一百籤第六十八籤",
+        "number_text": "六十八籤",
         "subtitle": [
             "中籤。卯宮"
         ],
@@ -8725,7 +8725,7 @@
     },
     "69": {
         "number": 69,
-        "number_text": "觀音一百籤第六十九籤",
+        "number_text": "六十九籤",
         "subtitle": [
             "中籤。辰宮"
         ],
@@ -8888,7 +8888,7 @@
     },
     "70": {
         "number": 70,
-        "number_text": "觀音一百籤第七十籤",
+        "number_text": "七十籤",
         "subtitle": [
             "下籤。辰宮"
         ],
@@ -8997,7 +8997,7 @@
     },
     "71": {
         "number": 71,
-        "number_text": "觀音一百籤第七十一籤",
+        "number_text": "七十一籤",
         "subtitle": [
             "中籤。辰宮"
         ],
@@ -9127,7 +9127,7 @@
     },
     "72": {
         "number": 72,
-        "number_text": "觀音一百籤第七十二籤",
+        "number_text": "七十二籤",
         "subtitle": [
             "中籤。辰宮"
         ],
@@ -9338,7 +9338,7 @@
     },
     "73": {
         "number": 73,
-        "number_text": "觀音一百籤第七十三籤",
+        "number_text": "七十三籤",
         "subtitle": [
             "上籤。巳宮"
         ],
@@ -9480,7 +9480,7 @@
     },
     "74": {
         "number": 74,
-        "number_text": "觀音一百籤第七十四籤",
+        "number_text": "七十四籤",
         "subtitle": [
             "下籤。巳宮"
         ],
@@ -9589,7 +9589,7 @@
     },
     "75": {
         "number": 75,
-        "number_text": "觀音一百籤第七十五籤",
+        "number_text": "七十五籤",
         "subtitle": [
             "中籤。午宮"
         ],
@@ -9698,7 +9698,7 @@
     },
     "76": {
         "number": 76,
-        "number_text": "觀音一百籤第七十六籤",
+        "number_text": "七十六籤",
         "subtitle": [
             "中籤。午宮"
         ],
@@ -9807,7 +9807,7 @@
     },
     "77": {
         "number": 77,
-        "number_text": "觀音一百籤第七十七籤",
+        "number_text": "七十七籤",
         "subtitle": [
             "中籤。午宮"
         ],
@@ -9949,7 +9949,7 @@
     },
     "78": {
         "number": 78,
-        "number_text": "觀音一百籤第七十八籤",
+        "number_text": "七十八籤",
         "subtitle": [
             "上籤。午宮"
         ],
@@ -10052,7 +10052,7 @@
     },
     "79": {
         "number": 79,
-        "number_text": "觀音一百籤第七十九籤",
+        "number_text": "七十九籤",
         "subtitle": [
             "中籤。午宮"
         ],
@@ -10170,7 +10170,7 @@
     },
     "80": {
         "number": 80,
-        "number_text": "觀音一百籤第八十籤",
+        "number_text": "八十籤",
         "subtitle": [
             "上籤。未宮"
         ],
@@ -10307,7 +10307,7 @@
     },
     "81": {
         "number": 81,
-        "number_text": "觀音一百籤第八十一籤",
+        "number_text": "八十一籤",
         "subtitle": [
             "上籤。未宮"
         ],
@@ -10422,7 +10422,7 @@
     },
     "82": {
         "number": 82,
-        "number_text": "觀音一百籤第八十二籤",
+        "number_text": "八十二籤",
         "subtitle": [
             "中籤。未宮"
         ],
@@ -10540,7 +10540,7 @@
     },
     "83": {
         "number": 83,
-        "number_text": "觀音一百籤第八十三籤",
+        "number_text": "八十三籤",
         "subtitle": [
             "中籤。未宮"
         ],
@@ -10655,7 +10655,7 @@
     },
     "84": {
         "number": 84,
-        "number_text": "觀音一百籤第八十四籤",
+        "number_text": "八十四籤",
         "subtitle": [
             "下籤。未宮"
         ],
@@ -10728,7 +10728,7 @@
     },
     "85": {
         "number": 85,
-        "number_text": "觀音一百籤第八十五籤",
+        "number_text": "八十五籤",
         "subtitle": [
             "中籤。申宮"
         ],
@@ -10855,7 +10855,7 @@
     },
     "86": {
         "number": 86,
-        "number_text": "觀音一百籤第八十六籤",
+        "number_text": "八十六籤",
         "subtitle": [
             "上籤。申宮"
         ],
@@ -10925,7 +10925,7 @@
     },
     "87": {
         "number": 87,
-        "number_text": "觀音一百籤第八十七籤",
+        "number_text": "八十七籤",
         "subtitle": [
             "中籤。申宮"
         ],
@@ -11049,7 +11049,7 @@
     },
     "88": {
         "number": 88,
-        "number_text": "觀音一百籤第八十八籤",
+        "number_text": "八十八籤",
         "subtitle": [
             "中籤。酉宮"
         ],
@@ -11158,7 +11158,7 @@
     },
     "89": {
         "number": 89,
-        "number_text": "觀音一百籤第八十九籤",
+        "number_text": "八十九籤",
         "subtitle": [
             "上籤。酉宮"
         ],
@@ -11264,7 +11264,7 @@
     },
     "90": {
         "number": 90,
-        "number_text": "觀音一百籤第九十籤",
+        "number_text": "九十籤",
         "subtitle": [
             "上籤。酉宮"
         ],
@@ -11331,7 +11331,7 @@
     },
     "91": {
         "number": 91,
-        "number_text": "觀音一百籤第九十一籤",
+        "number_text": "九十一籤",
         "subtitle": [
             "中籤。酉宮"
         ],
@@ -11398,7 +11398,7 @@
     },
     "92": {
         "number": 92,
-        "number_text": "觀音一百籤第九十二籤",
+        "number_text": "九十二籤",
         "subtitle": [
             "上籤。酉宮"
         ],
@@ -11528,7 +11528,7 @@
     },
     "93": {
         "number": 93,
-        "number_text": "觀音一百籤第九十三籤",
+        "number_text": "九十三籤",
         "subtitle": [
             "中籤。戌宮"
         ],
@@ -11634,7 +11634,7 @@
     },
     "94": {
         "number": 94,
-        "number_text": "觀音一百籤第九十四籤",
+        "number_text": "九十四籤",
         "subtitle": [
             "下籤。戌宮"
         ],
@@ -11758,7 +11758,7 @@
     },
     "95": {
         "number": 95,
-        "number_text": "觀音一百籤第九十五籤",
+        "number_text": "九十五籤",
         "subtitle": [
             "中籤。戌宮"
         ],
@@ -11879,7 +11879,7 @@
     },
     "96": {
         "number": 96,
-        "number_text": "觀音一百籤第九十六籤",
+        "number_text": "九十六籤",
         "subtitle": [
             "上籤。戌宮"
         ],
@@ -11991,7 +11991,7 @@
     },
     "97": {
         "number": 97,
-        "number_text": "觀音一百籤第九十七籤",
+        "number_text": "九十七籤",
         "subtitle": [
             "中籤。亥宮"
         ],
@@ -12142,7 +12142,7 @@
     },
     "98": {
         "number": 98,
-        "number_text": "觀音一百籤第九十八籤",
+        "number_text": "九十八籤",
         "subtitle": [
             "下籤。亥宮"
         ],
@@ -12251,7 +12251,7 @@
     },
     "99": {
         "number": 99,
-        "number_text": "觀音一百籤第九十九籤",
+        "number_text": "九十九籤",
         "subtitle": [
             "下籤。亥宮"
         ],
@@ -12360,7 +12360,7 @@
     },
     "100": {
         "number": 100,
-        "number_text": "觀音一百籤第一百籤",
+        "number_text": "一百籤",
         "subtitle": [
             "下籤。亥宮"
         ],
