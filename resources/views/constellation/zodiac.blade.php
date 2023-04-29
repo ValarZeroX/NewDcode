@@ -1,11 +1,11 @@
 @extends('layouts.main')
 
-@section('title', $title)
+@section('title', '星座 - 十二星座')
 @section('description', '十二星座是西方占星術中的重要元素，分別代表了不同的星座符號，象徵著不同的性格特質和命運走向。白羊座代表著勇氣和熱情，金牛座代表著實用和耐力，雙子座代表著機智和多才多藝，巨蟹座代表著情感和家庭，獅子座代表著自尊和榮耀，處女座代表著細心和完美主義，天秤座代表著和諧和平衡，天蠍座代表著神秘和激情，射手座代表著自由和冒險，魔羯座代表著實現和穩定，水瓶座代表著獨立和創新，雙魚座代表著敏感和浪漫。透過了解十二星座的特點，可以更好地了解自己和身邊的人，更好地應對生活中的挑戰和機會。')
 
 @section('main')
 <div class="container">
-    <h3>星座 - 十二星座</h3>
+    <h1>星座 - 十二星座</h1>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/">Dcode</a></li>
@@ -34,10 +34,10 @@
         <div class="col">
             <div class="well card">
                 <div class="card-header">
-                    <h2>牡羊座</h2>
+                    <h2>牡羊座</h2><small class="text-muted mx-2"> 3/21 ~ 4/19</small>
                 </div>
                 <div class="caard-header">
-                    <div id="auies" class="zodiac center-div"></div>
+                    <div id="aries" class="zodiac center-div"></div>
                 </div>
                 <div class="card-body">
                     <p>他們是天生的領導者，不容忽視！他們隨時準備負責並征服他們遇到的任何挑戰。勇敢而有競爭力的白羊座是一股強大的力量，在新的領域開闢道路，尋找未被發現的寶藏。這個無畏的星座以戰士的身份生活，為它所接觸的一切注入火焰、激情和力量。</p>
@@ -50,7 +50,7 @@
         <div class="col">
             <div class="well card">
                 <div class="card-header">
-                    <h2>獅子座</h2>
+                    <h2>獅子座</h2><small class="text-muted mx-2"> 7/23 ~ 8/22</small>
                 </div>
                 <div class="caard-header">
                     <div id="leo" class="zodiac center-div"></div>
@@ -66,7 +66,7 @@
         <div class="col">
             <div class="well card">
                 <div class="card-header">
-                    <h2>射手座</h2>
+                    <h2>射手座</h2><small class="text-muted mx-2"> 11/22 ~ 12/21</small>
                 </div>
                 <div class="caard-header">
                     <div id="sagittarius" class="zodiac center-div"></div>
@@ -92,7 +92,7 @@
         <div class="col">
             <div class="well card">
                 <div class="card-header">
-                    <h2>金牛座</h2>
+                    <h2>金牛座</h2><small class="text-muted mx-2"> 4/20 ~ 5/20</small>
                 </div>
                 <div class="caard-header">
                     <div id="taurus" class="zodiac center-div"></div>
@@ -108,7 +108,7 @@
         <div class="col">
             <div class="well card">
                 <div class="card-header">
-                    <h2>處女座</h2>
+                    <h2>處女座</h2><small class="text-muted mx-2"> 8/23 ~ 9/22</small>
                 </div>
                 <div class="caard-header">
                     <div id="virgo" class="zodiac center-div"></div>
@@ -124,7 +124,7 @@
         <div class="col">
             <div class="well card">
                 <div class="card-header">
-                    <h2>魔羯座</h2>
+                    <h2>魔羯座</h2><small class="text-muted mx-2"> 12/22 ~ 1/19</small>
                 </div>
                 <div class="caard-header">
                     <div id="capricorn" class="zodiac center-div"></div>
@@ -138,7 +138,7 @@
             </div>
         </div>
     </div>
-    @include('../layout/topads')
+    @include('../layouts/topads_two')
     <div class="row row-cols-12 row-cols-md-12 g-12">
         <div class="col">
             <h2>風象星座</h2>
@@ -151,7 +151,7 @@
         <div class="col">
             <div class="well card">
                 <div class="card-header">
-                    <h2>雙子座</h2>
+                    <h2>雙子座</h2><small class="text-muted mx-2"> 5/21 ~ 6/20</small>
                 </div>
                 <div class="caard-header">
                     <div id="gemini" class="zodiac center-div"></div>
@@ -167,7 +167,7 @@
         <div class="col">
             <div class="well card">
                 <div class="card-header">
-                    <h2>天秤座</h2>
+                    <h2>天秤座</h2><small class="text-muted mx-2"> 9/23 ~ 10/22</small>
                 </div>
                 <div class="caard-header">
                     <div id="libra" class="zodiac center-div"></div>
@@ -183,7 +183,7 @@
         <div class="col">
             <div class="well card">
                 <div class="card-header">
-                    <h2>水瓶座</h2>
+                    <h2>水瓶座</h2><small class="text-muted mx-2"> 1/20 ~ 2/18</small>
                 </div>
                 <div class="caard-header">
                     <div id="aquarius" class="zodiac center-div"></div>
@@ -209,7 +209,7 @@
         <div class="col">
             <div class="well card">
                 <div class="card-header">
-                    <h2>巨蟹座</h2>
+                    <h2>巨蟹座</h2><small class="text-muted mx-2"> 6/21 ~ 7/22</small>
                 </div>
                 <div class="caard-header">
                     <div id="cancer" class="zodiac center-div"></div>
@@ -225,7 +225,7 @@
         <div class="col">
             <div class="well card">
                 <div class="card-header">
-                    <h2>天蠍座</h2>
+                    <h2>天蠍座</h2><small class="text-muted mx-2"> 10/23 ~ 11/21</small>
                 </div>
                 <div class="caard-header">
                     <div id="scorpio" class="zodiac center-div"></div>
@@ -241,7 +241,7 @@
         <div class="col">
             <div class="well card">
                 <div class="card-header">
-                    <h2>雙魚座</h2>
+                    <h2>雙魚座</h2><small class="text-muted mx-2"> 2/19 ~ 3/20</small>
                 </div>
                 <div class="caard-header">
                     <div id="pisces" class="zodiac center-div"></div>

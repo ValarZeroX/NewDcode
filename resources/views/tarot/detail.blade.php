@@ -1,11 +1,11 @@
 @extends('layouts.main')
 
-@section('title', $data['name'])
+@section('title', '塔羅牌 - ' . $data['name'])
 @section('description', $data['content'])
 
 @section('main')
 <div class="container">
-    <h3>{{$data['name']}}</h3>
+    <h1>{{$data['name']}}</h1>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/">Dcode</a></li>
@@ -32,36 +32,36 @@
                                 class="badge rounded-pill bg-warning  text-dark">{{$value }}</span> @endforeach</P>
                         @if(!empty($data['astrology']))<p><strong>星象 :</strong> {{$data['astrology']}}</p>@endif
                         <p><strong>元素 :</strong> {{$data['element']}}</p>
-                        <h3>描述</h3>
+                        <h2>描述</h2>
                         <p>{!! $data['content'] !!}</p>
 
-                        <h3>正位描述</h3>
+                        <h2>正位描述</h2>
                         <p>{!! $data['upright_content'] !!}</p>
-                        <h4>正位 - 戀愛婚姻</h4>
+                        <h3>正位 - 戀愛婚姻</h3>
                         <p>{!! $data['upright_love'] !!}</p>
-                        <h4>正位 - 工作事業</h4>
+                        <h3>正位 - 工作事業</h3>
                         <p>{!! $data['upright_career'] !!}</p>
-                        <h4>正位 - 金錢財物</h4>
+                        <h3>正位 - 金錢財物</h3>
                         <p> {!! $data['upright_finances'] !!}</p>
                         <hr />
                         @include('../layouts/article')
-                        <h3>逆位描述</h3>
+                        <h2>逆位描述</h2>
                         <p>{!! $data['reversed_content'] !!}</p>
-                        <h4>逆位 - 戀愛婚姻</h4>
+                        <h3>逆位 - 戀愛婚姻</h3>
                         <p>{!! $data['reversed_love'] !!}</p>
-                        <h4>逆位 - 工作事業</h4>
+                        <h3>逆位 - 工作事業</h3>
                         <p>{!! $data['reversed_career'] !!}</p>
-                        <h4>逆位 - 金錢財物</h4>
+                        <h3>逆位 - 金錢財物</h3>
                         <p>{!! $data['reversed_finances'] !!}</p>
                         <hr />
-                        <h3>是否</h3>
+                        <h2>是否</h2>
                         <p>{!! $data['yes_no'] !!}</p>
                         <hr />
-                        <h3>過去</h3>
+                        <h2>過去</h2>
                         <p>{!! $data['past'] !!}</p>
-                        <h3>現在</h3>
+                        <h2>現在</h2>
                         <p>{!! $data['present'] !!}</p>
-                        <h3>未來</h3>
+                        <h2>未來</h2>
                         <p>{!! $data['future'] !!}</p>
                     </div>
                 </div>

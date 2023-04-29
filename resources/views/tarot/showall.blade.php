@@ -6,7 +6,7 @@
 
 @section('main')
 <div class="container">
-    <h3>{{$title}}</h3>
+    <h1>{{$title}}</h1>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/">Dcode</a></li>
@@ -60,7 +60,7 @@
         <div class="col text-center">
             <div class="card showall">
                 <div class="card-header">
-                    <h4><a href="/tarot/detail/{{$key}}">{{$tarot['name']}}</a></h4>
+                    <h3><a href="/tarot/detail/{{$key}}">{{$tarot['name']}}</a></h3>
                 </div>
                 <div class="card-body">
                     <div class="showalltarot-showcard">

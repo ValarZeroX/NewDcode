@@ -1,11 +1,11 @@
 @extends('layouts.main')
 
-@section('title', $title)
+@section('title', $title . ' - 抽籤')
 @section('description', $description)
 
 @section('main')
 <div class="container">
-    <h3>{{$title}} - 抽籤</h3>
+    <h1>{{$title}} - 抽籤</h1>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/">Dcode</a></li>

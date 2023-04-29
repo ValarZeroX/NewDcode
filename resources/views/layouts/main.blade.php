@@ -4,11 +4,11 @@
 <head>
     @vite(['resources/js/app.js'])
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    {{-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-PJ6MBCZ');</script>
+    })(window,document,'script','dataLayer','GTM-PJ6MBCZ');</script> --}}
     <!-- End Google Tag Manager -->
     <!-- 自動廣告 -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9868429025931364"
@@ -29,7 +29,7 @@
     <!-- End Google Tag Manager (noscript) -->
     <header>
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg fixed-top navbar-scroll">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-scroll navbar-dcode">
             <div class="container">
                 <a class="navbar-brand logo" href="/"><span style="color: #000000;">D</span><span
                         style="color: #5e9693;">Code</span></a>
@@ -70,6 +70,9 @@
     </header>
     <main id="main">
         @yield('main')
+        <div class="container">
+        @include('../layouts/footerads')
+        </div>
     </main>
     <footer class="footer mt-auto py-3 bg-light text-center footer-box">
         <div class="container">

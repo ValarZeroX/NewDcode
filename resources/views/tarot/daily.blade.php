@@ -5,7 +5,7 @@
 
 @section('main')
 <div class="container">
-    <h3>塔羅 - {{$title}}</h3>
+    <h1>塔羅 - {{$title}}</h1>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/">Dcode</a></li>
@@ -55,6 +55,10 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="alert alert-warning info-box" role="alert">
+        <p>更多種塔羅牌占卜。</p>
+        <a class="btn  btn-success" href="/tarot" role="button">前往</a>
     </div>
 </div>
 <script>

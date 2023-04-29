@@ -2,15 +2,41 @@
 @import 'material-icons/iconfont/material-icons.css';
 
 body {
-    background: #f1f4f6;
+    // background: #f1f4f6;
     font-size: 14px;
     line-height: 1.42857143;
     color: #333;
 
 }
+
+.container {
+    max-width: 1140px !important;
+}
+/*
+ *
+ */
+.topads {
+    margin: 5px auto;
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1140px !important;
+        ;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px !important;
+        ;
+    }
+}
+
 #main {
     min-height: 1080px;
 }
+
 a {
     text-decoration: none;
     color: #3b71ca;
@@ -20,6 +46,12 @@ a {
     font-weight: 900;
     font-size: 28px;
 }
+
+.navbar-dcode {
+    border-bottom: 1px solid #f1f4f6;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
 /* Color of the links BEFORE scroll */
 .navbar-scroll .nav-link,
 .navbar-scroll .fa-bars,
@@ -178,8 +210,9 @@ a {
 /*
  * 抽牌CSS
  */
- .draw {
+.draw {
     height: 250px;
+
     .deck {
         position: relative;
         display: flex;
@@ -198,6 +231,7 @@ a {
             border-radius: 6px;
             background-image: url("/images/background/tarot_cards.jpg");
             background-size: 80px 140px;
+
             &:hover {
                 border: 2px solid red;
                 bottom: 10px;
@@ -205,6 +239,7 @@ a {
         }
     }
 }
+
 .level2 {
     bottom: 120px;
     z-index: 200;
@@ -219,6 +254,7 @@ a {
     bottom: 360px;
     z-index: 400;
 }
+
 $max: 22;
 
 @for $i from 1 through $max {
@@ -240,8 +276,7 @@ $max: 22;
     margin-top: 5px;
 }
 
-.tarot-number
-{
+.tarot-number {
     height: 100%;
     display: flex;
     align-items: center;
@@ -255,15 +290,20 @@ $max: 22;
 
 
 .image-container {
-    height: 100px; /* 設定容器高度 */
-    overflow: hidden; /* 超出容器的部分隱藏 */
-  }
+    height: 100px;
+    /* 設定容器高度 */
+    overflow: hidden;
+    /* 超出容器的部分隱藏 */
+}
 
-  .image-container img {
-    width: 100%; /* 設定圖片寬度填滿容器 */
-    height: 100%; /* 設定圖片高度填滿容器 */
-    object-fit: cover; /* 調整圖片大小和位置，以填滿容器 */
-  }
+.image-container img {
+    width: 100%;
+    /* 設定圖片寬度填滿容器 */
+    height: 100%;
+    /* 設定圖片高度填滿容器 */
+    object-fit: cover;
+    /* 調整圖片大小和位置，以填滿容器 */
+}
 
 
 
@@ -287,7 +327,7 @@ $max: 22;
 * 抽籤
 */
 .draw-box {
-    display:none
+    display: none
 }
 
 .stick_title {
@@ -312,18 +352,88 @@ $max: 22;
     padding-bottom: 0;
     padding-right: .625rem;
     text-transform: uppercase;
-    color: rgba(13,27,62,0.7);
+    color: rgba(13, 27, 62, 0.7);
     font-weight: bold;
     font-size: .88rem;
     padding: .75rem 1.25rem;
     margin-bottom: 0;
     color: inherit;
     background-color: #fff;
-    border-bottom: 1px solid rgba(26,54,126,0.125);
+    border-bottom: 1px solid rgba(26, 54, 126, 0.125);
+}
+
+/*
+ * 十二星座
+ */
+.zodiac {
+    width: 150px;
+    height: 150px;
+    background-image: url('/images/constellation/zodiac.png');
+}
+
+#aries {
+    background-position: -60px 0;
+}
+
+#taurus {
+    background-position: -240px 0;
+}
+
+#gemini {
+    background-position: -430px 0;
+}
+
+#cancer {
+    background-position: -60px -150px;
+}
+
+#leo {
+    background-position: -225px -150px;
+}
+
+#virgo {
+    background-position: -415px -150px;
+}
+
+#libra {
+    background-position: -25px -300px;
+}
+
+#scorpio {
+    background-position: -225px -300px;
+}
+
+#sagittarius {
+    background-position: -415px -300px;
+}
+
+#capricorn {
+    background-position: -25px -450px;
+}
+
+#aquarius {
+    background-position: -225px -450px;
+}
+
+#pisces {
+    background-position: -415px -450px;
+}
+
+.center-div {
+    margin: 0px auto;
+}
+
+.box {
+    .feature {
+        p {
+            margin-bottom: 0.5rem;
+            /* 設定 p 標籤底部的間距 */
+        }
+    }
 }
 
 .footer {
     border-left: #e9ecef solid 1px;
     background: #fafbfc;
     // flex-shrink: 0;
-  }
+}

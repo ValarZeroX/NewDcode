@@ -5,7 +5,7 @@
 
 @section('main')
 <div class="container">
-    <h3>塔羅 - {{$title}}</h3>
+    <h1>塔羅 - {{$title}}</h1>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/">Dcode</a></li>
@@ -77,10 +77,10 @@
                     @endif
                     @if(!empty($value['astrology']))<p><strong>星象 :</strong> {{$value['astrology']}}</p>@endif
                     <p><strong>元素 :</strong> {{$value['element']}}</p>
-                    <h3>描述</h3>
+                    <h2>描述</h2>
                     <p>{!! $value['content'] !!}</p>
                     @if($value['reversed'] == 1)
-                    <h3>逆位描述</h3>
+                    <h2>逆位描述</h2>
                     <p>{!! $value['reversed_content'] !!}</p>
                     <h4>逆位 - 戀愛婚姻</h4>
                     <p>{!! $value['reversed_love'] !!}</p>
@@ -89,7 +89,7 @@
                     <h4>逆位 - 金錢財物</h4>
                     <p>{!! $value['reversed_finances'] !!}</p>
                     @else
-                    <h3>正位描述</h3>
+                    <h2>正位描述</h2>
                     <p>{!! $value['upright_content'] !!}</p>
                     <h4>正位 - 戀愛婚姻</h4>
                     <p>{!! $value['upright_love'] !!}</p>
@@ -100,15 +100,15 @@
                     @endif
                     <hr />
                     @if($key == 0)
-                    <h3>過去</h3>
+                    <h2>過去</h2>
                     <p>{!! $value['past'] !!}</p>
                     @endif
                     @if($key == 1)
-                    <h3>現在</h3>
+                    <h2>現在</h2>
                     <p>{!! $value['present'] !!}</p>
                     @endif
                     @if($key == 2)
-                    <h3>未來</h3>
+                    <h2>未來</h2>
                     <p>{!! $value['future'] !!}</p>
                     @endif
                     <a class="btn  btn-info" href="/tarot/detail/{{$value['number']}}" role="button">{{$value['name']}}完整說明</a>
@@ -124,7 +124,7 @@
         </div>
     </div>
     <div class="alert alert-warning info-box" role="alert">
-        <p>如果答案不清楚或過於抽象，再抽取一張卡獲取更多訊息。</p>
+        <p>如果答案不清楚或過於抽象，再抽取一次獲取更多訊息。</p>
         <a class="btn  btn-success" href="/tarot/fourcard" role="button">再抽一次</a>
     </div>
 </div>

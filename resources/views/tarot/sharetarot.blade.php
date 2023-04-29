@@ -5,7 +5,7 @@
 
 @section('main')
 <div class="container">
-    <h3>塔羅 - {{$title}}({{$info[0]}})</h3>
+    <h1>塔羅 - {{$title}}({{$info[0]}})</h1>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/">Dcode</a></li>
@@ -35,7 +35,7 @@
                     <img src="/images/deck/{{$value['image_key']}}.jpg" class="figure-img img-fluid showcard"
                         alt="{{$value['name']}}">
                 </div>
-                <h3>描述</h3>
+                <h2>描述</h2>
                 <p>{!! $value['content'] !!}</p>
                 <a class="btn btn-sm btn-outline-secondary" href="/tarot/detail/{{$value['number']}}"
                     role="button">{{$value['name']}}完整說明</a>

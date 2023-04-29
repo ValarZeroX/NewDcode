@@ -5,7 +5,7 @@
 
 @section('main')
 <div class="container">
-    <h3>塔羅 - {{$title}}</h3>
+    <h1>塔羅 - {{$title}}</h1>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/">Dcode</a></li>
@@ -57,29 +57,29 @@
                     @endif
                     @if(!empty($data['astrology']))<p><strong>星象 :</strong> {{$data['astrology']}}</p>@endif
                     <p><strong>元素 :</strong> {{$data['element']}}</p>
-                    <h3>描述</h3>
+                    <h2>描述</h2>
                     <p>{!! $data['content'] !!}</p>
                     @if($data['reversed'] == 1)
-                    <h3>逆位描述</h3>
+                    <h2>逆位描述</h2>
                     <p>{!! $data['reversed_content'] !!}</p>
-                    <h4>逆位 - 戀愛婚姻</h4>
+                    <h3>逆位 - 戀愛婚姻</h3>
                     <p>{!! $data['reversed_love'] !!}</p>
-                    <h4>逆位 - 工作事業</h4>
+                    <h3>逆位 - 工作事業</h3>
                     <p>{!! $data['reversed_career'] !!}</p>
-                    <h4>逆位 - 金錢財物</h4>
+                    <h3>逆位 - 金錢財物</h3>
                     <p>{!! $data['reversed_finances'] !!}</p>
                     @else
-                    <h3>正位描述</h3>
+                    <h2>正位描述</h2>
                     <p>{!! $data['upright_content'] !!}</p>
-                    <h4>正位 - 戀愛婚姻</h4>
+                    <h3>正位 - 戀愛婚姻</h3>
                     <p>{!! $data['upright_love'] !!}</p>
-                    <h4>正位 - 工作事業</h4>
+                    <h3>正位 - 工作事業</h3>
                     <p>{!! $data['upright_career'] !!}</p>
-                    <h4>正位 - 金錢財物</h4>
+                    <h3>正位 - 金錢財物</h3>
                     <p> {!! $data['upright_finances'] !!}</p>
                     @endif
                     <hr />
-                    <h3>是否</h3>
+                    <h2>是否</h2>
                     <p>{!! $data['yes_no'] !!}</p>
                     <a class="btn btn-sm btn-outline-secondary" href="/tarot/detail/{{$data['number']}}"
                         role="button">{{$data['name']}}完整說明</a>

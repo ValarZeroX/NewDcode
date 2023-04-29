@@ -5,7 +5,7 @@
 
 @section('main')
 <div class="container">
-    <h3>塔羅 - {{$title}}</h3>
+    <h1>塔羅 - {{$title}}</h1>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/">Dcode</a></li>
@@ -46,7 +46,7 @@
                         <img src="/images/deck/{{$value['image_key']}}.jpg" class="figure-img img-fluid showcard"
                             alt="{{$value['name']}}">
                     </div>
-                    <h3>描述</h3>
+                    <h2>描述</h2>
                     <p>{!! $value['content'] !!}</p>
                 </div>
                 @endforeach
@@ -54,7 +54,7 @@
         </div>
     </div>
     <div class="alert alert-warning info-box" role="alert">
-        <p>如果答案不清楚或過於抽象，再抽取一張卡獲取更多訊息。</p>
+        <p>如果答案不清楚或過於抽象，再抽取一次獲取更多訊息。</p>
         <a class="btn  btn-success" href="/tarot/flirt" role="button">再抽一次</a>
     </div>
 </div>

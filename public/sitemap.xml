@@ -27,6 +27,11 @@
 	<priority>0.8</priority>
 </url>
 <url>
+	<loc>https://dcode.tw/tarot/daily</loc>
+	<lastmod>2023-04-22T18:27:36+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
 	<loc>https://dcode.tw/stick/draw/2</loc>
 	<lastmod>2023-04-22T18:27:36+01:00</lastmod>
 	<priority>0.6</priority>

@@ -1,11 +1,11 @@
 @extends('layouts.main')
 
-@section('title', $title)
-@section('description', '')
+@section('title', $title . ' - 籤文')
+@section('description', '詩籤占卜是一種傳統文化的占卜方式，常見於廟宇或民間信仰。占卜者先祈求神明庇佑，然後以自己的問題或需求為題，從一堆隨機排列的竹籤中抽出一根，再將籤上的詩句解讀為占卜結果。')
 
 @section('main')
 <div class="container">
-    <h3>{{$title}} - 籤文</h3>
+    <h1>{{$title}} - 籤文</h1>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/">Dcode</a></li>
