@@ -24,7 +24,7 @@
                             <h2>獅子座</h2>
                             <p>元素： <span class="badge rounded-pill bg-danger">火</span></p>
                             <p>顏色： 金色</p>
-                            <p>主宰星： 太陽</p>
+                            <p>守護星： 太陽</p>
                             <p>最佳配對： <span class="badge rounded-pill bg-danger">牡羊座</span>、<span
                                     class="badge rounded-pill bg-danger">射手座</span>、<span
                                     class="badge rounded-pill bg-danger">獅子座</span></p>

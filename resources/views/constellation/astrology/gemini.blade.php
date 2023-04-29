@@ -24,10 +24,10 @@
                             <h2>雙子座</h2>
                             <p>元素： <span class="badge rounded-pill bg-success">風</span></p>
                             <p>顏色： 黃色</p>
-                            <p>主宰星： 水星</p>
+                            <p>守護星： 水星</p>
                             <p>最佳配對： <span class="badge rounded-pill bg-danger">牡羊座</span>、<span
-                                    class="badge rounded-pill bg-info">天秤座</span>、<span
-                                    class="badge rounded-pill bg-info">水瓶座</span></p>
+                                    class="badge rounded-pill bg-success">天秤座</span>、<span
+                                    class="badge rounded-pill bg-success">水瓶座</span></p>
                             <p>幸運數字： 5、7、14、23</p>
                             <p>日期：5/21 ~ 6/20</p>
                         </div>

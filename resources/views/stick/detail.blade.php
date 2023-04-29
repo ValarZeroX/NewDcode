@@ -10,6 +10,7 @@
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/">Dcode</a></li>
             <li class="breadcrumb-item"><a href="/stick">籤文</a></li>
+            <li class="breadcrumb-item"><a href="/stick/showall/{{$typeid}}">{{$title}} - 籤詩</a></li>
             <li class="breadcrumb-item active" aria-current="page">{{$title}} - 解籤</li>
         </ol>
     </nav>

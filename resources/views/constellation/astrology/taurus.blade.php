@@ -24,7 +24,7 @@
                             <h2>金牛座</h2>
                             <p>元素： <span class="badge rounded-pill bg-warning">土</span></p>
                             <p>顏色： 綠色</p>
-                            <p>主宰星： 金星</p>
+                            <p>守護星： 金星</p>
                             <p>最佳配對： <span class="badge rounded-pill bg-warning">處女座</span>、<span
                                     class="badge rounded-pill bg-warning">魔羯座</span>、<span
                                     class="badge rounded-pill bg-info">巨蟹座</span></p>

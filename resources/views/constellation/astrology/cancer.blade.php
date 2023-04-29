@@ -24,7 +24,7 @@
                             <h2>巨蟹座</h2>
                             <p>元素： <span class="badge rounded-pill bg-info">水</span></p>
                             <p>顏色： 白色</p>
-                            <p>主宰星： 月亮</p>
+                            <p>守護星： 月亮</p>
                             <p>最佳配對： <span class="badge rounded-pill bg-warning">金牛座</span>、<span
                                     class="badge rounded-pill bg-info">雙魚座</span>、<span
                                     class="badge rounded-pill bg-info">天蠍座</span></p>

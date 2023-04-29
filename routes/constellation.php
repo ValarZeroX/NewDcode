@@ -26,3 +26,31 @@ Route::get('/astrology/zodiac/cancer', function () {
 Route::get('/astrology/zodiac/leo', function () {
     return view('constellation/astrology/leo', []);
 });
+//處女
+Route::get('/astrology/zodiac/virgo', function () {
+    return view('constellation/astrology/virgo', []);
+});
+//天秤
+Route::get('/astrology/zodiac/libra', function () {
+    return view('constellation/astrology/libra', []);
+});
+//天蠍
+Route::get('/astrology/zodiac/scorpio', function () {
+    return view('constellation/astrology/scorpio', []);
+});
+//射手
+Route::get('/astrology/zodiac/sagittarius', function () {
+    return view('constellation/astrology/sagittarius', []);
+});
+//摩羯
+Route::get('/astrology/zodiac/capricorn', function () {
+    return view('constellation/astrology/capricorn', []);
+});
+//水瓶
+Route::get('/astrology/zodiac/aquarius', function () {
+    return view('constellation/astrology/aquarius', []);
+});
+//雙魚
+Route::get('/astrology/zodiac/pisces', function () {
+    return view('constellation/astrology/pisces', []);
+});

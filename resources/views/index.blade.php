@@ -77,6 +77,22 @@
               </div>
             </div>
           </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <div class="image-container card-img-top">
+                <img class="cards_image card-img-top" src="/images/constellation/gemini_2.jpg">
+              </div>
+              <div class="card-header text-center">十二星座</div>
+              <div class="card-body">
+                <p class="card-text">十二星座是人們根據太陽、月亮和行星在黃道帶上的位置劃分的星座，包括牡羊座、金牛座、雙子座、巨蟹座、獅子座、處女座、天秤座、天蠍座、射手座、摩羯座、水瓶座和雙魚座。每個星座都有自己的特點和個性，人們可以根據星座瞭解自己和身邊人的傾向和行為模式。星座也常被用於占星學和命理學中，被認為可以影響一個人的性格和命運。</p>
+              </div>
+              <div class="card-footer text-center">
+                  <div class="btn-group">
+                    <a href="/astrology/zodiac" class="btn btn-sm btn-outline-secondary" role="button">前往星座介紹</a>
+                  </div>
+              </div>
+            </div>
+          </div>
     </div>
 </div>
 @endsection
