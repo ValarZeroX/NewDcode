@@ -17,6 +17,8 @@
     <div class="card text-center">
         <div class="card-header"><strong>心誠則靈，在心中默念您的姓名、出生年月日、住址、求問事項後，點選求籤。</strong></div>
         <div class="card-body">
+            <img src="/images/stick/stick.png" class="figure-img img-fluid" alt="抽籤">
+            <br>
             <input type="hidden" id="stick_type_id" name="stick_type_id" value="{{ $data }}">
             <input type="hidden" id="number" name="number" value=1>
             <a href="/stick/detail/{{ $typeid }}/{{ $number }}" class="btn btn-sm btn-outline-secondary" role="button">求籤</a>
