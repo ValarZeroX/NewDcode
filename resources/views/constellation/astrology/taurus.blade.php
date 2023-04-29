@@ -163,7 +163,7 @@
                         </p>
                         @include('../layouts/topads_two')
                         <h2>金牛座 - 愛情、感情</h2>
-                        <img src="/images/constellation/aries_1.jpg" class="img-thumbnail figure-img img-fluid"
+                        <img src="/images/constellation/taurus_1.jpg" class="img-thumbnail figure-img img-fluid"
                             alt="金牛座}">
                         <p>金牛座的人對於愛情和感情非常著迷，他們是十二星座中最著重感官享受和物質享受的人。他們喜歡感受到愛情的實質存在，尤其是親密關係中的溫暖和舒適感。他們對於感官刺激和舒適感的渴望也反映在他們的浪漫偏好上，例如喜歡在高級餐廳用餐、享受高品質的飲料和美食等。</p>
                         <p>金牛座的人通常非常慎重和保守，因此他們會花很長時間在建立親密關係上，但是一旦建立起來，他們就會變得非常忠誠和堅定。他們非常注重關係的穩定性和長期性，因此在感情中，他們需要有安全感和穩定感。</p>
@@ -171,7 +171,7 @@
                         </p>
                         <p>總的來說，金牛座的人對於感情非常認真，他們需要感受到安全和穩定，才能夠真正地投入感情關係當中。他們也需要感受到愛情的實質存在，尤其是物質上的享受和舒適感。</p>
                         <h2>金牛座 - 家人、朋友</h2>
-                        <img src="/images/constellation/aries_2.jpg" class="img-thumbnail figure-img img-fluid"
+                        <img src="/images/constellation/taurus_2.jpg" class="img-thumbnail figure-img img-fluid"
                             alt="金牛座}">
                         <p>金牛座的人非常珍惜家人和朋友，他們有著非常穩定和堅固的家庭觀念，對於家人和朋友的關心和支持非常重視，通常將他們放在心靈上的最高位置。下面是金牛座對家人和朋友的介紹。
                         </p>
@@ -183,7 +183,7 @@
                         </p>
                         @include('../layouts/topads_three')
                         <h2>金牛座 - 事業、金錢</h2>
-                        <img src="/images/constellation/aries_3.jpg" class="img-thumbnail figure-img img-fluid"
+                        <img src="/images/constellation/taurus_3.jpg" class="img-thumbnail figure-img img-fluid"
                             alt="金牛座}">
                         <p>金牛座是一個著重實際與現實的星座，對於事業和金錢的追求有著穩健而踏實的態度。他們非常重視經濟穩定和財務自由，通常會從事實用性較高、風險較小的職業或投資，並注重儲蓄和理財，以確保自己的經濟安全。
                         </p>
