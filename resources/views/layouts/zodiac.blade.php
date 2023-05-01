@@ -1,6 +1,6 @@
 <br>
 <br>
-<h2>你可能會想知道</h2>
+<h2>十二星座介紹、配對分數</h2>
 <div class="row text-center">
     <div class="col-sm-2 zodiac-grid"><a class="" href="/astrology/zodiac/aries"><img
                 src="/images/constellation/aries.png" class="figure-img img-fluid" alt="牡羊座">

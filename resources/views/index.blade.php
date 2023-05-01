@@ -12,6 +12,7 @@
         </ol>
     </nav>
     @include('../layouts/topads')
+    <h1>詩籤解籤、塔羅占卜</h1>
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
         <div class="col">
             <div class="card shadow-sm">
@@ -96,5 +97,6 @@
             </div>
           </div>
     </div>
+    @include('../layouts/zodiac')
 </div>
 @endsection

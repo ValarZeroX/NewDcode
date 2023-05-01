@@ -198,5 +198,6 @@
             </div>
         </div>
     </div>
+    @include('../layouts/zodiac')
 </div>
 @endsection
