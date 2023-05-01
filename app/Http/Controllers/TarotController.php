@@ -185,4 +185,13 @@ class TarotController extends Controller
         $aOneCard = $this->oTarotServices->getOneCard($aAllTarot);
         return view('tarot/daily', ['event' => true, 'data' => $aOneCard, 'title' => '每日塔羅占卜', 'maxcard' => 1]);
     }
+
+    public function getDailyLove()
+    {
+        $aFile = app_path('JsonData/tarotDailyLove.json');
+        $sJsonData = file_get_contents($aFile);
+        $aAllTarot = json_decode($sJsonData, true);
+        $aOneCard = $this->oTarotServices->getOneCard($aAllTarot);
+        return view('tarot/daily_love', ['event' => true, 'data' => $aOneCard, 'title' => '每日愛情塔羅占卜', 'maxcard' => 1]);
+    }
 }

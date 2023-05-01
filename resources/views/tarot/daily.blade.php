@@ -57,6 +57,10 @@
         </div>
     </div>
     <div class="alert alert-warning info-box" role="alert">
+        <p>如果答案不清楚或過於抽象，再抽取一張卡獲取更多訊息。</p>
+        <a class="btn  btn-success" href="/tarot/daily" role="button">再抽一次</a>
+    </div>
+    <div class="alert alert-warning info-box" role="alert">
         <p>更多種塔羅牌占卜。</p>
         <a class="btn  btn-success" href="/tarot" role="button">前往</a>
     </div>

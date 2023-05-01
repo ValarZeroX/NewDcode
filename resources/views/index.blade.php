@@ -67,22 +67,6 @@
           <div class="col">
             <div class="card shadow-sm">
               <div class="image-container card-img-top">
-                <img class="cards_image card-img-top" src="/images/tarot/daily_tarot.jpg">
-              </div>
-              <div class="card-header text-center">每日塔羅占卜</div>
-              <div class="card-body">
-                <p class="card-text">每日塔羅占卜可以幫助你探索當天的能量和主題，提供指引和啟示，幫助你更好地理解和應對生活中的挑戰和機遇。透過抽出一張牌，解讀牌面的象徵意義，可以給你啟發和靈感。每日塔羅占卜不僅可以幫助你掌握當下的情況，還可以幫助你發現潛在的問題和解決方案。</p>
-              </div>
-              <div class="card-footer text-center">
-                  <div class="btn-group">
-                    <a href="/tarot/daily" class="btn btn-sm btn-outline-secondary" role="button">前往占卜</a>
-                  </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <div class="image-container card-img-top">
                 <img class="cards_image card-img-top" src="/images/constellation/gemini_2.jpg">
               </div>
               <div class="card-header text-center">十二星座</div>
@@ -96,6 +80,42 @@
               </div>
             </div>
           </div>
+    </div>
+    <br>
+    <h2>每日塔羅占卜系列</h2>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+      <div class="col">
+        <div class="card shadow-sm">
+          <div class="image-container card-img-top">
+            <img class="cards_image card-img-top" src="/images/tarot/daily_tarot.jpg">
+          </div>
+          <div class="card-header text-center">每日塔羅占卜</div>
+          <div class="card-body">
+            <p class="card-text">每日塔羅占卜可以幫助你探索當天的能量和主題，提供指引和啟示，幫助你更好地理解和應對生活中的挑戰和機遇。透過抽出一張牌，解讀牌面的象徵意義，可以給你啟發和靈感。每日塔羅占卜不僅可以幫助你掌握當下的情況，還可以幫助你發現潛在的問題和解決方案。</p>
+          </div>
+          <div class="card-footer text-center">
+              <div class="btn-group">
+                <a href="/tarot/daily" class="btn btn-sm btn-outline-secondary" role="button">前往占卜</a>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <div class="image-container card-img-top">
+            <img class="cards_image card-img-top" src="/images/tarot/love.jpg">
+          </div>
+          <div class="card-header text-center">每日愛情塔羅占卜</div>
+          <div class="card-body">
+            <p class="card-text">每日愛情塔羅占卜是一種運用塔羅牌的方式，以解讀當天的感情狀態、關係及愛情運勢為目的。每張塔羅牌代表著不同的象徵和含義，透過牌面的解讀，可以為當天的感情狀態帶來啟示和建議。</p>
+          </div>
+          <div class="card-footer text-center">
+              <div class="btn-group">
+                <a href="/tarot/daily/love" class="btn btn-sm btn-outline-secondary" role="button">前往占卜</a>
+              </div>
+          </div>
+        </div>
+      </div>
     </div>
     @include('../layouts/zodiac')
 </div>

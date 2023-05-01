@@ -18,3 +18,4 @@ Route::get('/tarot/either', [TarotController::class, 'getEither']);
 Route::get('/tarot/flirt', [TarotController::class, 'getFlirt']);
 
 Route::get('/tarot/daily', [TarotController::class, 'getDaily']);
+Route::get('/tarot/daily/love', [TarotController::class, 'getDailyLove']);
