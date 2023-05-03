@@ -1,17 +1,17 @@
 @extends('layouts.main')
 
-@section('title', '金牛座 星座介紹')
+@section('title', '金牛座 星座運勢')
 @section('description',
 '金牛座元素是土，代表著穩定、實際和現實主義。金牛座的主宰星是金星，這也代表著愛情和美麗。金牛座的人通常很踏實，喜歡穩定和可靠性，他們也有著強烈的物質欲望和對美好事物的追求。他們非常堅持自己的信念和價值觀，並且會全力以赴保護自己的家庭和朋友。')
 
 @section('main')
 <div class="container">
-    <h1>金牛座 - 星座介紹</h1>
+    <h1>金牛座 - 星座運勢</h1>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/">Dcode</a></li>
             <li class="breadcrumb-item"><a href="/astrology/zodiac">星座</a></li>
-            <li class="breadcrumb-item active" aria-current="page">金牛座 - 星座介紹</li>
+            <li class="breadcrumb-item active" aria-current="page">金牛座 - 星座運勢</li>
         </ol>
     </nav>
     <div class="row flex-nowrap justify-content-between">

@@ -1,17 +1,17 @@
 @extends('layouts.main')
 
-@section('title', '獅子座 - 星座介紹')
+@section('title', '獅子座 - 星座運勢')
 @section('description',
 '獅子座的人通常性格豪放、自信、有野心、熱情、創造力強，並且對自己的形象和聲譽非常在意。他們也很慷慨大方、大度、講義氣、具有領導才能和決策力。獅子座們通常非常自信，有時甚至會顯得過於自信，但是這樣的自信也使他們有著非凡的魅力和能力去實現自己的願望。他們熱愛表現自己，希望成為眾人矚目的焦點，並擁有受人尊敬和讚揚的感覺。')
 
 @section('main')
 <div class="container">
-    <h1>獅子座 - 星座介紹</h1>
+    <h1>獅子座 - 星座運勢</h1>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/">Dcode</a></li>
             <li class="breadcrumb-item"><a href="/astrology/zodiac">星座</a></li>
-            <li class="breadcrumb-item active" aria-current="page">獅子座 - 星座介紹</li>
+            <li class="breadcrumb-item active" aria-current="page">獅子座 - 星座運勢</li>
         </ol>
     </nav>
     <div class="row flex-nowrap justify-content-between">

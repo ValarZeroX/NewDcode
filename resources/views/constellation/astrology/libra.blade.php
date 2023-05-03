@@ -1,17 +1,17 @@
 @extends('layouts.main')
 
-@section('title', '天秤座 - 星座介紹')
+@section('title', '天秤座 - 星座運勢')
 @section('description',
 '天秤座的代表符號是天秤，象徵著平衡和公正。天秤座的人通常具有和諧、溫和、優雅、美感和理智等特點。他們喜歡和平、公正和平等，並且在人際關係中非常擅長斡旋和調和矛盾。天秤座的人也很注重外表和形象，喜歡打扮得體、精緻，對美感有很高的鑑賞力。天秤座的人很有人情味，對於家庭和朋友也非常重視。他們崇尚和諧的生活方式，喜歡營造一個溫馨、舒適的家庭環境，也喜歡和親朋好友交往、聚會。此外，天秤座的人也很懂得享受生活，喜歡追求高品質的生活享受，例如美食、藝術、音樂、旅遊等。')
 
 @section('main')
 <div class="container">
-    <h1>天秤座 - 星座介紹</h1>
+    <h1>天秤座 - 星座運勢</h1>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/">Dcode</a></li>
             <li class="breadcrumb-item"><a href="/astrology/zodiac">星座</a></li>
-            <li class="breadcrumb-item active" aria-current="page">天秤座 - 星座介紹</li>
+            <li class="breadcrumb-item active" aria-current="page">天秤座 - 星座運勢</li>
         </ol>
     </nav>
     <div class="row flex-nowrap justify-content-between">

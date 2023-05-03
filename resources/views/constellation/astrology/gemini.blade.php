@@ -1,17 +1,17 @@
 @extends('layouts.main')
 
-@section('title', '雙子座 - 星座介紹')
+@section('title', '雙子座 - 星座運勢')
 @section('description',
 '雙子代表著兩個不同的性格在同一個人身上。雙子座的人好奇心強，富有想像力，思維敏捷，能夠迅速地理解新事物。他們很好交朋友，健談又風趣，但也容易讓人感到輕浮或表面。雙子座的人內心有著不安定的因素，需要不斷地嘗試新事物來轉移注意力。他們通常會有多種興趣和專長，但也容易失去興趣，轉而追求新的挑戰。由於思維敏捷，雙子座的人在溝通和表達方面很有天賦，常常擅長文字、演說、表演等領域。')
 
 @section('main')
 <div class="container">
-    <h1>雙子座 - 星座介紹</h1>
+    <h1>雙子座 - 星座運勢</h1>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/">Dcode</a></li>
             <li class="breadcrumb-item"><a href="/astrology/zodiac">星座</a></li>
-            <li class="breadcrumb-item active" aria-current="page">雙子座 - 星座介紹</li>
+            <li class="breadcrumb-item active" aria-current="page">雙子座 - 星座運勢</li>
         </ol>
     </nav>
     <div class="row flex-nowrap justify-content-between">

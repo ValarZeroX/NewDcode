@@ -1,17 +1,17 @@
 @extends('layouts.main')
 
-@section('title', '射手座 - 星座介紹')
+@section('title', '射手座 - 星座運勢')
 @section('description',
 '射手座是十二星座中的第九個星座，其代表符號為弓箭手。射手座的主宰行星是木星，象徵著運氣和幸運。射手座的人通常性格樂觀、開朗、直率、勇敢、熱情，不喜歡束縛和限制，渴望自由和冒險。他們喜歡探索新事物、學習新知識，有很強的好奇心和求知欲。射手座的人也有時會不太注意細節，不善於處理瑣碎的事情，容易衝動，需要更多的耐心和沈穩。')
 
 @section('main')
 <div class="container">
-    <h1>射手座 - 星座介紹</h1>
+    <h1>射手座 - 星座運勢</h1>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/">Dcode</a></li>
             <li class="breadcrumb-item"><a href="/astrology/zodiac">星座</a></li>
-            <li class="breadcrumb-item active" aria-current="page">射手座 - 星座介紹</li>
+            <li class="breadcrumb-item active" aria-current="page">射手座 - 星座運勢</li>
         </ol>
     </nav>
     <div class="row flex-nowrap justify-content-between">

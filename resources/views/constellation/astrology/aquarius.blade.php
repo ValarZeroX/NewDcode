@@ -1,17 +1,17 @@
 @extends('layouts.main')
 
-@section('title', '水瓶座 - 星座介紹')
+@section('title', '水瓶座 - 星座運勢')
 @section('description',
 '水瓶座他們天生好奇心強，喜歡探索新事物和思想，獨立自主，個性鮮明。他們非常開放，喜歡和不同背景、文化的人相處，對於社會和人類的未來充滿著探索和幻想。水瓶座的人很聰明，思維靈活，很擅長分析和創新，喜歡解決複雜的問題。')
 
 @section('main')
 <div class="container">
-    <h1>水瓶座 - 星座介紹</h1>
+    <h1>水瓶座 - 星座運勢</h1>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/">Dcode</a></li>
             <li class="breadcrumb-item"><a href="/astrology/zodiac">星座</a></li>
-            <li class="breadcrumb-item active" aria-current="page">水瓶座 - 星座介紹</li>
+            <li class="breadcrumb-item active" aria-current="page">水瓶座 - 星座運勢</li>
         </ol>
     </nav>
     <div class="row flex-nowrap justify-content-between">

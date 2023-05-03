@@ -1,17 +1,17 @@
 @extends('layouts.main')
 
-@section('title', '處女座 - 星座介紹')
+@section('title', '處女座 - 星座運勢')
 @section('description',
 '處女座象徵是一個美麗的少女，代表著純潔、勤奮和完美主義。處女座的人通常非常細心、謹慎和有條理，他們會將自己的工作和生活安排得井井有條。他們非常注重細節，這讓他們成為非常出色的分析師、審計師和編輯等職業。此外，他們也有一定的藝術才華，擅長音樂、繪畫和手工藝等方面。但處女座的人也有些固執，對自己和他人要求非常高，有時候會讓自己過於緊張和焦慮。')
 
 @section('main')
 <div class="container">
-    <h1>處女座 - 星座介紹</h1>
+    <h1>處女座 - 星座運勢</h1>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/">Dcode</a></li>
             <li class="breadcrumb-item"><a href="/astrology/zodiac">星座</a></li>
-            <li class="breadcrumb-item active" aria-current="page">處女座 - 星座介紹</li>
+            <li class="breadcrumb-item active" aria-current="page">處女座 - 星座運勢</li>
         </ol>
     </nav>
     <div class="row flex-nowrap justify-content-between">

@@ -1,17 +1,17 @@
 @extends('layouts.main')
 
-@section('title', '天蠍座 - 星座介紹')
+@section('title', '天蠍座 - 星座運勢')
 @section('description',
 '天蠍座是十二星座之一，屬於水象星座，代表著深刻、神秘和熱情。天蠍座的人往往充滿熱情和魅力，他們有強烈的洞察力和直覺能力，喜歡探索人生的意義和深層次的事情。他們很少表現自己的情感，但對於身邊人的情感卻有極強的感應力，能夠理解和感受到他人的情感和需求。天蠍座的人內心深處總是帶著一些神秘的東西，讓人感到不可捉摸和難以了解。')
 
 @section('main')
 <div class="container">
-    <h1>天蠍座 - 星座介紹</h1>
+    <h1>天蠍座 - 星座運勢</h1>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/">Dcode</a></li>
             <li class="breadcrumb-item"><a href="/astrology/zodiac">星座</a></li>
-            <li class="breadcrumb-item active" aria-current="page">天蠍座 - 星座介紹</li>
+            <li class="breadcrumb-item active" aria-current="page">天蠍座 - 星座運勢</li>
         </ol>
     </nav>
     <div class="row flex-nowrap justify-content-between">

@@ -1,17 +1,17 @@
 @extends('layouts.main')
 
-@section('title', '摩羯座 - 星座介紹')
+@section('title', '摩羯座 - 星座運勢')
 @section('description',
 '摩羯座是黃道帶上第十個星座。它的象徵是山羊，象徵著耐力和毅力。摩羯座的人通常非常有計劃性和目標導向，以實現他們的抱負和野心。他們往往對自己和身邊的人都很嚴格，並以實際行動和成就為尊。他們通常表現出冷靜、理性、可靠和勤奮的特質，從而為自己贏得了不少成功。')
 
 @section('main')
 <div class="container">
-    <h1>摩羯座 - 星座介紹</h1>
+    <h1>摩羯座 - 星座運勢</h1>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/">Dcode</a></li>
             <li class="breadcrumb-item"><a href="/astrology/zodiac">星座</a></li>
-            <li class="breadcrumb-item active" aria-current="page">摩羯座 - 星座介紹</li>
+            <li class="breadcrumb-item active" aria-current="page">摩羯座 - 星座運勢</li>
         </ol>
     </nav>
     <div class="row flex-nowrap justify-content-between">

@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', '牡羊座 - 星座介紹')
+@section('title', '牡羊座 - 星座運勢')
 @section('description',
 '牡羊座的人出生於3月21日至4月19日之間，是十二星座中的第一個星座，其代表符號為公羊。牡羊座的人通常具有勇敢、積極、自信、直接、堅定等特點，他們勇於嘗試新事物，且做事總是充滿熱情與活力。牡羊座喜歡挑戰自己的極限，對於競爭和勝利充滿熱情，但有時候也會過於衝動而忽略他人的感受。在愛情方面，牡羊座熱情奔放，追求浪漫和刺激的感覺，但也容易陷入一見鍾情的狀態。牡羊座的人具有領袖風範，常常能夠帶領團隊前進，達成目標。')
 
@@ -11,7 +11,7 @@
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/">Dcode</a></li>
             <li class="breadcrumb-item"><a href="/astrology/zodiac">星座</a></li>
-            <li class="breadcrumb-item active" aria-current="page">牡羊座 - 星座介紹</li>
+            <li class="breadcrumb-item active" aria-current="page">牡羊座 - 星座運勢</li>
         </ol>
     </nav>
     <div class="row flex-nowrap justify-content-between">

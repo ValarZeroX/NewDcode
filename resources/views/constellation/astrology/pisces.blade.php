@@ -1,17 +1,17 @@
 @extends('layouts.main')
 
-@section('title', '雙魚座 - 星座介紹')
+@section('title', '雙魚座 - 星座運勢')
 @section('description',
 '雙魚座是十二星座中的最後一個星座，代表著結束和開始。它的守護行星是海王星和木星，代表著幻想、創造力和智慧。雙魚座的人通常是充滿藝術氣息的夢想家，喜歡在自己的想像中創造新的世界。他們對於別人的痛苦和需要很敏感，總是會盡力幫助他人。雙魚座的人常常不愿意面對現實，常常陷入自己的世界中，但是也因此擁有了豐富的內心世界和強烈的想像力。他們喜歡藝術和音樂，對於自己的情感很敏感。')
 
 @section('main')
 <div class="container">
-    <h1>雙魚座 - 星座介紹</h1>
+    <h1>雙魚座 - 星座運勢</h1>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/">Dcode</a></li>
             <li class="breadcrumb-item"><a href="/astrology/zodiac">星座</a></li>
-            <li class="breadcrumb-item active" aria-current="page">雙魚座 - 星座介紹</li>
+            <li class="breadcrumb-item active" aria-current="page">雙魚座 - 星座運勢</li>
         </ol>
     </nav>
     <div class="row flex-nowrap justify-content-between">

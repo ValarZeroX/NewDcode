@@ -1,17 +1,17 @@
 @extends('layouts.main')
 
-@section('title', '巨蟹座 - 星座介紹')
+@section('title', '巨蟹座 - 星座運勢')
 @section('description',
 '巨蟹座的代表符號是螃蟹，牠們的性格通常被形容為敏感、情感豐富、保護性強、愛家、善良和溫柔。巨蟹座的人有著非常豐富的想像力和感性的特點，對家庭和朋友非常重視，喜歡在自己的空間中享受生活。他們通常非常關注情感和人際關係，但也很容易受到情緒的波動影響。巨蟹座的人做事穩健，是很好的聆聽者和忠誠的朋友，但有時也會顯得固執和敏感。')
 
 @section('main')
 <div class="container">
-    <h1>巨蟹座 - 星座介紹</h1>
+    <h1>巨蟹座 - 星座運勢</h1>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/">Dcode</a></li>
             <li class="breadcrumb-item"><a href="/astrology/zodiac">星座</a></li>
-            <li class="breadcrumb-item active" aria-current="page">巨蟹座 - 星座介紹</li>
+            <li class="breadcrumb-item active" aria-current="page">巨蟹座 - 星座運勢</li>
         </ol>
     </nav>
     <div class="row flex-nowrap justify-content-between">
