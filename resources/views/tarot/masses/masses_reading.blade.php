@@ -34,7 +34,9 @@
                     <div class="tarot-showcard">
                         <img src="/images/deck/{{$data[$i]['image_key']}}.jpg" class="figure-img img-fluid showcard" alt="{{$data[$i]['name']}}">
                     </div>
-                    <p>{!! $data[$i]['content'] !!}</p>
+                    @foreach ($data[$i]['content'] as $val)
+                        <p>{{ $val}}</p>
+                    @endforeach
                 </div>
             </div>
             @endfor
