@@ -1,11 +1,11 @@
 @extends('layouts.main')
 
-@section('title', $title)
-@section('description', "單張牌占卜法 - 提供簡單簡潔的訊息，當需要更明確的答案時，這種類型的占卜會很有幫助。專注於你的問題。選擇一張卡。該卡將回答您的問題。")
+@section('title', $title. ' - 愛情、工作、金錢運勢解讀')
+@section('description', "單張牌占卜法 - 提供簡單簡潔的訊息，當需要更明確的答案時，這種類型的占卜會很有幫助。專注於你的問題。選擇一張卡。該卡將回答您的問題。不管是愛情、工作、金錢都能獲得答案")
 
 @section('main')
 <div class="container">
-    <h1>塔羅 - {{$title}}</h1>
+    <h1>塔羅 - {{$title}} - 愛情、工作、金錢運勢解讀</h1>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/">Dcode</a></li>

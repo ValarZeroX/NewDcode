@@ -1,11 +1,11 @@
 @extends('layouts.main')
 
-@section('title', $title)
+@section('title', $title . ' - 愛情、工作、金錢運勢解讀')
 @section('description', "每日塔羅占卜是一種靈性指南，幫助你在每天開始前思考當下的問題、情況和挑戰。每張牌都有不同的意義，而透過塔羅師的解讀，你可以探索自己的內心深處，並得到指引和啟示。每日塔羅占卜可以幫助你更清楚地看待自己的處境，發現自己的優勢和挑戰，提供靈感和建議，並為你未來的決策提供支持。通過每日塔羅占卜，你可以更好地理解自己和世界，並成為更強大、更有智慧和洞見的人。")
 
 @section('main')
 <div class="container">
-    <h1>塔羅 - {{$title}}</h1>
+    <h1>塔羅 - {{$title}} - 愛情、工作、金錢運勢解讀</h1>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/">Dcode</a></li>

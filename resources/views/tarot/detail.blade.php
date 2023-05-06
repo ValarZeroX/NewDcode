@@ -1,11 +1,11 @@
 @extends('layouts.main')
 
-@section('title', '塔羅牌 - ' . $data['name'] . ' - 愛情、工作、財運解讀')
+@section('title', '塔羅牌 - ' . $data['name'] . ' - 愛情、工作、金錢運勢解讀')
 @section('description', $data['content'])
 
 @section('main')
 <div class="container">
-    <h1>塔羅牌 - {{$data['name']}}</h1>
+    <h1>塔羅牌 - {{$data['name']}} - 愛情、工作、金錢運勢解讀</h1>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/">Dcode</a></li>
