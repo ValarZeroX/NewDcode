@@ -19,3 +19,6 @@ Route::get('/tarot/flirt', [TarotController::class, 'getFlirt']);
 
 Route::get('/tarot/daily', [TarotController::class, 'getDaily']);
 Route::get('/tarot/daily/love', [TarotController::class, 'getDailyLove']);
+
+Route::get('/tarot/masses-reading/{id}', [TarotController::class, 'getReading']);
+Route::get('/tarot/masses', [TarotController::class, 'getMasses']);

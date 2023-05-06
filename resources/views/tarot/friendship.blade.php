@@ -1,11 +1,11 @@
 @extends('layouts.main')
 
-@section('title', $title)
+@section('title', $title . ' - 愛情、工作、金錢運勢解讀')
 @section('description', "友誼占卜法需要抽取六張牌，分別代表對方的性格、你們的相處方式、友誼中可能遭遇的困難、你們的友誼前景等等。每張牌都有不同的含義，需要配合問題仔細解讀，從而深入了解你和朋友之間的情感狀態，以及如何改善或加強友誼關係。")
 
 @section('main')
 <div class="container">
-    <h1>塔羅 - {{$title}}</h1>
+    <h1>塔羅 - {{$title}} - 愛情、工作、金錢運勢解讀</h1>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/">Dcode</a></li>

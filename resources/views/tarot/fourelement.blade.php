@@ -1,11 +1,11 @@
 @extends('layouts.main')
 
-@section('title', $title)
+@section('title', $title . ' - 愛情、工作、金錢運勢解讀')
 @section('description', "四元素占卜法 - 火:面對問題如何採取行動。風:面對問題的理解，有那些負面的狀況。水:關於問題對於情感還有當事人周遭的發展。土:關於這個問題的實際層面考量、物質資源上的發展。")
 
 @section('main')
 <div class="container">
-    <h1>塔羅 - {{$title}}</h1>
+    <h1>塔羅 - {{$title}} - 愛情、工作、金錢運勢解讀</h1>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/">Dcode</a></li>

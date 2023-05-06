@@ -1,11 +1,11 @@
 @extends('layouts.main')
 
-@section('title', $title)
+@section('title', $title . ' - 愛情、工作、金錢運勢解讀')
 @section('description', "聖三角占卜法 - 針對問題做出解釋與推測，對於瞭解問題狀況與推估未來發展有很大幫助。")
 
 @section('main')
 <div class="container">
-    <h1>塔羅 - {{$title}}</h1>
+    <h1>塔羅 - {{$title}} - 愛情、工作、金錢運勢解讀</h1>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/">Dcode</a></li>

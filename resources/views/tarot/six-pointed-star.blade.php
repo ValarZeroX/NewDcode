@@ -1,11 +1,11 @@
 @extends('layouts.main')
 
-@section('title', $title)
+@section('title', $title . ' - 愛情、工作、金錢運勢解讀')
 @section('description', "六芒星占卜法 - 六芒星又稱為大衛之星、所羅門之星、所羅門封印、希伯來之星、猶太星等等，也被稱為六角星；而這是一個萬用牌陣，適合「任何問題」的占卜。")
 
 @section('main')
 <div class="container">
-    <h1>塔羅 - {{$title}}</h1>
+    <h1>塔羅 - {{$title}} - 愛情、工作、金錢運勢解讀</h1>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/">Dcode</a></li>

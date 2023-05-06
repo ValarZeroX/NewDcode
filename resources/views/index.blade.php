@@ -80,6 +80,22 @@
               </div>
             </div>
           </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <div class="image-container card-img-top">
+                <img class="cards_image card-img-top" src="/images/constellation/taurus_3.jpg">
+              </div>
+              <div class="card-header text-center">大眾塔羅占卜</div>
+              <div class="card-body">
+                <p class="card-text">大眾塔羅占卜網站提供各種塔羅牌占卜，包括愛情、財運、事業、健康、未來預測等，幫助人們解答各種疑問與困惑。使用網站占卜非常簡單，只需選擇你感興趣的類型，集中精神思考你的問題，然後點擊抽牌，就可以獲得你的塔羅牌占卜結果了。大眾塔羅占卜網站不僅提供各種占卜結果的解析，還有塔羅牌的詳細介紹和歷史文化背景，讓你更深入了解塔羅牌的奧秘。</p>
+              </div>
+              <div class="card-footer text-center">
+                  <div class="btn-group">
+                    <a href="/tarot/masses" class="btn btn-sm btn-outline-secondary" role="button">前往占卜</a>
+                  </div>
+              </div>
+            </div>
+          </div>
     </div>
     <br>
     <h2>每日塔羅占卜系列</h2>

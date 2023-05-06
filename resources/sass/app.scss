@@ -229,12 +229,33 @@ a {
             max-height: 140px;
             border: 2px solid #CCCCCC;
             border-radius: 6px;
+            cursor: pointer;
             background-image: url("/images/background/tarot_cards.jpg");
             background-size: 80px 140px;
 
             &:hover {
                 border: 2px solid red;
                 bottom: 10px;
+            }
+        }
+
+        .masses-card {
+            width: 80px;
+            height: 140px;
+            max-width: 80px;
+            max-height: 140px;
+            border: 1px solid #28451f;
+            background: #E9E9E9;
+            border-radius: 6px;
+            margin-right: 10px;
+            margin-top: 5px;
+            float: left;
+            cursor: pointer;
+            background-image: url("/images/background/tarot_cards.jpg");
+            background-size: 80px 140px;
+
+            &:hover {
+                border: 2px solid red;
             }
         }
     }

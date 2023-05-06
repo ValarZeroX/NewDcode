@@ -1,12 +1,12 @@
 @extends('layouts.main')
 
-@section('title', 'DCode 塔羅占卜')
+@section('title', '塔羅占卜 - 各種占卜法，解讀愛情、工作、金錢運勢 - DCode')
 @section('description', "塔羅占卜是一種古老的占卜方式，使用由78張牌組成的塔羅牌來進行占卜。透過塔羅牌的象徵意義和排列方式，占卜者可以探索自己的內在和未來的可能性，以及理解周遭事物的意義。塔羅占卜被視為一種心靈探索工具，可幫助人們獲得洞見和指導，進而掌握自己的人生。塔羅占卜是一個非常受歡迎的占卜方式，並且在現代被應用於心理學、精神療法、創意藝術和靈性探索等領域。")
 
 @section('main')
 
 <div class="container">
-    <h1>塔羅</h1>
+    <h1>塔羅占卜 - 各種占卜法，解讀愛情、工作、金錢運勢</h1>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/">Dcode</a></li>

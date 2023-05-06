@@ -47,4 +47,10 @@ $(function () {
         }
     });
 
+    $('.masses-card').on('mouseup', function (event) {
+            let masses_id = this.id;
+            $('.masses_info').slideUp();
+            $('#masses_'+masses_id).slideDown();
+    });
+
 });
