@@ -27,7 +27,7 @@
                 <div class="card-header text-center">{{$value["title"]}}</div>
                 <div class="card-body">
                     <p>{{$value["description"]}}</p>
-                    <div class="d-flex justify-content-between align-items-center">
+                    <div class="text-center">
                         <div class="btn-group">
                             <a href="/tarot/masses-reading/{{$key}}" class="btn btn-sm btn-outline-secondary" role="button">占卜</a>
                         </div>
