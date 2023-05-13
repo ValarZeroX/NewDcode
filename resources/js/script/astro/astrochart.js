@@ -2570,9 +2570,14 @@ $(function () {
             scale = 0.8
         }
 
-        if (width < 770) {
+        if (width < 770 && width >= 400) {
             chartWidth = 500
             scale = 0.7
+        }
+
+        if (width < 400) {
+            chartWidth = 350
+            scale = 0.8
         }
         var planetPosition = new Array()
         planetPosition = calPlanetPosition2(parseInt(data.Year), parseInt(data.Month), parseInt(data.Day), parseInt(data.Hour), parseInt(data.Minutes), parseFloat(data.Longitude), parseFloat(data.Latitude))

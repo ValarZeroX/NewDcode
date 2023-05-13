@@ -117,6 +117,8 @@ Chart）是一種天文學和占星學的工具，用於研究和解讀個人的
                             @endfor
                     </select>
                     <span class="input-group-text">年</span>
+                </div>
+                <div class="input-group mb-12 mt-3">
                     <select class="form-select month" name="month">
                         @for ($i = 1; $i <= 12; $i++) <option value={{$i}} @if ($i==1) selected @endif>{{$i}}
                             </option>
@@ -209,9 +211,9 @@ Chart）是一種天文學和占星學的工具，用於研究和解讀個人的
                 </div>
             </div>
         </div>
-        <h2>星位、宮位</h2>
+        <h2 class="mt-5">星位、宮位</h2>
         <div class="info-box">
-            <div class="d-flex justify-content-center mt-5">
+            <div class="d-flex justify-content-center mt-2">
                 <div class="card">
                     <div class="card-body">
                         <div class="planet-positions">
@@ -297,9 +299,9 @@ Chart）是一種天文學和占星學的工具，用於研究和解讀個人的
                 </tbody>
             </table>
         </div>
-        <h2>四大尖軸</h2>
+        <h2 class="mt=5">四大尖軸</h2>
         <div class="info-box">
-            <div class="d-flex justify-content-center mt-5">
+            <div class="d-flex justify-content-center mt-2">
                 <div class="card">
                     <div class="card-body">
                         <div class="aspect">
