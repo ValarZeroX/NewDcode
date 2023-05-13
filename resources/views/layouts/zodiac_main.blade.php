@@ -48,6 +48,9 @@
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="/astrology/zodiac">星座</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/astrology/zodiac/date">星盤</a>
+                        </li>
                     </ul>
 
                     <ul class="navbar-nav flex-row">
