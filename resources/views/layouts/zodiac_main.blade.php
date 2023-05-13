@@ -2,7 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
-    @vite(['resources/js/app.js'])
+    @vite(['resources/js/zodiac.js'])
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -47,9 +47,6 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="/astrology/zodiac">星座</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="/astrology/zodiac/date">星盤</a>
                         </li>
                     </ul>
 

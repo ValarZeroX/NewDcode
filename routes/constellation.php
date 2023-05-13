@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ZodiacController;
 
 //十二星座首頁
 Route::get('/astrology/zodiac', function () {
@@ -54,3 +55,10 @@ Route::get('/astrology/zodiac/aquarius', function () {
 Route::get('/astrology/zodiac/pisces', function () {
     return view('constellation/astrology/pisces', []);
 });
+
+Route::get('/astrology/zodiac/date', function () {
+    return view('constellation/zodiac_date', []);
+});
+
+// Route::get('/astrology/zodiac/date', [ZodiacController::class, 'index']);
+// Route::post('/astrology/zodiac/date', [ZodiacController::class, 'drawAstroChart']);

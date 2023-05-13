@@ -1,21 +1,32 @@
 <?php
 
-namespace App\Http\Controllers\Constellation;
+namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 
-class Zodiac extends Controller
+class ZodiacController extends Controller
 {
-
-    private $oZodiacRepositories;
-
-    public function __construct(ZodiacRepositories $_oZodiacRepositories)
+    public function index()
     {
-        $this->oZodiacRepositories = $_oZodiacRepositories;
+        return view('constellation/zodiac_date',['event' => true]);
     }
 
-    public function getDetail($_sZodiac)
+    public function drawAstroChart(Request $oRequest)
     {
-        return view('constellation/astrology/'.$_sZodiac ,['event' => true,  'data' => []]);
+        $sYear = $oRequest->input("year");
+        $sMonth = $oRequest->input("month");
+        $sDay = $oRequest->input("day");
+        $sHour = $oRequest->input("hour");
+        $sMinutes = $oRequest->input("minutes");
+        $sLongitude = $oRequest->input("longitude");
+        $sLatitude = $oRequest->input("latitude");
+        if ($sLongitude == null) {
+            $sLongitude = 0;
+        }
+        if ($sLatitude == null) {
+            $sLatitude = 0;
+        }
+        $aData = ['Year' => $sYear, 'Month' => $sMonth, 'Day' => $sDay, 'Hour' => $sHour, 'Minutes' => $sMinutes, 'Longitude' => $sLongitude, 'Latitude' => $sLatitude];
+        return view('constellation/zodiac_date',['event' => true,  'data' => $aData]);
     }
 }

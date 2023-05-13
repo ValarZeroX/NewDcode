@@ -16,7 +16,8 @@ export default defineConfig({
     plugins: [
         laravel({
             input: [
-                'resources/js/app.js'
+                'resources/js/app.js',
+                'resources/js/zodiac.js',
             ],
             refresh: true,
         }),
