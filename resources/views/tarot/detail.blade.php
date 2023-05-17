@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('title', '塔羅牌 - ' . $data['name'] . ' - 愛情、工作、金錢運勢解讀')
-@section('description', $data['content'])
+@section('description', '塔羅牌' . $data['name']. '正逆為對於愛情、工作、事業解讀。' .$data['content'])
 
 @section('main')
 <div class="container">
