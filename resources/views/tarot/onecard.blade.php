@@ -5,12 +5,12 @@
 
 @section('main')
 <div class="container">
-    <h1>塔羅 - {{$title}} - 愛情、工作、金錢運勢解讀</h1>
+    <h1>塔羅牌占卜 - {{$title}} - 愛情、工作、金錢運勢解讀</h1>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/">Dcode</a></li>
-            <li class="breadcrumb-item"><a href="/tarot">塔羅占卜</a></li>
-            <li class="breadcrumb-item active" aria-current="page">塔羅 - {{$title}}</li>
+            <li class="breadcrumb-item"><a href="/tarot">塔羅牌占卜</a></li>
+            <li class="breadcrumb-item active" aria-current="page">塔羅牌占卜 - {{$title}}</li>
         </ol>
     </nav>
     @include('../layouts/topads')
@@ -86,6 +86,10 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="alert alert-warning info-box" role="alert">
+        <p>更多種塔羅牌占卜。</p>
+        <a class="btn  btn-success" href="/tarot" role="button">前往</a>
     </div>
     <div class="alert alert-warning info-box" role="alert">
         <p>如果答案不清楚或過於抽象，再抽取一張卡獲取更多訊息。</p>

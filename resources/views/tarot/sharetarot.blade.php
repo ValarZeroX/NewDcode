@@ -5,12 +5,12 @@
 
 @section('main')
 <div class="container">
-    <h1>塔羅 - {{$title}}({{$info[0]}})</h1>
+    <h1>塔羅牌占卜 - {{$title}}({{$info[0]}})</h1>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/">Dcode</a></li>
-            <li class="breadcrumb-item"><a href="/tarot">塔羅占卜</a></li>
-            <li class="breadcrumb-item active" aria-current="page">塔羅 - {{$title}}</li>
+            <li class="breadcrumb-item"><a href="/tarot">塔羅牌占卜</a></li>
+            <li class="breadcrumb-item active" aria-current="page">塔羅牌占卜 - {{$title}}</li>
         </ol>
     </nav>
     @include('../layouts/topads')

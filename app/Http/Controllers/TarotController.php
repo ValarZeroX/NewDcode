@@ -90,14 +90,14 @@ class TarotController extends Controller
     public function drawList()
     {
         $aCardArray = $this->oTarotServices->formatCardArray($this->aDict);
-        return view('tarot/draw_list',['event' => true, 'data' => $aCardArray, 'title' => '塔羅', 'image' => $this->aImage]);
+        return view('tarot/draw_list',['event' => true, 'data' => $aCardArray, 'title' => '塔羅牌', 'image' => $this->aImage]);
     }
 
     public function getAllTarot()
     {
         $aAllTarot = $this->oTarotRepositories->getAllTarot(1);
         $aNewAllTarot = $this->oTarotServices->formatAllTarot($aAllTarot);
-        return view('tarot/showall', ['event' => true, 'data' => $aNewAllTarot, 'title' => '塔羅牌義']);
+        return view('tarot/showall', ['event' => true, 'data' => $aNewAllTarot, 'title' => '塔羅牌解讀']);
     }
 
     public function getDetail($_iNumber)
