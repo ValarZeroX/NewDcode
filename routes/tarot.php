@@ -15,7 +15,7 @@ Route::get('/tarot/six-pointed-star', [TarotController::class, 'getSixPointedSta
 Route::get('/tarot/friendship', [TarotController::class, 'getFriendship']);
 Route::get('/tarot/week', [TarotController::class, 'getWeek']);
 Route::get('/tarot/either', [TarotController::class, 'getEither']);
-Route::get('/tarot/flirt', [TarotController::class, 'getFlirt']);
+// Route::get('/tarot/flirt', [TarotController::class, 'getFlirt']);
 
 Route::get('/tarot/daily', [TarotController::class, 'getDaily']);
 Route::get('/tarot/daily/love', [TarotController::class, 'getDailyLove']);
