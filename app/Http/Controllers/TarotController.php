@@ -72,12 +72,12 @@ class TarotController extends Controller
             'either',
             8
         ],
-        9 => [
-            '暗戀塔羅牌占卜法',
-            '類型:分析型;張數:1張;您是否在暗戀某人，但不確定下一步應該做什麼？暗戀塔羅牌會了解你們之間的狀態，並就如何處理今天的互動提供建議。',
-            'flirt',
-            9
-        ],
+        // 9 => [
+        //     '暗戀塔羅牌占卜法',
+        //     '類型:分析型;張數:1張;您是否在暗戀某人，但不確定下一步應該做什麼？暗戀塔羅牌會了解你們之間的狀態，並就如何處理今天的互動提供建議。',
+        //     'flirt',
+        //     9
+        // ],
     ];
 
     public function __construct(TarotServices $_oTarotServices, TarotRepositories $_oTarotRepositories, DailyRepositories $_oDailyRepositories)
