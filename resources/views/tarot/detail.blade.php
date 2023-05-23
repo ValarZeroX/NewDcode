@@ -69,8 +69,12 @@
         </div>
     </div>
     <div class="alert alert-warning" role="alert">
+        <p>查看全部塔羅牌解讀。</p>
+        <a class="btn  btn-success" href="/tarot/showall" role="button">前往塔羅牌解讀</a>
+    </div>
+    <div class="alert alert-warning" role="alert">
         <p>更多種塔羅牌占卜，獲得愛情、工作、事業運勢解讀。</p>
-        <a class="btn  btn-success" href="/tarot" role="button">前往</a>
+        <a class="btn  btn-success" href="/tarot" role="button">前往占卜</a>
     </div>
 </div>
 @endsection
