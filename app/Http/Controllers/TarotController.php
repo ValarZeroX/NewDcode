@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Repositories\Tarot\TarotRepositories;
 use App\Services\Tarot\TarotServices;
 use App\Repositories\Tarot\DailyRepositories;
+use Illuminate\Support\Facades\App;
 
 class TarotController extends Controller
 {
@@ -85,6 +86,66 @@ class TarotController extends Controller
         $this->oTarotServices = $_oTarotServices;
         $this->oTarotRepositories = $_oTarotRepositories;
         $this->oDailyRepositories = $_oDailyRepositories;
+    }
+
+    public function drawListLang($locale)
+    {
+        App::setLocale($locale);
+        $tarotMethods = trans('tarot.tarot_list');
+        $aCardArray = $this->oTarotServices->formatCardArray($tarotMethods);
+        return view('tarot/lang/draw_list',['event' => true, 'data' => $aCardArray, 'title' => trans('tarot.tarot_cards'), 'image' => $this->aImage]);
+    }
+
+    public function getOneCardLang($locale)
+    {
+        App::setLocale($locale);
+        $tarotMethods = trans('tarot.tarot_list');
+        $aAllTarot = trans('tarot_cards');
+        $aOneCard = $this->oTarotServices->getOneCard($aAllTarot);
+        return view('tarot/lang/onecard', ['event' => true, 'data' => $aOneCard, 'title' => $tarotMethods[1][0], 'maxcard' => 1, 'type' => $tarotMethods[1][3]]);
+    }
+
+    public function getAllTarotLang($locale)
+    {
+        App::setLocale($locale);
+        $meanings = trans('tarot.tarot_meanings');
+        $aAllTarot = trans('tarot_cards');
+        $aNewAllTarot = $this->oTarotServices->formatAllTarot($aAllTarot);
+        return view('tarot/lang/showall', ['event' => true, 'data' => $aNewAllTarot, 'title' => $meanings]);
+    }
+
+    public function getDetailLang($locale, $_iNumber)
+    {
+        App::setLocale($locale);
+        $aAllTarot = trans('tarot_cards');
+        $aTarot = [];
+        $aTarot[0] = $aAllTarot[$_iNumber];
+        $aOneCard = $this->oTarotServices->getOneCard($aTarot);
+        return view('tarot/lang/detail', ['event' => true, 'data' => $aOneCard]);
+    }
+
+    public function getShareTarotLang($locale, $_sID, $_sReversed, $_sType)
+    {
+        App::setLocale($locale);
+        $tarotMethods = trans('tarot.tarot_list');
+        $aID = explode(',', $_sID) ;
+        $aReversed = explode(',', $_sReversed) ;
+        $aAllTarot = trans('tarot_cards');
+        foreach ($aID as  $iID) {
+            $aTarot[$iID] = $aAllTarot[$iID-1];
+        }
+        $aShareTarot = $this->oTarotServices-> formatShareTarot($aTarot, $aID, $aReversed);
+        return view('tarot/lang/sharetarot', ['event' => true, 'data' => $aShareTarot, 'title' => trans('tarot.share_card'), 'info' => $tarotMethods[$_sType]]);
+    }
+
+    public function getThreeCardLang($locale)
+    {
+        App::setLocale($locale);
+        $tarotMethods = trans('tarot.tarot_list');
+        // $aAllTarot = $this->oTarotRepositories->getAllTarot(1);
+        $aAllTarot = trans('tarot_cards');
+        $aThreeCard = $this->oTarotServices->getCard($aAllTarot, 3);
+        return view('tarot/lang/threecard', ['event' => true, 'data' => $aThreeCard, 'title' => $tarotMethods[2][0], 'maxcard' => 3, 'type' => $tarotMethods[2][3]]);
     }
 
     public function drawList()

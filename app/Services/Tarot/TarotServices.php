@@ -19,13 +19,18 @@ class TarotServices
     {
         shuffle($_aAllTarot);
         $aOneTarot = array_pop($_aAllTarot);
+        // $aOneTarot = $_aAllTarot[21];
         $iUR = rand(0, 1);
 
         $aNewTarot = [];
         foreach ($aOneTarot as $sKey => $sValue) {
             $aNewTarot[$sKey] = nl2br($sValue);
             if ($sKey == 'upright_keyword' || $sKey == 'reversed_keyword') {
-                $aNewTarot[$sKey] = explode('、', $sValue);
+                if (preg_match('/[,]/', $sValue)) {
+                    $aNewTarot[$sKey] = explode(',', $sValue);
+                } else {
+                    $aNewTarot[$sKey] = explode('、', $sValue);
+                }
             }
         }
         $aNewTarot['reversed'] = $iUR;
@@ -46,7 +51,11 @@ class TarotServices
             foreach ($aOneTarot as $sKey => $sValue) {
                 $aNewTarot[$sKey] = nl2br($sValue);
                 if ($sKey == 'upright_keyword' || $sKey == 'reversed_keyword') {
-                    $aNewTarot[$sKey] = explode('、', $sValue);
+                    if (preg_match('/[,]/', $sValue)) {
+                        $aNewTarot[$sKey] = explode(',', $sValue);
+                    } else {
+                        $aNewTarot[$sKey] = explode('、', $sValue);
+                    }
                 }
             }
             $aNewTarot['reversed'] = $iUR;
@@ -68,7 +77,11 @@ class TarotServices
             foreach ($aOneTarot as $sKey => $sValue) {
                 $aNewTarot[$sKey] = nl2br($sValue);
                 if ($sKey == 'upright_keyword' || $sKey == 'reversed_keyword') {
-                    $aNewTarot[$sKey] = explode('、', $sValue);
+                    if (preg_match('/[,]/', $sValue)) {
+                        $aNewTarot[$sKey] = explode(',', $sValue);
+                    } else {
+                        $aNewTarot[$sKey] = explode('、', $sValue);
+                    }
                 }
             }
             $aNewTarot['reversed'] = $iUR;
@@ -90,7 +103,11 @@ class TarotServices
                         $aNewTarot[$sKey] = nl2br($sValue);
                     }
                     if ($sKey == 'upright_keyword' || $sKey == 'reversed_keyword') {
-                        $aNewTarot[$sKey] = explode('、', $sValue);
+                        if (preg_match('/[,]/', $sValue)) {
+                            $aNewTarot[$sKey] = explode(',', $sValue);
+                        } else {
+                            $aNewTarot[$sKey] = explode('、', $sValue);
+                        }
                     }
                 }
                 $aTarotInfo['Major'][$iNumber] = $aNewTarot;
@@ -102,7 +119,11 @@ class TarotServices
                         $aNewTarot[$sKey] = nl2br($sValue);
                     }
                     if ($sKey == 'upright_keyword' || $sKey == 'reversed_keyword') {
-                        $aNewTarot[$sKey] = explode('、', $sValue);
+                        if (preg_match('/[,]/', $sValue)) {
+                            $aNewTarot[$sKey] = explode(',', $sValue);
+                        } else {
+                            $aNewTarot[$sKey] = explode('、', $sValue);
+                        }
                     }
                 }
                 $aTarotInfo['Wands'][$iNumber] = $aNewTarot;
@@ -114,7 +135,11 @@ class TarotServices
                         $aNewTarot[$sKey] = nl2br($sValue);
                     }
                     if ($sKey == 'upright_keyword' || $sKey == 'reversed_keyword') {
-                        $aNewTarot[$sKey] = explode('、', $sValue);
+                        if (preg_match('/[,]/', $sValue)) {
+                            $aNewTarot[$sKey] = explode(',', $sValue);
+                        } else {
+                            $aNewTarot[$sKey] = explode('、', $sValue);
+                        }
                     }
                 }
                 $aTarotInfo['Pentacles'][$iNumber] = $aNewTarot;
@@ -126,7 +151,11 @@ class TarotServices
                         $aNewTarot[$sKey] = nl2br($sValue);
                     }
                     if ($sKey == 'upright_keyword' || $sKey == 'reversed_keyword') {
-                        $aNewTarot[$sKey] = explode('、', $sValue);
+                        if (preg_match('/[,]/', $sValue)) {
+                            $aNewTarot[$sKey] = explode(',', $sValue);
+                        } else {
+                            $aNewTarot[$sKey] = explode('、', $sValue);
+                        }
                     }
                 }
                 $aTarotInfo['Cups'][$iNumber] = $aNewTarot;
@@ -138,7 +167,11 @@ class TarotServices
                         $aNewTarot[$sKey] = nl2br($sValue);
                     }
                     if ($sKey == 'upright_keyword' || $sKey == 'reversed_keyword') {
-                        $aNewTarot[$sKey] = explode('、', $sValue);
+                        if (preg_match('/[,]/', $sValue)) {
+                            $aNewTarot[$sKey] = explode(',', $sValue);
+                        } else {
+                            $aNewTarot[$sKey] = explode('、', $sValue);
+                        }
                     }
                 }
                 $aTarotInfo['Swords'][$iNumber] = $aNewTarot;
@@ -162,7 +195,11 @@ class TarotServices
                 foreach ($aTarot as $sKey => $sValue) {
                     $aNewTarot[$sKey] = nl2br($sValue);
                     if ($sKey == 'upright_keyword' || $sKey == 'reversed_keyword') {
-                        $aNewTarot[$sKey] = explode('、', $sValue);
+                        if (preg_match('/[,]/', $sValue)) {
+                            $aNewTarot[$sKey] = explode(',', $sValue);
+                        } else {
+                            $aNewTarot[$sKey] = explode('、', $sValue);
+                        }
                     }
                 }
                 $aNewTarot['reversed'] = $iUR;
@@ -172,7 +209,11 @@ class TarotServices
                 foreach ($aTarot as $sKey => $sValue) {
                     $aNewTarot[$sKey] = nl2br($sValue);
                     if ($sKey == 'upright_keyword' || $sKey == 'reversed_keyword') {
-                        $aNewTarot[$sKey] = explode('、', $sValue);
+                        if (preg_match('/[,]/', $sValue)) {
+                            $aNewTarot[$sKey] = explode(',', $sValue);
+                        } else {
+                            $aNewTarot[$sKey] = explode('、', $sValue);
+                        }
                     }
                 }
                 $aNewTarot['reversed'] = $iUR;
@@ -182,7 +223,11 @@ class TarotServices
                 foreach ($aTarot as $sKey => $sValue) {
                     $aNewTarot[$sKey] = nl2br($sValue);
                     if ($sKey == 'upright_keyword' || $sKey == 'reversed_keyword') {
-                        $aNewTarot[$sKey] = explode('、', $sValue);
+                        if (preg_match('/[,]/', $sValue)) {
+                            $aNewTarot[$sKey] = explode(',', $sValue);
+                        } else {
+                            $aNewTarot[$sKey] = explode('、', $sValue);
+                        }
                     }
                 }
                 $aNewTarot['reversed'] = $iUR;
@@ -192,7 +237,11 @@ class TarotServices
                 foreach ($aTarot as $sKey => $sValue) {
                     $aNewTarot[$sKey] = nl2br($sValue);
                     if ($sKey == 'upright_keyword' || $sKey == 'reversed_keyword') {
-                        $aNewTarot[$sKey] = explode('、', $sValue);
+                        if (preg_match('/[,]/', $sValue)) {
+                            $aNewTarot[$sKey] = explode(',', $sValue);
+                        } else {
+                            $aNewTarot[$sKey] = explode('、', $sValue);
+                        }
                     }
                 }
                 $aNewTarot['reversed'] = $iUR;
