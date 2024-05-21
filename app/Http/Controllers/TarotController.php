@@ -148,6 +148,64 @@ class TarotController extends Controller
         return view('tarot/lang/threecard', ['event' => true, 'data' => $aThreeCard, 'title' => $tarotMethods[2][0], 'maxcard' => 3, 'type' => $tarotMethods[2][3]]);
     }
 
+    public function getFourCardLang($locale)
+    {
+        App::setLocale($locale);
+        $tarotMethods = trans('tarot.tarot_list');
+        $aAllTarot = trans('tarot_cards');
+        $aCard = $this->oTarotServices->getCard($aAllTarot, 4);
+        return view('tarot/lang/fourcard', ['event' => true, 'data' => $aCard, 'title' => $tarotMethods[3][0], 'maxcard' => 4, 'sub' => [trans('tarot.four_cards_2'),trans('tarot.four_cards_3'),trans('tarot.four_cards_4'),trans('tarot.four_cards_5')], 'type' => $tarotMethods[3][3]]);
+    }
+
+    public function getFourElementLang($locale)
+    {
+        App::setLocale($locale);
+        $tarotMethods = trans('tarot.tarot_list');
+        $aAllTarot = trans('tarot_cards');
+        $aNewAllTarot = $this->oTarotServices->formatFourElementTarotLang($aAllTarot, trans('tarot'));
+        return view('tarot/lang/fourelement', ['event' => true, 'data' => $aNewAllTarot, 'title' => $tarotMethods[4][0], 'maxcard' => 4, 'type' => $tarotMethods[4][3]]);
+    }
+
+    public function getSixPointedStarLang($locale)
+    {
+        App::setLocale($locale);
+        $tarotMethods = trans('tarot.tarot_list');
+        $aAllTarot = trans('tarot_cards');
+        $aCard = $this->oTarotServices->getCard($aAllTarot, 7);
+        $aSub = [trans('tarot.six_pointed_star_2'),trans('tarot.six_pointed_star_3'),trans('tarot.six_pointed_star_4'),trans('tarot.six_pointed_star_5'),trans('tarot.six_pointed_star_6'),trans('tarot.six_pointed_star_7'),trans('tarot.six_pointed_star_8')];
+        return view('tarot/lang/six-pointed-star', ['event' => true, 'data' => $aCard, 'title' => $tarotMethods[5][0],'sub' => $aSub, 'maxcard' => 7, 'type' => $tarotMethods[5][3]]);
+    }
+
+    public function getFriendshipLang($locale)
+    {
+        App::setLocale($locale);
+        $tarotMethods = trans('tarot.tarot_list');
+        $aAllTarot = trans('tarot_cards');
+        $aCard = $this->oTarotServices->getCard($aAllTarot, 6);
+        $aSub = [trans('tarot.friendship_2'),trans('tarot.friendship_3'),trans('tarot.friendship_4'),trans('tarot.friendship_5'),trans('tarot.friendship_6'),trans('tarot.friendship_7')];
+        return view('tarot/lang/friendship', ['event' => true, 'data' => $aCard, 'title' => $tarotMethods[6][0], 'maxcard' => 6, 'sub' => $aSub, 'type' => $tarotMethods[6][3]]);
+    }
+
+    public function getWeekLang($locale)
+    {
+        App::setLocale($locale);
+        $tarotMethods = trans('tarot.tarot_list');
+        $aAllTarot = trans('tarot_cards');
+        $aCard = $this->oTarotServices->getCard($aAllTarot, 7);
+        $aSub = [trans('tarot.week_1'),trans('tarot.week_2'),trans('tarot.week_3'),trans('tarot.week_4'),trans('tarot.week_5'),trans('tarot.week_6'),trans('tarot.week_7')];
+        return view('tarot/lang/week', ['event' => true, 'data' => $aCard, 'title' => $tarotMethods[7][0], 'maxcard' => 7, 'sub' => $aSub, 'type' => $tarotMethods[7][3]]);
+    }
+
+    public function getEitherLang($locale)
+    {
+        App::setLocale($locale);
+        $tarotMethods = trans('tarot.tarot_list');
+        $aAllTarot = trans('tarot_cards');
+        $aCard = $this->oTarotServices->getCard($aAllTarot, 5);
+        $aSub = [trans('tarot.either_2'),trans('tarot.either_3'),trans('tarot.either_4'),trans('tarot.either_5'),trans('tarot.either_6')];
+        return view('tarot/lang/either', ['event' => true, 'data' => $aCard, 'title' => $tarotMethods[8][0], 'maxcard' => 5, 'sub' => $aSub, 'type' => $tarotMethods[8][3]]);
+    }
+
     public function drawList()
     {
         $aCardArray = $this->oTarotServices->formatCardArray($this->aDict);

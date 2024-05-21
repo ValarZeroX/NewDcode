@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TarotController;
+use App\Http\Controllers\PagesController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,6 +19,9 @@ Route::get('/', function () {
 });
 
 
+Route::get('/makeSitemap', [PagesController::class, 'makeSitemap']);
+Route::get('/sitemap.xml', [PagesController::class, 'sitemap']);
+
 
 Route::prefix('language')->group(function () {
     Route::get('/{locale}', function (string $locale) {
@@ -26,7 +30,7 @@ Route::prefix('language')->group(function () {
             if ($locale == 'zh-hant') {
                 return view('index');
             }
-            if ($locale == 'en') {
+            if ($locale == 'en' || $locale == 'zh-hans') {
                 return view('dcode');
             }
         }
@@ -37,4 +41,10 @@ Route::prefix('language')->group(function () {
     Route::get('/{locale}/tarot/detail/{number}', [TarotController::class, 'getDetailLang']);
     Route::get('/{locale}/tarot/sharetarot/{id}/{reversed}/{type}', [TarotController::class, 'getShareTarotLang']);
     Route::get('/{locale}/tarot/threecard', [TarotController::class, 'getThreeCardLang']);
+    Route::get('/{locale}/tarot/fourcard', [TarotController::class, 'getFourCardLang']);
+    Route::get('/{locale}/tarot/fourelement', [TarotController::class, 'getFourElementLang']);
+    Route::get('/{locale}/tarot/six-pointed-star', [TarotController::class, 'getSixPointedStarLang']);
+    Route::get('/{locale}/tarot/friendship', [TarotController::class, 'getFriendshipLang']);
+    Route::get('/{locale}/tarot/week', [TarotController::class, 'getWeekLang']);
+    Route::get('/{locale}/tarot/either', [TarotController::class, 'getEitherLang']);
 });
