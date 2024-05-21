@@ -268,4 +268,83 @@ class TarotServices
         }
         return $aNewTarot;
     }
+
+    public function formatFourElementTarotLang($_aAllTarot, $_lang)
+    {
+        $aFire = [];
+        $aAir = [];
+        $aWater = [];
+        $aEarth = [];
+        foreach ($_aAllTarot as $iKey => $aTarot) {
+            $sElement = $aTarot['element'];
+            $iNumber = $aTarot['number'];
+            $aNewTarot = [];
+            $iUR = rand(0, 1);
+            if ($sElement == $_lang['fire_element']) {
+                foreach ($aTarot as $sKey => $sValue) {
+                    $aNewTarot[$sKey] = nl2br($sValue);
+                    if ($sKey == 'upright_keyword' || $sKey == 'reversed_keyword') {
+                        if (preg_match('/[,]/', $sValue)) {
+                            $aNewTarot[$sKey] = explode(',', $sValue);
+                        } else {
+                            $aNewTarot[$sKey] = explode('、', $sValue);
+                        }
+                    }
+                }
+                $aNewTarot['reversed'] = $iUR;
+                $aFire[$iNumber] = $aNewTarot;
+            }
+            if ($sElement == $_lang['air_element']) {
+                foreach ($aTarot as $sKey => $sValue) {
+                    $aNewTarot[$sKey] = nl2br($sValue);
+                    if ($sKey == 'upright_keyword' || $sKey == 'reversed_keyword') {
+                        if (preg_match('/[,]/', $sValue)) {
+                            $aNewTarot[$sKey] = explode(',', $sValue);
+                        } else {
+                            $aNewTarot[$sKey] = explode('、', $sValue);
+                        }
+                    }
+                }
+                $aNewTarot['reversed'] = $iUR;
+                $aAir[$iNumber] = $aNewTarot;
+            }
+            if ($sElement == $_lang['water_element']) {
+                foreach ($aTarot as $sKey => $sValue) {
+                    $aNewTarot[$sKey] = nl2br($sValue);
+                    if ($sKey == 'upright_keyword' || $sKey == 'reversed_keyword') {
+                        if (preg_match('/[,]/', $sValue)) {
+                            $aNewTarot[$sKey] = explode(',', $sValue);
+                        } else {
+                            $aNewTarot[$sKey] = explode('、', $sValue);
+                        }
+                    }
+                }
+                $aNewTarot['reversed'] = $iUR;
+                $aWater[$iNumber] = $aNewTarot;
+            }
+            if ($sElement == $_lang['earth_element']) {
+                foreach ($aTarot as $sKey => $sValue) {
+                    $aNewTarot[$sKey] = nl2br($sValue);
+                    if ($sKey == 'upright_keyword' || $sKey == 'reversed_keyword') {
+                        if (preg_match('/[,]/', $sValue)) {
+                            $aNewTarot[$sKey] = explode(',', $sValue);
+                        } else {
+                            $aNewTarot[$sKey] = explode('、', $sValue);
+                        }
+                    }
+                }
+                $aNewTarot['reversed'] = $iUR;
+                $aEarth[$iNumber] = $aNewTarot;
+            }
+        }
+        shuffle($aFire);
+        shuffle($aAir);
+        shuffle($aWater);
+        shuffle($aEarth);
+        $aFourElementTarot[0] = $aFire[0];
+        $aFourElementTarot[1] = $aAir[1];
+        $aFourElementTarot[2] = $aWater[2];
+        $aFourElementTarot[3] = $aEarth[3];
+        return $aFourElementTarot;
+    }
 }

@@ -5,7 +5,7 @@
 
 @section('main')
 <div class="container">
-    <h1>{{ __('dcode.tarot_reading')}} - {{$title}} - {{ __('tarot.tarot_list_title')}}</h1>
+    <h1>{{ __('dcode.tarot_reading')}} - {{$title}} - {{ __('tarot.tarot_title_1')}}</h1>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/language/{{ app()->getLocale() }}">Dcode</a></li>

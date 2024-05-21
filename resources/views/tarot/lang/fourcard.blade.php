@@ -1,11 +1,11 @@
 @extends('layouts.lang.main')
 
 @section('title', $title . ' - ' . __('tarot.tarot_title_1'))
-@section('description', __('description.three_cards'))
+@section('description', __('description.four_cards'))
 
 @section('main')
 <div class="container">
-    <h1>{{ __('dcode.tarot_reading')}} - {{$title}} - {{ __('tarot.tarot_title_1')}}</h1>
+    <h1>{{ __('tarot.tarot_card_reading')}} - {{$title}} - {{ __('tarot.tarot_title_1')}}</h1>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/language/{{ app()->getLocale() }}">Dcode</a></li>
@@ -15,8 +15,13 @@
     </nav>
     @include('../layouts/topads')
     <div class="alert alert-success" role="alert">
-        <p>{{ __('tarot.three_cards')}}</p>
-        <p>{{ __('tarot.three_cards_1')}}</p>
+        <p>{{ __('tarot.four_cards')}} : </p>
+        <ul>
+            @foreach ($sub as $value)
+            <li>{{$value}}</li>
+            @endforeach
+        </ul>
+        <p>{{ __('tarot.four_cards_1')}}</p>
     </div>
     <div class="draw">
         <div class="deck">
@@ -35,16 +40,24 @@
     <div class="clearfix"></div>
     <div class="d-flex justify-content-center result">
         <div class="tarot-card">
-            <img src="/images/deck/{{$data[0]['image_key']}}.jpg" class="figure-img img-fluid card-hide card1 @if($data[0]['reversed'] == 1) reversed @endif" alt="{{$data[0]['name']}}">
-            <div class="tarot-number" id="number1">1</div>
+            <img src="/images/deck/{{$data[0]['image_key']}}.jpg" class="figure-img img-fluid card-hide card1 @if($data[0]['reversed'] == 1) reversed @endif"
+                alt="{{$data[0]['name']}}">
+                <div class="tarot-number" id="number1">1</div>
         </div>
         <div class="tarot-card">
-            <img src="/images/deck/{{$data[1]['image_key']}}.jpg" class="figure-img img-fluid card-hide card2 @if($data[1]['reversed'] == 1) reversed @endif" alt="{{$data[1]['name']}}">
-            <div class="tarot-number" id="number2">2</div>
+            <img src="/images/deck/{{$data[1]['image_key']}}.jpg" class="figure-img img-fluid card-hide card2 @if($data[1]['reversed'] == 1) reversed @endif"
+                alt="{{$data[1]['name']}}">
+                <div class="tarot-number" id="number2">2</div>
         </div>
         <div class="tarot-card">
-            <img src="/images/deck/{{$data[2]['image_key']}}.jpg" class="figure-img img-fluid card-hide card3 @if($data[2]['reversed'] == 1) reversed @endif" alt="{{$data[2]['name']}}">
-            <div class="tarot-number" id="number3">3</div>
+            <img src="/images/deck/{{$data[2]['image_key']}}.jpg" class="figure-img img-fluid card-hide card3 @if($data[2]['reversed'] == 1) reversed @endif"
+                alt="{{$data[2]['name']}}">
+                <div class="tarot-number" id="number3">3</div>
+        </div>
+        <div class="tarot-card">
+            <img src="/images/deck/{{$data[3]['image_key']}}.jpg" class="figure-img img-fluid card-hide card4 @if($data[3]['reversed'] == 1) reversed @endif"
+                alt="{{$data[3]['name']}}">
+                <div class="tarot-number" id="number4">4</div>
         </div>
     </div>
     <div class="row row-cols-1">
@@ -53,7 +66,7 @@
                 <hr />
                 @foreach ($data as $key => $value)
                 <div class="well card">
-                    <h2>{{$value['name']}}</h2>
+                    <h2>{{$sub[$key]}} - {{$value['name']}}</h2>
                     <div class="tarot-showcard @if($value['reversed'] == 1) reversed @endif">
                         <img src="/images/deck/{{$value['image_key']}}.jpg" class="figure-img img-fluid showcard" alt="{{$value['name']}}">
                     </div>
@@ -116,7 +129,7 @@
     </div>
     <div class="alert alert-warning info-box" role="alert">
         <p>{{ __('tarot.tarot_draw')}}</p>
-        <a class="btn  btn-success" href="/language/{{ app()->getLocale() }}/tarot/threecard" role="button">{{ __('tarot.draw_another_tarot_card')}}</a>
+        <a class="btn  btn-success" href="/language/{{ app()->getLocale() }}/tarot/fourcard" role="button">{{ __('tarot.draw_another_tarot_card')}}</a>
     </div>
 </div>
 <script>
