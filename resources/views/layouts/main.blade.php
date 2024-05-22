@@ -101,6 +101,7 @@
                     <div class="text-muted">Copyright ©2023 - 2024 DCode Inc.</div>
                 </div>
                 <div class="col">
+                    <a href="https://banshus.com/" target="_blank">Banshus</a>
                 </div>
             </div>
         </div>
