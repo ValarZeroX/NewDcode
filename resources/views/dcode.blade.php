@@ -32,6 +32,22 @@
                 </div>
             </div>
         </div>
+        <div class="col">
+            <div class="card shadow-sm">
+              <div class="image-container card-img-top">
+                <img class="cards_image card-img-top" src="/images/constellation/taurus_3.jpg">
+              </div>
+              <div class="card-header text-center">{{ __('tarot.public_tarot_1')}}</div>
+              <div class="card-body">
+                <p class="card-text">{{ __('description.public_tarot')}}</p>
+              </div>
+              <div class="card-footer text-center">
+                  <div class="btn-group">
+                    <a href="/language/{{ app()->getLocale() }}/tarot/masses" class="btn btn-sm btn-outline-secondary" role="button">{{ __('tarot.reading')}}</a>
+                  </div>
+              </div>
+            </div>
+          </div>
     </div>
 </div>
 @endsection
