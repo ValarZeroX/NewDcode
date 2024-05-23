@@ -1,8 +1,9 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\TarotController;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\TarotController;
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,16 +13,14 @@ use App\Http\Controllers\PagesController;
 | routes are loaded by the RouteServiceProvider and all of them will
 | be assigned to the "web" middleware group. Make something great!
 |
-*/
+ */
 
 Route::get('/', function () {
     return view('index');
 });
 
-
 Route::get('/makeSitemap', [PagesController::class, 'makeSitemap']);
 Route::get('/sitemap.xml', [PagesController::class, 'sitemap']);
-
 
 Route::prefix('language')->group(function () {
     Route::get('/{locale}', function (string $locale) {
@@ -50,4 +49,70 @@ Route::prefix('language')->group(function () {
 
     Route::get('/{locale}/tarot/masses-reading/{id}', [TarotController::class, 'getReadingLang']);
     Route::get('/{locale}/tarot/masses', [TarotController::class, 'getMassesLang']);
+
+    //十二星座首頁
+    Route::get('/{locale}/astrology/zodiac', function ($locale) {
+        App::setLocale($locale);
+        return view('constellation/lang/zodiac', []);
+    });
+    //牡羊
+    Route::get('/{locale}/astrology/zodiac/aries', function ($locale) {
+        App::setLocale($locale);
+        return view('constellation/lang/astrology/aries', []);
+    });
+    //金牛
+    Route::get('/{locale}/astrology/zodiac/taurus', function ($locale) {
+        App::setLocale($locale);
+        return view('constellation/lang/astrology/taurus', []);
+    });
+    //雙子
+    Route::get('/{locale}/astrology/zodiac/gemini', function ($locale) {
+        App::setLocale($locale);
+        return view('constellation/lang/astrology/gemini', []);
+    });
+    //巨蟹
+    Route::get('/{locale}/astrology/zodiac/cancer', function ($locale) {
+        App::setLocale($locale);
+        return view('constellation/lang/astrology/cancer', []);
+    });
+    //獅子
+    Route::get('/{locale}/astrology/zodiac/leo', function ($locale) {
+        App::setLocale($locale);
+        return view('constellation/lang/astrology/leo', []);
+    });
+    //處女
+    Route::get('/{locale}/astrology/zodiac/virgo', function ($locale) {
+        App::setLocale($locale);
+        return view('constellation/lang/astrology/virgo', []);
+    });
+    //天秤
+    Route::get('/{locale}/astrology/zodiac/libra', function ($locale) {
+        App::setLocale($locale);
+        return view('constellation/lang/astrology/libra', []);
+    });
+    //天蠍
+    Route::get('/{locale}/astrology/zodiac/scorpio', function ($locale) {
+        App::setLocale($locale);
+        return view('constellation/lang/astrology/scorpio', []);
+    });
+    //射手
+    Route::get('/{locale}/astrology/zodiac/sagittarius', function ($locale) {
+        App::setLocale($locale);
+        return view('constellation/lang/astrology/sagittarius', []);
+    });
+    //摩羯
+    Route::get('/{locale}/astrology/zodiac/capricorn', function ($locale) {
+        App::setLocale($locale);
+        return view('constellation/lang/astrology/capricorn', []);
+    });
+    //水瓶
+    Route::get('/{locale}/astrology/zodiac/aquarius', function ($locale) {
+        App::setLocale($locale);
+        return view('constellation/lang/astrology/aquarius', []);
+    });
+    //雙魚
+    Route::get('/{locale}/astrology/zodiac/pisces', function ($locale) {
+        App::setLocale($locale);
+        return view('constellation/lang/astrology/pisces', []);
+    });
 });
