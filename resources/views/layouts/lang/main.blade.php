@@ -42,6 +42,9 @@
                         <li class="nav-item active">
                             <a class="nav-link" aria-current="page" href="/language/{{ app()->getLocale() }}/tarot">{{ __('tarot.tarot')}}</a>
                         </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" aria-current="page" href="/language/{{ app()->getLocale() }}/astrology/zodiac">{{ __('zodiac.zodiac_14')}}</a>
+                        </li>
                     </ul>
 
                     <ul class="navbar-nav flex-row">
