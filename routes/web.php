@@ -115,4 +115,9 @@ Route::prefix('language')->group(function () {
         App::setLocale($locale);
         return view('constellation/lang/astrology/pisces', []);
     });
+
+    Route::get('/{locale}/astrology/zodiac/date', function ($locale) {
+        App::setLocale($locale);
+        return view('constellation/lang/zodiac_date', []);
+    });
 });
