@@ -347,4 +347,7 @@ Chart）是一種天文學和占星學的工具，用於研究和解讀個人的
         </div>
     </div>
 </div>
+<script>
+    window.zodiac = {!! json_encode(trans('zodiac')) !!};
+</script>
 @endsection

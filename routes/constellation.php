@@ -57,6 +57,7 @@ Route::get('/astrology/zodiac/pisces', function () {
 });
 
 Route::get('/astrology/zodiac/date', function () {
+    App::setLocale('zh-hant');
     return view('constellation/zodiac_date', []);
 });
 
