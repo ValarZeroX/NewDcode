@@ -70,6 +70,22 @@
           </div>
         </div>
       </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <div class="image-container card-img-top">
+            <img class="cards_image card-img-top" src="/images/constellation/aquarius_3.jpg">
+          </div>
+          <div class="card-header text-center">{{ __('zodiac.natal_chart')}}</div>
+          <div class="card-body">
+            <p class="card-text">{{ __('zodiac.zodiac_date_50')}}</p>
+          </div>
+          <div class="card-footer text-center">
+              <div class="btn-group">
+                <a href="/language/{{ app()->getLocale() }}/astrology/zodiac/date" class="btn btn-sm btn-outline-secondary" role="button">{{ __('tarot.go_to')}}</a>
+              </div>
+          </div>
+        </div>
+      </div>
     </div>
     @include('../layouts/lang/zodiac')
 </div>

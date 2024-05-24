@@ -1766,9 +1766,48 @@ $(function () {
         return Math.ceil(X);
     }
 
+    var sun = window.zodiac.sun
+    var moon = window.zodiac.moon
+    var mercury = window.zodiac.mercury
+    var venus = window.zodiac.venus
+    var mars = window.zodiac.mars
+    var jupiter = window.zodiac.jupiter
+    var saturn = window.zodiac.saturn
+    var uranus = window.zodiac.uranus
+    var neptune = window.zodiac.neptune
+    var pluto = window.zodiac.pluto
+    var lilith = window.zodiac.lilith
+    var nnod = window.zodiac.ascending_node
+
+    var asc = window.zodiac.zodiac_date_42
+    var ic = window.zodiac.zodiac_date_44
+    var dsc = window.zodiac.zodiac_date_46
+    var mc = window.zodiac.zodiac_date_48
+
+    var aries = window.zodiac.aries
+    var taurus = window.zodiac.taurus
+    var gemini = window.zodiac.gemini
+    var cancer = window.zodiac.cancer
+    var leo = window.zodiac.leo
+    var virgo = window.zodiac.virgo
+    var libra = window.zodiac.libra
+    var scorpio = window.zodiac.scorpio
+    var sagittarius = window.zodiac.sagittarius
+    var capricorn = window.zodiac.capricorn
+    var aquarius = window.zodiac.aquarius
+    var pisces = window.zodiac.pisces
+
+    var four_angles = window.zodiac.zodiac_date_41
+    var zodiac = window.zodiac.zodiac_14
+    var sign = window.zodiac.sign
+    var zodiac_angle = window.zodiac.angle
+    var location = window.zodiac.location
+    var house = window.zodiac.houses
+    var planet = window.zodiac.planet
+
     var constellation = ["Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo", "Libra", "Scorpio", "Sagittarius", "Capricorn", "Aquarius", "Pisces"];
-    var aspectDict = { "ASC": "上升星座", "DSC": "下降星座", "MC": "天頂星座", "IC": "天底星座" };
-    var planetDict = { "Sun": "太陽", "Moon": "月亮", "Mercury": "水星", "Venus": "金星", "Mars": "火星", "Jupiter": "木星", "Saturn": "土星", "Uranus": "天王星", "Neptune": "海王星", "Pluto": "冥王星", "Lilith": "莉莉絲", "NNode": "升交點" };
+    var aspectDict = { "ASC": asc, "DSC": dsc, "MC": mc, "IC": ic };
+    var planetDict = { "Sun": sun, "Moon": moon, "Mercury": mercury, "Venus": venus, "Mars": mars, "Jupiter": jupiter, "Saturn": saturn, "Uranus": uranus, "Neptune": neptune, "Pluto": pluto, "Lilith": lilith, "NNode": nnod };
     var planame = ["",
         "太陽", "月亮", "水星", "金星", "火星",
         "木星", "土星", "天王星", "海王星", "冥王星",
@@ -1784,8 +1823,8 @@ $(function () {
         "丘比特", "哈迪斯", "宙斯", "時空",
         "阿波羅", "阿德梅", "巴薩", "波塞"];
     var sgnname = [
-        "牧羊座", "金牛座", "雙子座", "巨蟹座", "獅子座", "處女座",
-        "天秤座", "天蠍座", "射手座", "摩羯座", "水瓶座", "雙魚座"];
+        aries, taurus, gemini, cancer, leo, virgo,
+        libra, scorpio, sagittarius, capricorn, aquarius, pisces];
     var sgnS = ["羊", "牛", "雙", "蟹", "獅", "處", "秤", "蠍", "射", "羯", "瓶", "魚"];
 
     function convertPlanetHouse(pla, csp) {
@@ -2579,6 +2618,7 @@ $(function () {
             chartWidth = 350
             scale = 0.8
         }
+
         var planetPosition = new Array()
         planetPosition = calPlanetPosition2(parseInt(data.Year), parseInt(data.Month), parseInt(data.Day), parseInt(data.Hour), parseInt(data.Minutes), parseFloat(data.Longitude), parseFloat(data.Latitude))
 
@@ -2622,7 +2662,7 @@ $(function () {
 
         //星位、宮位表格
         var planetsContent = '<table class="table table-bordered planet-positions-table text-center">'
-        planetsContent += '<tr><th>行星符號</th><th>行星名稱</th><th>角度</th><th>星座符號</th><th>星座名稱</th><th>宮位</th></tr>'
+        planetsContent += '<tr><th>' + sign +'</th><th> ' + planet +'</th><th>'+zodiac_angle+'</th><th>'+sign+'</th><th>'+zodiac+'</th><th>' + house+'</th></tr>'
         $.each(glyph, function (index, value) {
             planetsContent += '<tr>'
             $.each(value, function (houses, angle) {
@@ -2641,11 +2681,11 @@ $(function () {
         })
 
         var aspectContent = '<table class="table table-bordered aspect-table text-center">'
-        aspectContent += '<tr><th>四大尖軸</th><th>起點角度</th><th>星座位置</th></tr>'
+        aspectContent += '<tr><th>' + four_angles + '</th><th>' + zodiac_angle + '</th><th>' + location + '</th></tr>'
         $.each(aspectGlyph, function (index, value) {
             aspectContent += '<tr>'
             $.each(value, function (houses, angle) {
-                aspectContent += '<td>' + aspectDict[index] + '(' + index + ')</td>' + '<td>' + angle + '</td>' + '<td>' + sgnname[houses] + '</td>'
+                aspectContent += '<td>' + aspectDict[index] + '</td>' + '<td>' + angle + '</td>' + '<td>' + sgnname[houses] + '</td>'
             })
             aspectContent += '</tr>'
         })
