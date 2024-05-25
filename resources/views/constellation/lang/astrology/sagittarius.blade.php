@@ -21,7 +21,7 @@
                     <div class="row row-cols-1 row-cols-sm-2">
                         <div class="col">
                             <h2>{{ __('zodiac.sagittarius')}}</h2>
-                            <p>{{ __('tarot.element')}}： <span class="badge rounded-pill bg-danger">{{ __('zodiac.fire')}}<</span></p>
+                            <p>{{ __('tarot.element')}}： <span class="badge rounded-pill bg-danger">{{ __('zodiac.fire')}}</span></p>
                             <p>{{ __('zodiac.color')}}： {{ __('zodiac.blue')}}</p>
                             <p>{{ __('zodiac.ruling_planet')}}： {{ __('zodiac.jupiter')}}</p>
                             <p>{{ __('zodiac.best_match')}}： <span class="badge rounded-pill bg-danger">{{ __('zodiac.aries')}}</span> <span
