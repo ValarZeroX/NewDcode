@@ -34,6 +34,12 @@ Route::prefix('language')->group(function () {
             // }
         }
     });
+
+    Route::get('/{locale}/disclaimer', function (string $locale) {
+        App::setLocale($locale);
+        return view('common/disclaimer');
+    });
+
     Route::get('/{locale}/tarot', [TarotController::class, 'drawListLang']);
     Route::get('/{locale}/tarot/onecard', [TarotController::class, 'getOneCardLang']);
     Route::get('/{locale}/tarot/showall', [TarotController::class, 'getAllTarotLang']);
