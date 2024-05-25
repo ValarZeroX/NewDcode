@@ -98,6 +98,7 @@
                 </div>
                 <div class="col">
                     <a href="https://banshus.com/" target="_blank">Banshus</a>
+                    <a href="/language/{{ app()->getLocale() }}/disclaimer">{{ __('dcode.disclaimer')}}</a>
                 </div>
             </div>
         </div>
