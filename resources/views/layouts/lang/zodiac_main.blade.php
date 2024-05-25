@@ -49,7 +49,16 @@ body>
                             <a class="nav-link" aria-current="page" href="/language/{{ app()->getLocale() }}/astrology/zodiac/date">{{ __('zodiac.natal_chart')}}</a>
                         </li>
                     </ul>
-
+                    <div class="ms-auto mb-2 mb-lg-0">
+                        <select class="form-select" id="languageSelect">
+                            @foreach(config('app.available_locales') as $locale => $name)
+                            <option value="{{$locale}}" {{ app()->getLocale() == $locale ?
+                                'selected' : '' }}>
+                                {{ $name }}
+                            </option>
+                            @endforeach
+                        </select>
+                    </div>
                     <ul class="navbar-nav flex-row">
                         <li class="nav-item">
                             <a class="nav-link px-2" href="#!">
