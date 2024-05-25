@@ -29,9 +29,9 @@ Route::prefix('language')->group(function () {
             if ($locale == 'zh-hant') {
                 return view('index');
             }
-            if ($locale == 'en' || $locale == 'zh-hans') {
+            // if ($locale == 'en' || $locale == 'zh-hans') {
                 return view('dcode');
-            }
+            // }
         }
     });
     Route::get('/{locale}/tarot', [TarotController::class, 'drawListLang']);

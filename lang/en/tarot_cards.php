@@ -2248,7 +2248,6 @@ Alternatively, another interpretation of this card in reverse is that the confli
         "id" => 70,
         "type_id" => 1,
         "number" => 69,
-
         "name" => "Six of Swords",
         "upright_keyword" => "Moving on, Leaving behind, Transition, Distance, Learning from the past",
         "reversed_keyword" => "Stuck in the past, Repeating mistakes, Avoiding issues, Feeling trapped",
@@ -2342,7 +2341,6 @@ The good news is that since these traps are of our own making, we can also leave
         "id" => 73,
         "type_id" => 1,
         "number" => 72,
-
         "name" => "Nine of Swords",
         "upright_keyword" => "Fear, Anxiety, Negativity, Breakdown, Despair, Nightmares, Isolation",
         "reversed_keyword" => "Recovery, Coping, Facing Life, Seeking Help, Shame, Guilt, Mental Health Issues",
