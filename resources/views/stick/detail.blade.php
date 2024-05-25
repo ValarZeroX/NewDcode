@@ -28,6 +28,7 @@
             @endforeach
         </div>
     </div>
+    @include('../layouts/topads_two')
     @foreach ($data['explanation'] as $sKey => $value)
     <div class="card stick_well">
         <div class="card-header-custom text-center stick_title"><strong>{{$sKey}}</strong></div>
