@@ -9,6 +9,7 @@ class PagesController extends Controller
 {
     public function makeSitemap()
     {
+        //set_time_limit(300);
         $path = public_path('sitemap.xml');
         SitemapGenerator::create(config('app.url'))->writeToFile($path);
     }
