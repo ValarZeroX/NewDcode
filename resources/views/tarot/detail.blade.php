@@ -34,7 +34,6 @@
                         <p><strong>元素 :</strong> {{$data['element']}}</p>
                         <h2>描述</h2>
                         <p>{!! $data['content'] !!}</p>
-
                         <h2>正位描述</h2>
                         <p>{!! $data['upright_content'] !!}</p>
                         <h3>正位 - 戀愛婚姻</h3>
@@ -54,6 +53,7 @@
                         <h3>逆位 - 金錢財物</h3>
                         <p>{!! $data['reversed_finances'] !!}</p>
                         <hr />
+                        @include('../layouts/topads_two')
                         <h2>是否</h2>
                         <p>{!! $data['yes_no'] !!}</p>
                         <hr />

@@ -34,7 +34,6 @@
                         <p><strong>{{ __('tarot.element')}} :</strong> {{$data['element']}}</p>
                         <h2>{{ __('tarot.meaning_1')}}</h2>
                         <p>{!! $data['content'] !!}</p>
-
                         <h2>{{ __('tarot.upright_meaning')}}</h2>
                         <p>{!! $data['upright_content'] !!}</p>
                         <h3>{{ __('tarot.upright_love')}}</h3>
@@ -54,6 +53,7 @@
                         <h3>{{ __('tarot.reversed_finances')}}</h3>
                         <p>{!! $data['reversed_finances'] !!}</p>
                         <hr />
+                        @include('../layouts/topads_two')
                         <h2>{{ __('tarot.yes_no')}}</h2>
                         <p>{!! $data['yes_no'] !!}</p>
                         <hr />
