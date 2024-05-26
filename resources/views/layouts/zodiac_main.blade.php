@@ -85,7 +85,7 @@
             <div class="row row-cols-3">
                 <div class="col">
                     <div class="text-left text-muted">語言</div>
-                    <div class="text-left"><a href="/language/en">English</a> <a href="/">繁體中文</a> <a href="/language/zh-hans">简体中文</a></div>
+                    <div class="text-left"><a href="/language/en">English</a> <a href="/language/es">Español</a> <a href="/language/ja">日本語</a> <a href="/">繁體中文</a> <a href="/language/zh-hans">简体中文</a></div>
                 </div>
                 <div class="col">
                 </div>
