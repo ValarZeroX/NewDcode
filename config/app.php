@@ -88,6 +88,7 @@ return [
     'available_locales' => [
         'en' => 'English',
         'es' => 'Español',
+        'fr' => 'Français',
         'ja' => '日本語',
         'zh-hans' => '简体中文',
         'zh-hant' => '繁體中文',
