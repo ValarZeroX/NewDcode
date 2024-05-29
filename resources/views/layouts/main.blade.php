@@ -79,21 +79,46 @@
         @include('../layouts/footerads')
         </div>
     </main>
-    <footer class="footer mt-auto py-3 bg-light text-center footer-box">
+    <footer class="footer mt-auto py-3 bg-light footer-box">
         <div class="container">
-            <div class="row row-cols-3">
+            <div class="row row-cols-1">
                 <div class="col">
                     <div class="text-left text-muted">語言</div>
-                    <div class="text-left"><a href="/language/en">English</a> <a href="/language/es">Español</a> <a href="/language/ja">日本語</a> <a href="/">繁體中文</a> <a href="/language/zh-hans">简体中文</a></div>
+                </div>
+            </div>
+            <div class="row row-cols-3 row-cols-sm-4 row-cols-md-6 row-cols-lg-12">
+                <div class="col">
+                    <a href="/language/en">English</a>
+                </div>
+                <div class="col">
+                    <a href="/language/es">Español</a>
+                </div>
+                <div class="col">
+                    <a href="/language/fr">Français</a>
+                </div>
+                <div class="col">
+                    <a href="/language/ja">日本語</a>
+                </div>
+                <div class="col">
+                    <a href="/">繁體中文</a>
+                </div>
+                <div class="col">
+                    <a href="/language/zh-hans">简体中文</a>
+                </div>
+                <div class="col">
+                </div>
+                <div class="col">
+                </div>
+                <div class="col">
+                </div>
+                <div class="col">
                 </div>
                 <div class="col">
                 </div>
                 <div class="col">
                 </div>
             </div>
-        </div>
-        <div class="container text-center">
-            <div class="row row-cols-3">
+            <div class="row row-cols-3 text-center">
                 <div class="col">
                 </div>
                 <div class="col">
@@ -101,11 +126,11 @@
                 </div>
                 <div class="col">
                     <a href="https://banshus.com/" target="_blank">Banshus</a>
+                    <a href="/language/{{ app()->getLocale() }}/disclaimer">{{ __('dcode.disclaimer')}}</a>
                 </div>
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>
