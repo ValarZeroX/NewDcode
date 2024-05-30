@@ -1,2 +1,8 @@
 User-agent: *
-Disallow:
+Disallow: /tarot/sharetarot/
+Disallow: /language/en/tarot/sharetarot/
+Disallow: /language/es/tarot/sharetarot/
+Disallow: /language/fr/tarot/sharetarot/
+Disallow: /language/ja/tarot/sharetarot/
+Disallow: /language/zh-hant/tarot/sharetarot/
+Disallow: /language/zh-hans/tarot/sharetarot/
