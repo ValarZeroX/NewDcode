@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="zh-hant">
 
 <head>
     @vite(['resources/js/zodiac.js'])
@@ -95,6 +95,9 @@
                     <a href="/language/en">English</a>
                 </div>
                 <div class="col">
+                    <a href="/language/de">Deutsch</a>
+                </div>
+                <div class="col">
                     <a href="/language/es">Español</a>
                 </div>
                 <div class="col">
@@ -108,8 +111,6 @@
                 </div>
                 <div class="col">
                     <a href="/language/zh-hans">简体中文</a>
-                </div>
-                <div class="col">
                 </div>
                 <div class="col">
                 </div>
