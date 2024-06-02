@@ -478,4 +478,8 @@ return [
     "houses" => "Maisons",
     "planet" => "Planète",
     "zodiac_date_50" => "Un thème natal est un diagramme créé en fonction de la date, de l'heure et du lieu de naissance d'une personne, montrant les positions des différentes planètes dans le zodiaque. En analysant le thème natal, nous pouvons comprendre les traits de personnalité d'un individu, les chemins de carrière appropriés, les tendances romantiques, et plus encore.",
+    "zodiac_date_51" => "Zodiaque - Dates complètes des douze signes du zodiaque",
+    "zodiac_date_52" => "Zodiaque - Consultation du thème natal",
+    "zodiac_date_free" => "Zodiaque - Consultation gratuite du thème natal",
+    "view_zodiac_date" => "Voir les dates complètes des douze signes du zodiaque",
 ];

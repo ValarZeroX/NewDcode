@@ -126,4 +126,9 @@ Route::prefix('language')->group(function () {
         App::setLocale($locale);
         return view('constellation/lang/zodiac_date', []);
     });
+
+    Route::get('/{locale}/astrology/zodiac/all_date', function ($locale) {
+        App::setLocale($locale);
+        return view('constellation/lang/zodiac_all_date', []);
+    });
 });

@@ -255,5 +255,13 @@
             </div>
         </div>
     </div>
+    <div class="row row-cols-1">
+        <div class="col">
+            <div class="alert alert-warning" role="alert">
+                <p>{{ __('zodiac.view_zodiac_date')}}</p>
+                <a class="btn  btn-success" href="/language/{{ app()->getLocale() }}/astrology/zodiac/all_date" role="button">{{ __('zodiac.view_details')}}</a>
+            </div>
+        </div>
+    </div>
 </div>
 @endsection

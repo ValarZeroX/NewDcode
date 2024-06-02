@@ -478,4 +478,8 @@ return [
     "houses" => "Houses",
     "planet" => "Planet",
     "zodiac_date_50" => "A natal chart is a diagram created based on an individual's birth date, time, and location, showing the positions of various planets in the zodiac. By analyzing the natal chart, we can understand an individual's personality traits, suitable career paths, romantic tendencies, and more.",
+    "zodiac_date_51" => "Zodiac - Complete Dates of the Twelve Zodiac Signs",
+    "zodiac_date_52" => "Zodiac - Natal Chart Inquiry",
+    "zodiac_date_free" => "Zodiac - Free Natal Chart Inquiry",
+    "view_zodiac_date" => "View Complete Dates of the Twelve Zodiac Signs",
 ];

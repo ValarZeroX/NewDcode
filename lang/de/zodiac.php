@@ -478,4 +478,8 @@ return [
     "houses" => "Häuser",
     "planet" => "Planet",
     "zodiac_date_50" => "Ein Geburtshoroskop ist ein Diagramm, das basierend auf dem Geburtsdatum, der Uhrzeit und dem Ort einer Person erstellt wird und die Positionen der verschiedenen Planeten im Tierkreis zeigt. Durch die Analyse des Geburtshoroskops können wir die Persönlichkeitsmerkmale, die geeigneten Karrierewege, die romantischen Tendenzen und vieles mehr einer Person verstehen.",
+    "zodiac_date_51" => "Tierkreis - Komplette Daten der zwölf Sternzeichen",
+    "zodiac_date_52" => "Tierkreis - Geburtshoroskop-Abfrage",
+    "zodiac_date_free" => "Tierkreis - Kostenlose Geburtshoroskop-Abfrage",
+    "view_zodiac_date" => "Komplette Daten der zwölf Sternzeichen anzeigen",
 ];

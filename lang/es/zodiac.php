@@ -478,4 +478,8 @@ return [
     "houses" => "Casas",
     "planet" => "Planeta",
     "zodiac_date_50" => "Una carta natal es un diagrama creado en función de la fecha, la hora y el lugar de nacimiento de un individuo, que muestra las posiciones de varios planetas en el zodiaco. Al analizar la carta natal, podemos entender los rasgos de personalidad, las trayectorias profesionales adecuadas, las tendencias románticas y más de un individuo.",
+    "zodiac_date_51" => "Zodiaco - Fechas completas de los doce signos del zodiaco",
+    "zodiac_date_52" => "Zodiaco - Consulta de la carta natal",
+    "zodiac_date_free" => "Zodiaco - Consulta gratuita de la carta natal",
+    "view_zodiac_date" => "Ver fechas completas de los doce signos del zodiaco",
 ];
