@@ -155,4 +155,5 @@ return [
     "public_tarot_1" => "Öffentliches Tarot-Lesen",
     "public_tarot_2" => "Einführung ins öffentliche Tarot-Lesen",
     "public_tarot_3" => "Öffentliches Tarot-Lesen - Verschiedene Wahrsagemethoden, Interpretation von Liebe, Karriere, finanziellem Glück - DCode",
+    "tarot_card_meanings" => "Tarotkarten Bedeutungen",
 ];

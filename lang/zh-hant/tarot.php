@@ -155,4 +155,5 @@ return [
     "public_tarot_1" => "大眾塔羅占卜",
     "public_tarot_2" => "大眾塔羅占卜介紹",
     "public_tarot_3" => "大眾塔羅占卜 - 各種占卜法，解讀愛情、工作、金錢運勢 - DCode",
+    "tarot_card_meanings" => "塔羅牌含義",
 ];

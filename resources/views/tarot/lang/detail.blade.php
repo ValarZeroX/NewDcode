@@ -1,16 +1,16 @@
 @extends('layouts.lang.main')
 
-@section('title', __('tarot.tarot_cards') .' - ' . $data['name'] . ' - ' . __('tarot.tarot_title_1'))
-@section('description', __('tarot.tarot_cards') . $data['name']. __('tarot.tarot_title_2') .$data['content'])
+@section('title', $data['name'] . ' ' . __('tarot.tarot_card_meanings') . ' - ' . __('tarot.tarot_title_1'))
+@section('description', $data['name'] . __('tarot.tarot_card_meanings') . __('tarot.tarot_title_2') .$data['content'])
 
 @section('main')
 <div class="container">
-    <h1>{{ __('tarot.tarot_cards')}} - {{$data['name']}} - {{ __('tarot.tarot_title_1')}}</h1>
+    <h1>{{$data['name']}} {{ __('tarot.tarot_card_meanings')}} - {{ __('tarot.tarot_title_1')}}</h1>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/language/{{ app()->getLocale() }}/">Dcode</a></li>
-            <li class="breadcrumb-item"><a href="/language/{{ app()->getLocale() }}/tarot/showall">{{ __('tarot.tarot_meanings')}}</a></li>
-            <li class="breadcrumb-item active" aria-current="page">{{ __('tarot.tarot_cards')}} - {{$data['name']}}</li>
+            <li class="breadcrumb-item"><a href="/language/{{ app()->getLocale() }}/tarot/showall">{{ __('tarot.tarot_card_meanings')}}</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{$data['name']}} {{ __('tarot.tarot_card_meanings')}}</li>
         </ol>
     </nav>
     @include('../layouts/topads')

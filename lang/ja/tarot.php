@@ -155,4 +155,5 @@ return [
     "public_tarot_1" => "公開タロットリーディング",
     "public_tarot_2" => "公開タロットリーディングの紹介",
     "public_tarot_3" => "公開タロットリーディング - 様々な占い方法、恋愛、キャリア、金運の解釈 - DCode",
+    "tarot_card_meanings" => "タロットカードの意味",
 ];

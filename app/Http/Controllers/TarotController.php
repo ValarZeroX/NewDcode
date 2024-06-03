@@ -108,7 +108,7 @@ class TarotController extends Controller
     public function getAllTarotLang($locale)
     {
         App::setLocale($locale);
-        $meanings = trans('tarot.tarot_meanings');
+        $meanings = trans('tarot.tarot_card_meanings');
         $aAllTarot = trans('tarot_cards');
         $aNewAllTarot = $this->oTarotServices->formatAllTarot($aAllTarot);
         return view('tarot/lang/showall', ['event' => true, 'data' => $aNewAllTarot, 'title' => $meanings]);

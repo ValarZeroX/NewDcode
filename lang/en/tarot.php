@@ -155,4 +155,5 @@ return [
     "public_tarot_1" => "Public Tarot Reading",
     "public_tarot_2" => "Public Tarot Reading Introduction",
     "public_tarot_3" => "Public Tarot Reading - Various Divination Methods, Interpreting Love, Career, Financial Fortune - DCode",
+    "tarot_card_meanings" => "Tarot Card Meanings",
 ];

@@ -155,4 +155,5 @@ return [
     "public_tarot_1" => "Lecture de Tarot Public",
     "public_tarot_2" => "Introduction à la Lecture de Tarot Public",
     "public_tarot_3" => "Lecture de Tarot Public - Diverses Méthodes de Divination, Interprétation de l'Amour, de la Carrière et de la Fortune Financière - DCode",
+    "tarot_card_meanings" => "Significations des Cartes de Tarot",
 ];
