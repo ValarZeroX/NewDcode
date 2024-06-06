@@ -142,7 +142,6 @@ class TarotController extends Controller
     {
         App::setLocale($locale);
         $tarotMethods = trans('tarot.tarot_list');
-        // $aAllTarot = $this->oTarotRepositories->getAllTarot(1);
         $aAllTarot = trans('tarot_cards');
         $aThreeCard = $this->oTarotServices->getCard($aAllTarot, 3);
         return view('tarot/lang/threecard', ['event' => true, 'data' => $aThreeCard, 'title' => $tarotMethods[2][0], 'maxcard' => 3, 'type' => $tarotMethods[2][3]]);
@@ -223,88 +222,119 @@ class TarotController extends Controller
 
     public function drawList()
     {
-        $aCardArray = $this->oTarotServices->formatCardArray($this->aDict);
-        return view('tarot/draw_list',['event' => true, 'data' => $aCardArray, 'title' => '塔羅牌', 'image' => $this->aImage]);
+        App::setLocale('zh-hant');
+        $tarotMethods = trans('tarot.tarot_list');
+        $aCardArray = $this->oTarotServices->formatCardArray($tarotMethods);
+        return view('tarot/draw_list',['event' => true, 'data' => $aCardArray, 'title' => trans('tarot.tarot_cards'), 'image' => $this->aImage]);
     }
 
     public function getAllTarot()
     {
-        $aAllTarot = $this->oTarotRepositories->getAllTarot(1);
+        App::setLocale('zh-hant');
+        $meanings = trans('tarot.tarot_card_meanings');
+        $aAllTarot = trans('tarot_cards');
         $aNewAllTarot = $this->oTarotServices->formatAllTarot($aAllTarot);
         return view('tarot/showall', ['event' => true, 'data' => $aNewAllTarot, 'title' => '塔羅牌解讀']);
     }
 
     public function getDetail($_iNumber)
     {
-        $aTarot = $this->oTarotRepositories->getTarot($_iNumber);
+        App::setLocale('zh-hant');
+        $aAllTarot = trans('tarot_cards');
+        $aTarot = [];
+        $aTarot[0] = $aAllTarot[$_iNumber];
         $aOneCard = $this->oTarotServices->getOneCard($aTarot);
         return view('tarot/detail', ['event' => true, 'data' => $aOneCard]);
     }
 
     public function getShareTarot($_sID, $_sReversed, $_sType)
     {
-        // echo '<pre>';
+        App::setLocale('zh-hant');
+        $tarotMethods = trans('tarot.tarot_list');
         $aID = explode(',', $_sID) ;
         $aReversed = explode(',', $_sReversed) ;
-        $aTarot = $this->oTarotRepositories->getShareTarot($aID);
+        $aAllTarot = trans('tarot_cards');
+        foreach ($aID as  $iID) {
+            $aTarot[$iID] = $aAllTarot[$iID-1];
+        }
         $aShareTarot = $this->oTarotServices-> formatShareTarot($aTarot, $aID, $aReversed);
-        return view('tarot/sharetarot', ['event' => true, 'data' => $aShareTarot, 'title' => '分享牌組', 'info' => $this->aDict[$_sType]]);
+        return view('tarot/sharetarot', ['event' => true, 'data' => $aShareTarot, 'title' => trans('tarot.share_card'), 'info' => $tarotMethods[$_sType]]);
     }
 
     public function getOneCard()
     {
-        $aAllTarot = $this->oTarotRepositories->getAllTarot(1);
+        App::setLocale('zh-hant');
+        $tarotMethods = trans('tarot.tarot_list');
+        $aAllTarot = trans('tarot_cards');
         $aOneCard = $this->oTarotServices->getOneCard($aAllTarot);
-        return view('tarot/onecard', ['event' => true, 'data' => $aOneCard, 'title' => $this->aDict[1][0], 'maxcard' => 1, 'type' => $this->aDict[1][3]]);
+        return view('tarot/onecard', ['event' => true, 'data' => $aOneCard, 'title' => $tarotMethods[1][0], 'maxcard' => 1, 'type' => $tarotMethods[1][3]]);
     }
 
     public function getThreeCard()
     {
-        $aAllTarot = $this->oTarotRepositories->getAllTarot(1);
+        App::setLocale('zh-hant');
+        $tarotMethods = trans('tarot.tarot_list');
+        $aAllTarot = trans('tarot_cards');
         $aThreeCard = $this->oTarotServices->getCard($aAllTarot, 3);
-        return view('tarot/threecard', ['event' => true, 'data' => $aThreeCard, 'title' => $this->aDict[2][0], 'maxcard' => 3, 'type' => $this->aDict[2][3]]);
+        return view('tarot/threecard', ['event' => true, 'data' => $aThreeCard, 'title' => $tarotMethods[2][0], 'maxcard' => 3, 'type' => $tarotMethods[2][3]]);
     }
 
     public function getFourCard()
     {
-        $aAllTarot = $this->oTarotRepositories->getAllTarot(1);
+        App::setLocale('zh-hant');
+        $tarotMethods = trans('tarot.tarot_list');
+        $aAllTarot = trans('tarot_cards');
         $aCard = $this->oTarotServices->getCard($aAllTarot, 4);
-        return view('tarot/fourcard', ['event' => true, 'data' => $aCard, 'title' => $this->aDict[3][0], 'maxcard' => 4, 'sub' => ['已知的','未知的','問題點在哪','如何解決'], 'type' => $this->aDict[3][3]]);
+        return view('tarot/fourcard', ['event' => true, 'data' => $aCard, 'title' => $tarotMethods[3][0], 'maxcard' => 4, 'sub' => [trans('tarot.four_cards_2'),trans('tarot.four_cards_3'),trans('tarot.four_cards_4'),trans('tarot.four_cards_5')], 'type' => $tarotMethods[3][3]]);
     }
 
     public function getFourElement()
     {
-        $aAllTarot = $this->oTarotRepositories->getAllTarot(1);
-        $aNewAllTarot = $this->oTarotServices->formatFourElementTarot($aAllTarot);
-        return view('tarot/fourelement', ['event' => true, 'data' => $aNewAllTarot, 'title' => $this->aDict[4][0], 'maxcard' => 4, 'type' => $this->aDict[4][3]]);
+        App::setLocale('zh-hant');
+        $tarotMethods = trans('tarot.tarot_list');
+        $aAllTarot = trans('tarot_cards');
+        $aNewAllTarot = $this->oTarotServices->formatFourElementTarotLang($aAllTarot, trans('tarot'));
+        return view('tarot/fourelement', ['event' => true, 'data' => $aNewAllTarot, 'title' => $tarotMethods[4][0], 'maxcard' => 4, 'type' => $tarotMethods[4][3]]);
     }
 
     public function getSixPointedStar()
     {
-        $aAllTarot = $this->oTarotRepositories->getAllTarot(1);
+        App::setLocale('zh-hant');
+        $tarotMethods = trans('tarot.tarot_list');
+        $aAllTarot = trans('tarot_cards');
         $aCard = $this->oTarotServices->getCard($aAllTarot, 7);
-        return view('tarot/six-pointed-star', ['event' => true, 'data' => $aCard, 'title' => $this->aDict[5][0], 'maxcard' => 7, 'sub' => ['表示問題的過去直到目前為止的原因','表示問題的現在','表示問題的未來','表示較近的未來影響(當事人的想法)','表示稍遠的未來影響(環境與幫助)','表示長久的影響(周圍的限制與會遇到的麻煩)','表示對這個問題最後的預測'], 'type' => $this->aDict[5][3]]);
+        $aSub = [trans('tarot.six_pointed_star_2'),trans('tarot.six_pointed_star_3'),trans('tarot.six_pointed_star_4'),trans('tarot.six_pointed_star_5'),trans('tarot.six_pointed_star_6'),trans('tarot.six_pointed_star_7'),trans('tarot.six_pointed_star_8')];
+        return view('tarot/six-pointed-star', ['event' => true, 'data' => $aCard, 'title' => $tarotMethods[5][0],'sub' => $aSub, 'maxcard' => 7, 'type' => $tarotMethods[5][3]]);
     }
 
     public function getFriendship()
     {
-        $aAllTarot = $this->oTarotRepositories->getAllTarot(1);
+        App::setLocale('zh-hant');
+        $tarotMethods = trans('tarot.tarot_list');
+        $aAllTarot = trans('tarot_cards');
         $aCard = $this->oTarotServices->getCard($aAllTarot, 6);
-        return view('tarot/friendship', ['event' => true, 'data' => $aCard, 'title' => $this->aDict[6][0], 'maxcard' => 6, 'sub' => ['代表你對對方的看法','代表對方對你的看法','代表你認為目前雙方關係','代表對方認為目前雙方關係','表你期望未來雙方關係的發展','代表對方期望未來雙方關係的發展'], 'type' => $this->aDict[6][3]]);
+        $aSub = [trans('tarot.friendship_2'),trans('tarot.friendship_3'),trans('tarot.friendship_4'),trans('tarot.friendship_5'),trans('tarot.friendship_6'),trans('tarot.friendship_7')];
+        return view('tarot/friendship', ['event' => true, 'data' => $aCard, 'title' => $tarotMethods[6][0], 'maxcard' => 6, 'sub' => $aSub, 'type' => $tarotMethods[6][3]]);
     }
 
     public function getWeek()
     {
-        $aAllTarot = $this->oTarotRepositories->getAllTarot(1);
+        App::setLocale('zh-hant');
+        $tarotMethods = trans('tarot.tarot_list');
+        $aAllTarot = trans('tarot_cards');
         $aCard = $this->oTarotServices->getCard($aAllTarot, 7);
-        return view('tarot/week', ['event' => true, 'data' => $aCard, 'title' => $this->aDict[7][0], 'maxcard' => 7, 'sub' => ['太陽:星期日，或代表整體運勢','月亮:星期一，或代表情緒、內心世界、與親人或親密伴侶的關係','火星:星期二，代表行動、工作、性愛','水星:星期三，或代表學習、交通、溝通、朋友','木星:星期四，或代表理想、工作、願望、帶來好運的事情','金星:星期五，或代表金錢、愛情','土星:星期六，或代表限制、困難、帶來厄運的事情'], 'type' => $this->aDict[7][3]]);
+        $aSub = [trans('tarot.week_1'),trans('tarot.week_2'),trans('tarot.week_3'),trans('tarot.week_4'),trans('tarot.week_5'),trans('tarot.week_6'),trans('tarot.week_7')];
+        return view('tarot/week', ['event' => true, 'data' => $aCard, 'title' => $tarotMethods[7][0], 'maxcard' => 7, 'sub' => $aSub, 'type' => $tarotMethods[7][3]]);
     }
 
     public function getEither()
     {
-        $aAllTarot = $this->oTarotRepositories->getAllTarot(1);
+        App::setLocale('zh-hant');
+        $tarotMethods = trans('tarot.tarot_list');
+        $aAllTarot = trans('tarot_cards');
         $aCard = $this->oTarotServices->getCard($aAllTarot, 5);
-        return view('tarot/either', ['event' => true, 'data' => $aCard, 'title' => $this->aDict[8][0], 'maxcard' => 5, 'sub' => ['本人狀況','A的狀況','B的狀況','選A的結果','選B的結果'], 'type' => $this->aDict[8][3]]);
+        $aSub = [trans('tarot.either_2'),trans('tarot.either_3'),trans('tarot.either_4'),trans('tarot.either_5'),trans('tarot.either_6')];
+        return view('tarot/either', ['event' => true, 'data' => $aCard, 'title' => $tarotMethods[8][0], 'maxcard' => 5, 'sub' => $aSub, 'type' => $tarotMethods[8][3]]);
     }
 
     public function getFlirt()
@@ -331,18 +361,16 @@ class TarotController extends Controller
 
     public function getReading($_iID)
     {
-        $aFile = app_path('JsonData/massesReading.json');
-        $sJsonData = file_get_contents($aFile);
-        $aAllTarot = json_decode($sJsonData, true);
+        App::setLocale('zh-hant');
+        $aAllTarot = trans('tarot_masses');
         $aTarot = $aAllTarot[$_iID];
         return view('tarot/masses/masses_reading', ['event' => true, 'data' => $aTarot['cards'], 'title' => $aTarot['title'], 'description' => $aTarot['description']]);
     }
 
     public function getMasses()
     {
-        $aFile = app_path('JsonData/massesReading.json');
-        $sJsonData = file_get_contents($aFile);
-        $aAllTarot = json_decode($sJsonData, true);
+        App::setLocale('zh-hant');
+        $aAllTarot = trans('tarot_masses');
         return view('tarot/masses/masses', ['event' => true, 'data' => $aAllTarot]);
     }
 }

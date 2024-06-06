@@ -60,7 +60,7 @@
         <div class="col text-center">
             <div class="card showall">
                 <div class="card-header">
-                    <h3><a href="/tarot/detail/{{$key}}">{{$tarot['name']}}</a></h3>
+                    <h3 class="lang_h3"><a href="/tarot/detail/{{$key}}">{{$tarot['name']}}</a></h3>
                 </div>
                 <div class="card-body">
                     <div class="showalltarot-showcard">
