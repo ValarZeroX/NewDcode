@@ -56,6 +56,9 @@
                                 href="/language/{{ app()->getLocale() }}/astrology/zodiac/date">{{
                                 __('zodiac.natal_chart')}}</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/language/{{ app()->getLocale() }}/stick">{{ __('poems.fortune_poem')}}</a>
+                        </li>
                     </ul>
                     <div class="ms-auto mb-2 mb-lg-0">
                         <select class="form-select" id="languageSelect">

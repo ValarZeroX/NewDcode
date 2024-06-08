@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use App\Repositories\Stick\StickRepositories;
 use App\Services\Stick\StickServices;
+use Illuminate\Support\Facades\App;
 
 class StickController extends Controller
 {
@@ -17,7 +18,7 @@ class StickController extends Controller
             'file' => 'sixtyJiazi.json',
             'rand' => [
                 'min' => 1,
-                'max' => 62
+                'max' => 62,
             ],
             'description' => '「六十甲子籤」是中國傳統的占卜方式，以甲子、乙丑、丙寅……壬子、癸丑共六十個甲子為一個周期，每個甲子對應著一首詩籤。人們在祈求吉利或解決問題時，會隨機抽取一首詩籤，以此來預測未來的吉凶和命運走向。六十甲子籤源遠流長，歷史悠久，至今仍然在華人社會中廣泛流傳。',
             'image' => 'sixty_jiazi.jpg',
@@ -27,40 +28,40 @@ class StickController extends Controller
             'file' => 'moonStick.json',
             'rand' => [
                 'min' => 1,
-                'max' => 101
+                'max' => 101,
             ],
             'description' => '月老靈簽是道教中的簽籤神諭，主要是用來卜問姻緣婚姻方面的問題。簽筒中有許多簽籤，抽到的簽將對應到一段神諭，可以得到月老的指示和提醒。',
-            'image' => 'moon_old_man.jpg'
+            'image' => 'moon_old_man.jpg',
         ],
         3 =>
         [
             'file' => 'guanyinOneHundred.json',
             'rand' => [
                 'min' => 1,
-                'max' => 100
+                'max' => 100,
             ],
             'description' => '觀音一百籤，又稱觀音靈簽，是佛教中常用的占卜方式之一。此籤分為吉凶兩部分，每籤均有經文和詩句相伴，可以指引人們在求神問卜時，尋求心靈的指引和安慰。籤詩通俗易懂，充滿智慧，被許多人視為佛教智慧的縮影，引領人們走向美好的生活。',
-            'image' => 'guanyin_one_hundred.jpg'
+            'image' => 'guanyin_one_hundred.jpg',
         ],
         4 =>
         [
             'file' => 'guanyinTwentyEight.json',
             'rand' => [
                 'min' => 1,
-                'max' => 28
+                'max' => 28,
             ],
             'description' => '觀音二十八籤是佛教徒常用的占卜工具，是觀音菩薩慈悲智慧的體現。透過這些籤詩，可以領悟佛理，化解問題，得到觀音菩薩的指引和庇佑。籤詩風格優美簡潔，含蓄深刻，具有啟發性和感召力。',
-            'image' => 'guanyin_twenty_eight.jpg'
+            'image' => 'guanyin_twenty_eight.jpg',
         ],
         5 =>
         [
             'file' => 'GuanShengdijunOneHundred.json',
             'rand' => [
                 'min' => 1,
-                'max' => 100
+                'max' => 100,
             ],
             'description' => '《關聖帝君一百籤》是民間信仰中非常受歡迎的卜卦書籍，被視為保佑平安、求得庇佑和指引方向的神典。其中每一籤都蘊含豐富的哲理和智慧，透過觀念的融入，為人生的抉擇和方向提供了有益的啟示。',
-            'image' => 'guan_shengdijun_one_hundred.jpg'
+            'image' => 'guan_shengdijun_one_hundred.jpg',
         ],
     ];
     public function __construct(StickRepositories $_oStickRepositories, StickServices $_oStickServices)
@@ -71,7 +72,7 @@ class StickController extends Controller
 
     public function index()
     {
-        return view('stick/stick',['event' => true, 'data' => $this->aDict, 'remark' => $this->aRemark, 'title' => '詩籤', 'stick' => $this->aStick]);
+        return view('stick/stick', ['event' => true, 'data' => $this->aDict, 'remark' => $this->aRemark, 'title' => '詩籤', 'stick' => $this->aStick]);
     }
 
     public function draw($_iTypeID)
@@ -107,6 +108,8 @@ class StickController extends Controller
         $aFile = app_path('JsonData/' . $this->aStick[$_iTypeID]['file']);
         $sJsonData = file_get_contents($aFile);
         $aStick = json_decode($sJsonData, true);
+        // var_export($aStick);
+        // exit;
         $aNewStick = $this->oStickServices->handleFormat($aStick);
         // var_export($aNewStick[$_iNumber]);exit;
         return view('stick/detail', ['event' => true, 'data' => $aNewStick[$_iNumber], 'title' => $this->aDict[$_iTypeID], 'typeid' => $_iTypeID, 'description' => $this->aStick[$_iTypeID]['description']]);
@@ -114,10 +117,79 @@ class StickController extends Controller
 
     public function showAll($_iTypeID)
     {
+        // echo '<pre>';
         $aFile = app_path('JsonData/' . $this->aStick[$_iTypeID]['file']);
         $sJsonData = file_get_contents($aFile);
         $aStick = json_decode($sJsonData, true);
+        // var_export($aStick);
+        // exit;
         $aNewStick = $this->oStickServices->handleFormat($aStick);
         return view('stick/showall', ['event' => true, 'data' => $aNewStick, 'title' => $this->aDict[$_iTypeID], 'typeid' => $_iTypeID, 'description' => $this->aStick[$_iTypeID]['description']]);
+    }
+
+    public function showAllLang($locale, $_iTypeID)
+    {
+        // echo '<pre>';
+        App::setLocale($locale);
+        $poemsTitle = trans('poems.poems_title');
+        $poemsList = trans('poems.poems_list');
+        switch ($_iTypeID) {
+            case 2:
+                $aStick = trans('yue_lao_fortune_poems');
+                break;
+
+            default:
+                $aStick = trans('yue_lao_fortune_poems');
+                break;
+        }
+
+        // $aFile = app_path('JsonData/' . $this->aStick[$_iTypeID]['file']);
+        // $sJsonData = file_get_contents($aFile);
+        // $aStick = json_decode($sJsonData, true);
+        // var_export($poemsTitle[$_iTypeID]);
+        // exit;
+        $aNewStick = $this->oStickServices->handleFormat($aStick);
+        return view('stick/lang/showall', ['event' => true, 'data' => $aNewStick, 'title' => $poemsTitle[$_iTypeID], 'typeid' => $_iTypeID, 'description' => $poemsList[$_iTypeID]['description']]);
+    }
+
+    public function getDetailLang($locale, $_iTypeID, $_iNumber)
+    {
+        App::setLocale($locale);
+        $poemsTitle = trans('poems.poems_title');
+        $poemsList = trans('poems.poems_list');
+        switch ($_iTypeID) {
+            case 2:
+                $aStick = trans('yue_lao_fortune_poems');
+                break;
+
+            default:
+                $aStick = trans('yue_lao_fortune_poems');
+                break;
+        }
+
+        $aNewStick = $this->oStickServices->handleFormat($aStick);
+        // var_export($aNewStick[$_iNumber]);exit;
+        return view('stick/lang/detail', ['event' => true, 'data' => $aNewStick[$_iNumber], 'title' => $poemsTitle[$_iTypeID], 'typeid' => $_iTypeID, 'description' => $poemsList[$_iTypeID]['description']]);
+    }
+
+    public function indexLang($locale)
+    {
+        App::setLocale($locale);
+        $poemsTitle = trans('poems.poems_title');
+        //暫時只開放月老籤
+        $tmp[2] = $poemsTitle[2];
+        $poemsList = trans('poems.poems_list');
+        $poemsRemark = trans('poems.poems_remark');
+        return view('stick/lang/stick', ['event' => true, 'data' => $tmp, 'remark' => $poemsRemark, 'title' => trans('poems.fortune_poem'), 'stick' => $poemsList]);
+    }
+
+    public function drawLang($locale, $_iTypeID)
+    {
+        App::setLocale($locale);
+        $poemsTitle = trans('poems.poems_title');
+        $poemsList = trans('poems.poems_list');
+
+        $iRand = rand($this->aStick[$_iTypeID]['rand']['min'], $this->aStick[$_iTypeID]['rand']['max']);
+        return view('stick/lang/draw', ['event' => true, 'data' => $_iTypeID, 'title' => $poemsTitle[$_iTypeID], 'typeid' => $_iTypeID, 'description' => $poemsList[$_iTypeID]['description'], 'number' => $iRand]);
     }
 }

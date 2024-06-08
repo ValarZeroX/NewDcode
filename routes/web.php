@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\StickController;
 use App\Http\Controllers\TarotController;
 use Illuminate\Support\Facades\Route;
 
@@ -30,7 +31,7 @@ Route::prefix('language')->group(function () {
                 return view('index');
             }
             // if ($locale == 'en' || $locale == 'zh-hans') {
-                return view('dcode');
+            return view('dcode');
             // }
         }
     });
@@ -131,4 +132,11 @@ Route::prefix('language')->group(function () {
         App::setLocale($locale);
         return view('constellation/lang/zodiac_all_date', []);
     });
+
+    Route::get('/{locale}/stick', [StickController::class, 'indexLang']);
+    Route::get('/{locale}/stick/showall/{id}', [StickController::class, 'showAllLang']);
+    Route::get('/{locale}/stick/detail/{id}/{number}', [StickController::class, 'getDetailLang']);
+
+    Route::get('/{locale}/stick/draw/{id}', [StickController::class, 'drawLang']);
+    // Route::post('/{locale}/stick/draw/{id}', [StickController::class, 'drawStickLang']);
 });
