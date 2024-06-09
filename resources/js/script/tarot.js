@@ -38,6 +38,14 @@ $(function () {
                 $('.card8').fadeIn(500);
                 $('#number8').hide();
             }
+            if(countCard == 8){
+                $('.card9').fadeIn(500);
+                $('#number9').hide();
+            }
+            if(countCard == 9){
+                $('.card10').fadeIn(500);
+                $('#number10').hide();
+            }
             countCard++;
 
         }

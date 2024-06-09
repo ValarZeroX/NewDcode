@@ -62,7 +62,7 @@
     "src": "node_modules/material-icons/iconfont/material-icons.woff2"
   },
   "resources/js/app.js": {
-    "file": "assets/app-54c27922.js",
+    "file": "assets/app-74cf879e.js",
     "imports": [
       "_general-7eb2a504.js"
     ],

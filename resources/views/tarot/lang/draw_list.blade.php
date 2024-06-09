@@ -18,6 +18,22 @@
     <p>{{ __('tarot.tarot_list_2')}}</p>
     <p>{{ __('tarot.tarot_list_3')}}</p>
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+        <div class="col">
+            <div class="card shadow-sm">
+                <div class="image-container card-img-top">
+                    <img class="cards_image card-img-top" src="/images/tarot/love_card.jpg" alt="tarot">
+                </div>
+                <div class="card-header text-center">{{ __('tarot.free_love_celtic_cross_spread')}}</div>
+                <div class="card-body">
+                    <p>{{ __('tarot.celtic_cross_spread_0')}}</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <a href="/language/{{ app()->getLocale() }}/tarot/love" class="btn btn-sm btn-outline-secondary" role="button">{{ __('tarot.reading')}}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         @foreach ($data as $key => $value)
         <div class="col">
             <div class="card shadow-sm">

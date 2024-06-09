@@ -54,6 +54,8 @@ Route::prefix('language')->group(function () {
     Route::get('/{locale}/tarot/week', [TarotController::class, 'getWeekLang']);
     Route::get('/{locale}/tarot/either', [TarotController::class, 'getEitherLang']);
 
+    Route::get('/{locale}/tarot/love', [TarotController::class, 'getLoveLang']);
+
     Route::get('/{locale}/tarot/masses-reading/{id}', [TarotController::class, 'getReadingLang']);
     Route::get('/{locale}/tarot/masses', [TarotController::class, 'getMassesLang']);
 

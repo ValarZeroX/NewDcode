@@ -205,6 +205,15 @@ class TarotController extends Controller
         return view('tarot/lang/either', ['event' => true, 'data' => $aCard, 'title' => $tarotMethods[8][0], 'maxcard' => 5, 'sub' => $aSub, 'type' => $tarotMethods[8][3]]);
     }
 
+    public function getLoveLang($locale)
+    {
+        App::setLocale($locale);
+        $aAllTarot = trans('tarot_cards');
+        $aCard = $this->oTarotServices->getCard($aAllTarot, 10);
+        $aSub = [trans('tarot.love_1'),trans('tarot.love_2'),trans('tarot.love_3'),trans('tarot.love_4'),trans('tarot.love_5'),trans('tarot.love_6'),trans('tarot.love_7'),trans('tarot.love_8'),trans('tarot.love_9'),trans('tarot.love_10')];
+        return view('tarot/lang/love', ['event' => true, 'data' => $aCard, 'maxcard' => 10, 'sub' => $aSub]);
+    }
+
     public function getReadingLang($locale, $_iID)
     {
         App::setLocale($locale);

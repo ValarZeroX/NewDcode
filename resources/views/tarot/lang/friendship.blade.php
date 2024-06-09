@@ -18,7 +18,7 @@
         <p>{{ __('tarot.friendship_1')}} : </p>
         <ol>
             @foreach ($sub as $value)
-            <li>{{$value}}。</li>
+            <li>{{$value}}</li>
             @endforeach
         </ol>
         <p>{{ __('tarot.friendship_8')}}</p>

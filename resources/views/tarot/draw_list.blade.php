@@ -18,6 +18,22 @@
     <p>塔羅占卜可分為許多種類，如愛情占卜、事業占卜、財富占卜、人際關係占卜等等。每種類型都有不同的牌陣和解讀方法，可以幫助人們了解自己的生命狀態和潛在的機會與挑戰。</p>
     <p>在網站上，您可以找到各種塔羅占卜的介紹和解讀，並選擇自己感興趣的牌陣和類型。透過占卜，您可以更好地了解自己，找到內心的平衡和方向，並面對未來的挑戰。</p>
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+        <div class="col">
+            <div class="card shadow-sm">
+                <div class="image-container card-img-top">
+                    <img class="cards_image card-img-top" src="/images/tarot/love_card.jpg" alt="tarot">
+                </div>
+                <div class="card-header text-center">{{ __('tarot.free_love_celtic_cross_spread')}}</div>
+                <div class="card-body">
+                    <p>{{ __('tarot.celtic_cross_spread_0')}}</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <a href="/language/zh-hant/tarot/love" class="btn btn-sm btn-outline-secondary" role="button">{{ __('tarot.reading')}}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         @foreach ($data as $key => $value)
         <div class="col">
             <div class="card shadow-sm">
