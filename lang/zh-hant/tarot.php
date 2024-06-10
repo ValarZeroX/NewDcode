@@ -119,7 +119,7 @@ return [
     "four_element_6" => "專注於你的問題。選擇四張牌。卡片會回答你的問題。",
     "fire_element" => "火元素",
     "air_element" => "風元素",
-    "earth_element" => "風元素",
+    "earth_element" => "土元素",
     "water_element" => "水元素",
     "six_pointed_star_1" => "七張卡片提供以下訊息",
     "six_pointed_star_2" => "表示問題的過去直到目前為止的原因",

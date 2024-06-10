@@ -118,7 +118,7 @@ return [
     "four_element_5" => "地球: 問題に関連する実用的な考慮事項と物質的資源",
     "four_element_6" => "質問に集中してください。四枚のカードを選びます。カードはあなたの質問に答えます。",
     "fire_element" => "火の元素",
-    "air_element" => "空気の元素",
+    "air_element" => "風の元素",
     "earth_element" => "地の元素",
     "water_element" => "水の元素",
     "six_pointed_star_1" => "7枚のカードは以下の情報を提供します",
