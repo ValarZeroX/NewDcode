@@ -24,7 +24,7 @@
                     <p>{{ $val }}</p>
                     @endforeach
                 </div>
-                <div class="card-body stick_body">
+                <div class="card-body stick_body stick_card">
                     @foreach ($value['stick_text'] as $val)
                     <p>{{ $val }}</p>
                     @endforeach

@@ -101,10 +101,7 @@ class StickController extends Controller
 
     public function getDetail($_iTypeID, $_iNumber)
     {
-        // echo '<pre>';
-        // $aStick = $this->oStickRepositories->getStick($_iTypeID, $_iNumber);
-        // $aNewStick = $this->oStickServices->handleFormat($aStick);
-        // var_export($aNewStick);
+        App::setLocale('zh-hant');
         $aFile = app_path('JsonData/' . $this->aStick[$_iTypeID]['file']);
         $sJsonData = file_get_contents($aFile);
         $aStick = json_decode($sJsonData, true);

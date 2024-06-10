@@ -22,31 +22,51 @@
             <p>{{ $val }}</p>
             @endforeach
         </div>
-        <div class="card-body stick_body">
+        <div class="card-body stick_body stick_card">
             @foreach ($data['stick_text'] as $val)
             <p>{{ $val }}</p>
             @endforeach
         </div>
     </div>
     @include('../layouts/topads_two')
-    @foreach ($data['explanation'] as $sKey => $value)
-    <div class="card stick_well">
-        <div class="card-header-custom text-center stick_title"><strong>{{$sKey}}</strong></div>
-        <div class="card-body">
-
-            <dl class="row">
-                @if ($typeid == 1)
-                    @foreach ($value as $val)
-                    <dt class="col-sm-3">{{ $val[0] }}</dt>
-                    <dd class="col-sm-9">{{ $val[1] }}</dd>
-                    @endforeach
-                @else
-                    @foreach ($value as $val)
+    <div class="row row-cols-1">
+        @foreach ($data['explanation'] as $sKey => $value)
+        <div class="col">
+            <div class="card stick_well">
+                <div class="card-header-custom text-center stick_title"><strong>{{$sKey}}</strong></div>
+                <div class="card-body">
+                    <dl class="row">
+                        @if ($typeid == 1)
+                        @foreach ($value as $val)
+                        <dt class="col-sm-3">{{ $val[0] }}</dt>
+                        <dd class="col-sm-9">{{ $val[1] }}</dd>
+                        @endforeach
+                        @else
+                        @foreach ($value as $val)
                         <p>{{ $val[0] }}</p>
-                    @endforeach
-                @endif
+                        @endforeach
+                        @endif
+                    </dl>
+                </div>
+            </div>
+        </div>
+        @endforeach
+    </div>
+    <div class="row row-cols-1">
+        <div class="col">
+            <div class="alert alert-warning" role="alert">
+                <p>{{ __('poems.poem_again')}}</p>
+                <a href="/stick/draw/{{$typeid}}" class="btn btn-success" role="button">{{
+                    __('poems.drawing')}}</a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="alert alert-warning" role="alert">
+                <p>{{ __('poems.poem_home')}}</p>
+                <a class="btn  btn-success" href="/stick" role="button">{{
+                    __('poems.fortune_poem')}}</a>
+            </div>
         </div>
     </div>
-    @endforeach
 </div>
 @endsection

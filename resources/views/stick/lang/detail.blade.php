@@ -50,22 +50,25 @@
                         <p>{{ $val[0] }}</p>
                         @endforeach
                         @endif
+                    </dl>
                 </div>
             </div>
         </div>
         @endforeach
-        <div class="row row-cols-1">
-            <div class="col">
-                <div class="alert alert-warning" role="alert">
-                    <p>{{ __('poems.poem_again')}}</p>
-                    <a href="/language/{{ app()->getLocale() }}/stick/draw/{{$typeid}}" class="btn btn-success" role="button">{{ __('poems.drawing')}}</a>
-                </div>
+    </div>
+    <div class="row row-cols-1">
+        <div class="col">
+            <div class="alert alert-warning" role="alert">
+                <p>{{ __('poems.poem_again')}}</p>
+                <a href="/language/{{ app()->getLocale() }}/stick/draw/{{$typeid}}" class="btn btn-success"
+                    role="button">{{ __('poems.drawing')}}</a>
             </div>
-            <div class="col">
-                <div class="alert alert-warning" role="alert">
-                    <p>{{ __('poems.poem_home')}}</p>
-                    <a class="btn  btn-success" href="/language/{{ app()->getLocale() }}/stick" role="button">{{ __('poems.fortune_poem')}}</a>
-                </div>
+        </div>
+        <div class="col">
+            <div class="alert alert-warning" role="alert">
+                <p>{{ __('poems.poem_home')}}</p>
+                <a class="btn  btn-success" href="/language/{{ app()->getLocale() }}/stick" role="button">{{
+                    __('poems.fortune_poem')}}</a>
             </div>
         </div>
     </div>
