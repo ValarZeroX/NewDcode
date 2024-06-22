@@ -101,6 +101,9 @@
                     <a href="/language/es">Español</a>
                 </div>
                 <div class="col">
+                    <a href="/language/ko">한국어</a>
+                </div>
+                <div class="col">
                     <a href="/language/fr">Français</a>
                 </div>
                 <div class="col">
@@ -111,8 +114,6 @@
                 </div>
                 <div class="col">
                     <a href="/language/zh-hans">简体中文</a>
-                </div>
-                <div class="col">
                 </div>
                 <div class="col">
                 </div>

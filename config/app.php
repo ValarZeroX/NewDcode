@@ -90,6 +90,7 @@ return [
         'de' => 'Deutsch',
         'es' => 'Español',
         'fr' => 'Français',
+        'ko' => '한국어',
         'ja' => '日本語',
         'zh-hans' => '简体中文',
         'zh-hant' => '繁體中文',
