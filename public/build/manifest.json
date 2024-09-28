@@ -1,5 +1,5 @@
 {
-  "_general-7eb2a504.js": {
+  "_general-bedba353.js": {
     "assets": [
       "assets/material-icons-8265f647.woff2",
       "assets/material-icons-fd84f88b.woff",
@@ -13,12 +13,12 @@
       "assets/material-icons-two-tone-3d34f30a.woff"
     ],
     "css": [
-      "assets/general-e4e3d801.css"
+      "assets/general-1b5abbad.css"
     ],
-    "file": "assets/general-7eb2a504.js"
+    "file": "assets/general-bedba353.js"
   },
   "general.css": {
-    "file": "assets/general-e4e3d801.css",
+    "file": "assets/general-1b5abbad.css",
     "src": "general.css"
   },
   "node_modules/material-icons/iconfont/material-icons-outlined.woff": {
@@ -62,17 +62,17 @@
     "src": "node_modules/material-icons/iconfont/material-icons.woff2"
   },
   "resources/js/app.js": {
-    "file": "assets/app-74cf879e.js",
+    "file": "assets/app-2c17f005.js",
     "imports": [
-      "_general-7eb2a504.js"
+      "_general-bedba353.js"
     ],
     "isEntry": true,
     "src": "resources/js/app.js"
   },
   "resources/js/zodiac.js": {
-    "file": "assets/zodiac-6ac14496.js",
+    "file": "assets/zodiac-8beaea6c.js",
     "imports": [
-      "_general-7eb2a504.js"
+      "_general-bedba353.js"
     ],
     "isEntry": true,
     "src": "resources/js/zodiac.js"

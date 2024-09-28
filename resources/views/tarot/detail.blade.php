@@ -15,6 +15,12 @@
     </nav>
     @include('../layouts/topads')
     <div class="row row-cols-1">
+        <div class="col-md-4">
+            <div id="toc">
+                <h3>目錄</h3>
+                <ul></ul>
+            </div>
+        </div>
         <div class="col">
             <div>
                 <div class="well card">
@@ -32,36 +38,36 @@
                                 class="badge rounded-pill bg-warning  text-dark">{{$value }}</span> @endforeach</P>
                         @if(!empty($data['astrology']))<p><strong>星象 :</strong> {{$data['astrology']}}</p>@endif
                         <p><strong>元素 :</strong> {{$data['element']}}</p>
-                        <h2>描述</h2>
+                        <h2 id="content">描述</h2>
                         <p>{!! $data['content'] !!}</p>
-                        <h2>正位描述</h2>
+                        <h2 id="upright_content">正位描述</h2>
                         <p>{!! $data['upright_content'] !!}</p>
-                        <h3>正位 - 戀愛婚姻</h3>
+                        <h3 id="upright_love">正位 - 戀愛婚姻</h3>
                         <p>{!! $data['upright_love'] !!}</p>
-                        <h3>正位 - 工作事業</h3>
+                        <h3 id="upright_career">正位 - 工作事業</h3>
                         <p>{!! $data['upright_career'] !!}</p>
-                        <h3>正位 - 金錢財物</h3>
+                        <h3 id="upright_finances">正位 - 金錢財物</h3>
                         <p> {!! $data['upright_finances'] !!}</p>
                         <hr />
                         @include('../layouts/article')
-                        <h2>逆位描述</h2>
+                        <h2 id="reversed_content">逆位描述</h2>
                         <p>{!! $data['reversed_content'] !!}</p>
-                        <h3>逆位 - 戀愛婚姻</h3>
+                        <h3 id="reversed_love">逆位 - 戀愛婚姻</h3>
                         <p>{!! $data['reversed_love'] !!}</p>
-                        <h3>逆位 - 工作事業</h3>
+                        <h3 id="reversed_career">逆位 - 工作事業</h3>
                         <p>{!! $data['reversed_career'] !!}</p>
-                        <h3>逆位 - 金錢財物</h3>
+                        <h3 id="reversed_finances">逆位 - 金錢財物</h3>
                         <p>{!! $data['reversed_finances'] !!}</p>
                         <hr />
                         @include('../layouts/topads_two')
-                        <h2>是否</h2>
+                        <h2 id="yes_no">是否</h2>
                         <p>{!! $data['yes_no'] !!}</p>
                         <hr />
-                        <h2>過去</h2>
+                        <h2 id="past">過去</h2>
                         <p>{!! $data['past'] !!}</p>
-                        <h2>現在</h2>
+                        <h2 id="present">現在</h2>
                         <p>{!! $data['present'] !!}</p>
-                        <h2>未來</h2>
+                        <h2 id="future">未來</h2>
                         <p>{!! $data['future'] !!}</p>
                     </div>
                 </div>

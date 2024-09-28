@@ -60,5 +60,35 @@ $(function () {
             $('.masses_info').slideUp();
             $('#masses_'+masses_id).slideDown();
     });
+    // 選取所有的 h2 和 h3 標題
+    var headers = $('.well h2, .well h3');
+    var toc = $('#toc ul'); // 目錄的列表容器
 
+    headers.each(function (index) {
+        var header = $(this);
+        var headerId = header.attr('id');
+
+        // 如果標題沒有 id，生成一個唯一的 id
+        if (!headerId) {
+            headerId = 'header-' + index;
+            header.attr('id', headerId);
+        }
+
+        // 創建目錄項目
+        var tagName = header.prop('tagName').toLowerCase();
+        var className = "tabh3"
+        if (tagName == "h2") {
+            className = "tabh2"
+        }
+        var listItem = $('<li></li>')
+            .addClass(className) // 將 h2 和 h3 標題設置不同的 class
+            .append(
+                $('<a></a>')
+                    .attr('href', '#' + headerId)
+                    .text(header.text())
+            );
+
+        // 添加到目錄中
+        toc.append(listItem);
+    });
 });

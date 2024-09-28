@@ -30,4 +30,5 @@ return [
     'disclaimer_3' => 'Accuracy of Content: While every effort has been made to provide accurate content, the Website does not guarantee its accuracy or reliability. The Website shall not be liable for any errors or omissions in the content and reserves the right to change the content at any time without prior notice.',
     'disclaimer_4' => 'Website Services: The Website reserves the right to suspend or change web page data and related terms at any time without prior notice to users.',
     'disclaimer_5' => 'Disclaimer of Liability: The Website shall not be liable for any damages arising from the use of or connection to the Website, including but not limited to computer viruses, system failures, or data loss. The Website shall not be liable for any damages resulting from defamation, copyright infringement, or intellectual property infringement, including but not limited to loss of profits, loss of reputation, data loss, or other intangible losses, whether direct, indirect, incidental, special, consequential, or punitive.',
+    "table_of_contents" => "Table of Contents",
 ];

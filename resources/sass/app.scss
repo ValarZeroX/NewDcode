@@ -476,3 +476,28 @@ $max: 22;
     background: #fafbfc;
     // flex-shrink: 0;
 }
+
+
+#toc {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#toc ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.tabh2 {
+    margin-left: 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.tabh3 {
+    font-size: 20px;
+    margin-left: 20px;
+}

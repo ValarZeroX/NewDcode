@@ -15,6 +15,12 @@
     </nav>
     @include('../layouts/topads')
     <div class="row row-cols-1">
+        <div class="col-md-4">
+            <div id="toc">
+                <h3>{{ __('dcode.table_of_contents')}}</h3>
+                <ul></ul>
+            </div>
+        </div>
         <div class="col">
             <div>
                 <div class="well card">
