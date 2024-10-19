@@ -19,6 +19,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="@yield('description')">
     <meta name="csrf-token" content="{{ csrf_token() }}" />
+    <link rel="canonical" href="https://dcode.tw/language/zh-hant" />
     <title>@yield('title')</title>
 </head>
 

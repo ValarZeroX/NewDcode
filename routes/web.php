@@ -15,10 +15,10 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
  */
-
-Route::get('/', function () {
-    return view('index');
-});
+Route::redirect('/', '/language/zh-hant', 301);
+// Route::get('/', function () {
+//     return view('index');
+// });
 
 Route::get('/makeSitemap', [PagesController::class, 'makeSitemap']);
 Route::get('/sitemap.xml', [PagesController::class, 'sitemap']);
