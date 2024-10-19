@@ -27,9 +27,9 @@ Route::prefix('language')->group(function () {
     Route::get('/{locale}', function (string $locale) {
         if ($locale != 'sitemap.xml') {
             App::setLocale($locale);
-            if ($locale == 'zh-hant') {
-                return view('index');
-            }
+            // if ($locale == 'zh-hant') {
+            //     return view('index');
+            // }
             // if ($locale == 'en' || $locale == 'zh-hans') {
             return view('dcode');
             // }
