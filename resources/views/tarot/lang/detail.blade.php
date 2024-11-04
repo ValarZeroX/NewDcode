@@ -30,7 +30,7 @@
                     <div class="card-body">
                         <div class="tarot-showcard">
                             <img src="/images/deck/{{$data['image_key']}}.jpg" class="figure-img img-fluid showcard"
-                                alt="{{$data['name']}}">
+                                alt="{{$data['name']}}" width="160" height="280">
                         </div>
                         <p><strong>{{ __('tarot.upright_keyword')}} :</strong> @foreach ($data['upright_keyword'] as $value)<span
                                 class="badge rounded-pill bg-info text-dark">{{$value }}</span> @endforeach</P>

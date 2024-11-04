@@ -35,7 +35,7 @@
             <div class="container">
                 <a class="navbar-brand logo" href="/language/{{ app()->getLocale() }}"><span
                         style="color: #000000;">D</span><span style="color: #5e9693;">Code</span></a>
-                <button class="navbar-toggler ps-0" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="material-icons-outlined">menu</span>
