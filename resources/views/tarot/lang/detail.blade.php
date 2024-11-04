@@ -14,7 +14,7 @@
         </ol>
     </nav>
     @include('../layouts/topads')
-    <div class="row row-cols-1">
+    <div class="row row-cols-1 custom-container">
         <div class="col-md-4">
             <div id="toc">
                 <h3>{{ __('dcode.table_of_contents')}}</h3>
