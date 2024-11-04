@@ -17,6 +17,23 @@ body {
  */
 .topads {
     margin: 5px auto;
+    min-height: 100px; /* 移动设备默认最小高度 */
+}
+
+@media (min-width: 768px) {
+    .topads {
+        margin: 5px auto;
+        min-height: 250px; /* 桌面设备最小高度 */
+    }
+}
+
+.ad-placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f0; /* 您可以根据需要更改颜色 */
 }
 
 @media (min-width: 1400px) {
