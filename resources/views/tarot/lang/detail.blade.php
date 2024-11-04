@@ -49,7 +49,7 @@
                         <h3>{{ __('tarot.upright_finances')}}</h3>
                         <p> {!! $data['upright_finances'] !!}</p>
                         <hr />
-                        @include('../layouts/article')
+                        <!-- @include('../layouts/article') -->
                         <h2>{{ __('tarot.reversed_meaning')}}</h2>
                         <p>{!! $data['reversed_content'] !!}</p>
                         <h3>{{ __('tarot.reversed_love')}}</h3>
@@ -59,7 +59,7 @@
                         <h3>{{ __('tarot.reversed_finances')}}</h3>
                         <p>{!! $data['reversed_finances'] !!}</p>
                         <hr />
-                        @include('../layouts/topads_two')
+                        <!-- @include('../layouts/topads_two') -->
                         <h2>{{ __('tarot.yes_no')}}</h2>
                         <p>{!! $data['yes_no'] !!}</p>
                         <hr />
