@@ -32,7 +32,7 @@
             @endforeach
         </div>
     </div>
-    @include('../layouts/topads_two')
+    <!-- @include('../layouts/topads_two') -->
     <div class="row row-cols-1">
         @foreach ($data['explanation'] as $sKey => $value)
         <div class="col">
