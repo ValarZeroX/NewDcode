@@ -11,6 +11,14 @@ Route::post('/stick/draw/{id}', [StickController::class, 'drawStick']);
 
 
 Route::redirect('/stick', '/language/zh-hant/stick', 301);
-Route::redirect('/stick/showall/{id}', '/language/zh-hant/stick/showall/{id}', 301);
-Route::redirect('/stick/detail/{id}/{number}', '/language/zh-hant/stick/detail/{id}/{number}', 301);
-Route::redirect('/stick/draw/{id}', '/language/zh-hant/stick/draw/{id}', 301);
+Route::get('/stick/showall/{id}', function ($id) {
+    return redirect('/language/zh-hant/stick/showall/' . $id, 301);
+});
+
+Route::get('/stick/detail/{id}/{number}', function ($id, $number) {
+    return redirect('/language/zh-hant/stick/detail/' . $id . '/' . $number, 301);
+});
+
+Route::get('/stick/draw/{id}', function ($id) {
+    return redirect('/language/zh-hant/stick/draw/' . $id, 301);
+});

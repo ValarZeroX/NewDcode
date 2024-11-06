@@ -6,8 +6,12 @@ use App\Http\Controllers\TarotController;
 Route::redirect('/tarot', '/language/zh-hant/tarot', 301);
 Route::redirect('/tarot/onecard', '/language/zh-hant/tarot/onecard', 301);
 Route::redirect('/tarot/showall', '/language/zh-hant/tarot/showall', 301);
-Route::redirect('/tarot/detail/{number}', '/language/zh-hant/tarot/detail/{number}', 301);
-Route::redirect('/tarot/sharetarot/{id}/{reversed}/{type}', '/language/zh-hant/tarot/sharetarot/{id}/{reversed}/{type}', 301);
+Route::get('/tarot/detail/{number}', function ($number) {
+    return redirect('/language/zh-hant/tarot/detail/' . $number, 301);
+});
+Route::get('/tarot/sharetarot/{id}/{reversed}/{type}', function ($id, $reversed, $type) {
+    return redirect('/language/zh-hant/tarot/sharetarot/' . $id . '/' . $reversed . '/' . $type, 301);
+});
 Route::redirect('/tarot/threecard', '/language/zh-hant/tarot/threecard', 301);
 Route::redirect('/tarot/fourcard', '/language/zh-hant/tarot/fourcard', 301);
 Route::redirect('/tarot/fourelement', '/language/zh-hant/tarot/fourelement', 301);
@@ -17,7 +21,9 @@ Route::redirect('/tarot/week', '/language/zh-hant/tarot/week', 301);
 Route::redirect('/tarot/either', '/language/zh-hant/tarot/either', 301);
 Route::redirect('/tarot/daily', '/language/zh-hant/tarot/daily', 301);
 Route::redirect('/tarot/daily/love', '/language/zh-hant/tarot/love', 301);
-Route::redirect('/tarot/masses-reading/{id}', '/language/zh-hant/tarot/masses-reading/{id}', 301);
+Route::get('/tarot/masses-reading/{id}', function ($id) {
+    return redirect('/language/zh-hant/tarot/masses-reading/' . $id, 301);
+});
 Route::redirect('/tarot/masses', '/language/zh-hant/tarot/masses', 301);
 // Route::get('/tarot', [TarotController::class, 'drawList']);
 // Route::get('/tarot/showall', [TarotController::class, 'getAllTarot']);

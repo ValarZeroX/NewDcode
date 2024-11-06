@@ -10,3 +10,4 @@ Disallow: /     # 禁止所有其他路徑
 Allow: /language/    # 明確允許 /language/ 路徑及其子路徑
 Allow: /ads.txt
 Allow: /sitemap.xml
+Allow: /favicon.ico
