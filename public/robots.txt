@@ -6,7 +6,7 @@ Disallow: /language/fr/tarot/sharetarot/
 Disallow: /language/ja/tarot/sharetarot/
 Disallow: /language/zh-hant/tarot/sharetarot/
 Disallow: /language/zh-hans/tarot/sharetarot/
-Disallow: /     # 禁止所有其他路徑
+Disallow: /makeSitemap
 Allow: /language/    # 明確允許 /language/ 路徑及其子路徑
 Allow: /ads.txt
 Allow: /sitemap.xml
