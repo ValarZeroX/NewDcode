@@ -1,11 +1,11 @@
 User-agent: *
-Disallow: /tarot/sharetarot/
-Disallow: /language/en/tarot/sharetarot/
-Disallow: /language/es/tarot/sharetarot/
-Disallow: /language/fr/tarot/sharetarot/
-Disallow: /language/ja/tarot/sharetarot/
-Disallow: /language/zh-hant/tarot/sharetarot/
-Disallow: /language/zh-hans/tarot/sharetarot/
+#Disallow: /tarot/sharetarot/
+#Disallow: /language/en/tarot/sharetarot/
+#Disallow: /language/es/tarot/sharetarot/
+#Disallow: /language/fr/tarot/sharetarot/
+#Disallow: /language/ja/tarot/sharetarot/
+#Disallow: /language/zh-hant/tarot/sharetarot/
+#Disallow: /language/zh-hans/tarot/sharetarot/
 Disallow: /makeSitemap
 Allow: /language/    # 明確允許 /language/ 路徑及其子路徑
 Allow: /ads.txt
