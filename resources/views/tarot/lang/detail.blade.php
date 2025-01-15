@@ -84,6 +84,10 @@
         <p>蝦皮商品:多款可選 偉特 神諭卡 塔羅 占卜 英文卡牌 算命 塔羅牌 偉特牌 偉特塔羅牌 Waite Tarot 卡牌</p>
         <a class="btn  btn-danger" href="https://s.shopee.tw/AUeNtDV3tG" role="button">NT$150</a>
     </div>
+    <div class="alert alert-warning" role="alert">
+        <p>蝦皮商品:線上塔羅占卜</p>
+        <a class="btn  btn-danger" href="https://s.shopee.tw/10nIsFQLDd" role="button">NT$1</a>
+    </div>
     <div class="alert alert-info" role="alert">
         <p>{{ __('tarot.view_all')}}</p>
         <a class="btn  btn-success" href="/language/{{ app()->getLocale() }}/tarot/showall" role="button">{{ __('tarot.go_to_tarot_readings')}}</a>
