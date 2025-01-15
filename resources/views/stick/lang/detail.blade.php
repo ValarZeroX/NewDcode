@@ -55,6 +55,10 @@
         </div>
         @endforeach
     </div>
+    <div class="alert alert-warning" role="alert">
+        <p>蝦皮廣告:線上紫微斗數</p>
+        <a class="btn  btn-danger" href="https://s.shopee.tw/4L3ktzS0KP" role="button">NT$1000~</a>
+    </div>
     <div class="row row-cols-1">
         <div class="col">
             <div class="alert alert-warning" role="alert">
@@ -70,10 +74,6 @@
                     __('poems.fortune_poem')}}</a>
             </div>
         </div>
-    </div>
-    <div class="alert alert-warning" role="alert">
-        <p>蝦皮廣告:線上紫微斗數</p>
-        <a class="btn  btn-danger" href="https://s.shopee.tw/4L3ktzS0KP" role="button">NT$1000~</a>
     </div>
 </div>
 @endsection
