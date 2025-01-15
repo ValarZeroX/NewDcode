@@ -18,6 +18,7 @@
             <li>{{ __('dcode.disclaimer_3')}}</li>
             <li>{{ __('dcode.disclaimer_4')}}</li>
             <li>{{ __('dcode.disclaimer_5')}}</li>
+            <li>skynier2024@gmail.com</li>
         </ul>
     </div>
 </div>
