@@ -86,7 +86,7 @@
     </div>
     <div class="alert alert-warning" role="alert">
         <p>蝦皮商品:線上塔羅占卜</p>
-        <a class="btn  btn-danger" href="https://s.shopee.tw/10nIsFQLDd" role="button">NT$1</a>
+        <a class="btn  btn-danger" href="https://s.shopee.tw/7fKCoxFubp" role="button">NT$299</a>
     </div>
     <div class="alert alert-info" role="alert">
         <p>{{ __('tarot.view_all')}}</p>
