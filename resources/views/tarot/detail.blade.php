@@ -74,13 +74,21 @@
             </div>
         </div>
     </div>
-    <div class="alert alert-warning" role="alert">
+    <div class="alert alert-info" role="alert">
         <p>查看全部塔羅牌解讀。</p>
         <a class="btn  btn-success" href="/tarot/showall" role="button">前往塔羅牌解讀</a>
     </div>
-    <div class="alert alert-warning" role="alert">
+    <div class="alert alert-info" role="alert">
         <p>更多種塔羅牌占卜，獲得愛情、工作、事業運勢解讀。</p>
         <a class="btn  btn-success" href="/tarot" role="button">前往占卜</a>
+    </div>
+    <div class="alert alert-warning" role="alert">
+        <p>蝦皮商品:塔羅入門套組+萊德偉特塔羅牌</p>
+        <a class="btn  btn-success" href="https://s.shopee.tw/7KhM6zUWtH" role="button">NT$838</a>
+    </div>
+    <div class="alert alert-warning" role="alert">
+        <p>蝦皮商品:正版 普及版偉特塔羅牌 Universal Waite® TAROT(中文) 歐洲製</p>
+        <a class="btn  btn-success" href="https://s.shopee.tw/6AVOj38GrQ" role="button">NT$535</a>
     </div>
 </div>
 @endsection

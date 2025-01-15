@@ -141,7 +141,7 @@
                     <div class="text-muted">Copyright ©2023 - 2024 DCode Inc.</div>
                 </div>
                 <div class="col">
-                    <a href="https://banshus.com/" target="_blank">Banshus</a>
+                    <a href="https://stellarnier.com//" target="_blank">StellarNier</a>
                     <a href="/language/{{ app()->getLocale() }}/disclaimer">{{ __('dcode.disclaimer')}}</a>
                 </div>
             </div>
