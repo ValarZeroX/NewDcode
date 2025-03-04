@@ -43,8 +43,8 @@ Route::prefix('language')->group(function () {
 
     Route::get('/{locale}/tarot', [TarotController::class, 'drawListLang']);
     Route::get('/{locale}/tarot/onecard', [TarotController::class, 'getOneCardLang']);
-    Route::get('/{locale}/tarot/showall', [TarotController::class, 'getAllTarotLang']);
-    Route::get('/{locale}/tarot/detail/{number}', [TarotController::class, 'getDetailLang']);
+    Route::get('/{locale}/tarot/showall', [TarotController::class, 'getAllTarotLang'])->middleware('cache.headers:public;max_age=604800;etag');;
+    Route::get('/{locale}/tarot/detail/{number}', [TarotController::class, 'getDetailLang'])->middleware('cache.headers:public;max_age=604800;etag');
     Route::get('/{locale}/tarot/sharetarot/{id}/{reversed}/{type}', [TarotController::class, 'getShareTarotLang']);
     Route::get('/{locale}/tarot/threecard', [TarotController::class, 'getThreeCardLang']);
     Route::get('/{locale}/tarot/fourcard', [TarotController::class, 'getFourCardLang']);
@@ -135,9 +135,9 @@ Route::prefix('language')->group(function () {
         return view('constellation/lang/zodiac_all_date', []);
     });
 
-    Route::get('/{locale}/stick', [StickController::class, 'indexLang']);
-    Route::get('/{locale}/stick/showall/{id}', [StickController::class, 'showAllLang']);
-    Route::get('/{locale}/stick/detail/{id}/{number}', [StickController::class, 'getDetailLang']);
+    Route::get('/{locale}/stick', [StickController::class, 'indexLang'])->middleware('cache.headers:public;max_age=604800;etag');
+    Route::get('/{locale}/stick/showall/{id}', [StickController::class, 'showAllLang'])->middleware('cache.headers:public;max_age=604800;etag');
+    Route::get('/{locale}/stick/detail/{id}/{number}', [StickController::class, 'getDetailLang'])->middleware('cache.headers:public;max_age=604800;etag');
 
     Route::get('/{locale}/stick/draw/{id}', [StickController::class, 'drawLang']);
     // Route::post('/{locale}/stick/draw/{id}', [StickController::class, 'drawStickLang']);

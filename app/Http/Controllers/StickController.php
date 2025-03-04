@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Cache;
 use App\Http\Controllers\Controller;
 use App\Repositories\Stick\StickRepositories;
 use App\Services\Stick\StickServices;
@@ -126,58 +127,123 @@ class StickController extends Controller
 
     public function showAllLang($locale, $_iTypeID)
     {
-        // echo '<pre>';
         App::setLocale($locale);
+
+        $cacheKey = "stick_showall_{$locale}_{$_iTypeID}";
+
+        // 如果快取已存在，直接回傳快取內容
+        if (Cache::has($cacheKey)) {
+            return Cache::get($cacheKey);
+        }
+
+        // 取得翻譯資料
         $poemsTitle = trans('poems.poems_title');
         $poemsList = trans('poems.poems_list');
+
+        // 根據 TypeID 取得對應的籤詩
         switch ($_iTypeID) {
             case 2:
                 $aStick = trans('yue_lao_fortune_poems');
                 break;
-
             default:
                 $aStick = trans('yue_lao_fortune_poems');
                 break;
         }
 
-        // $aFile = app_path('JsonData/' . $this->aStick[$_iTypeID]['file']);
-        // $sJsonData = file_get_contents($aFile);
-        // $aStick = json_decode($sJsonData, true);
-        // var_export($poemsTitle[$_iTypeID]);
-        // exit;
+        // 格式化籤詩
         $aNewStick = $this->oStickServices->handleFormat($aStick);
-        return view('stick/lang/showall', ['event' => true, 'data' => $aNewStick, 'title' => $poemsTitle[$_iTypeID], 'typeid' => $_iTypeID, 'description' => $poemsList[$_iTypeID]['description']]);
+
+        // 轉換 View 為 HTML 字串
+        $view = view('stick/lang/showall', [
+            'event'       => true,
+            'data'        => $aNewStick,
+            'title'       => $poemsTitle[$_iTypeID],
+            'typeid'      => $_iTypeID,
+            'description' => $poemsList[$_iTypeID]['description']
+        ])->render();
+
+        // 儲存快取 7 天（604800 秒）
+        Cache::put($cacheKey, $view, 604800);
+
+        return $view;
     }
 
     public function getDetailLang($locale, $_iTypeID, $_iNumber)
     {
         App::setLocale($locale);
+
+        $cacheKey = "stick_detail_{$locale}_{$_iTypeID}_{$_iNumber}";
+
+        // 如果快取已存在，直接回傳快取內容
+        if (Cache::has($cacheKey)) {
+            return Cache::get($cacheKey);
+        }
+
+        // 取得翻譯資料
         $poemsTitle = trans('poems.poems_title');
         $poemsList = trans('poems.poems_list');
+
+        // 根據 TypeID 取得對應的籤詩
         switch ($_iTypeID) {
             case 2:
                 $aStick = trans('yue_lao_fortune_poems');
                 break;
-
             default:
                 $aStick = trans('yue_lao_fortune_poems');
                 break;
         }
 
+        // 格式化籤詩
         $aNewStick = $this->oStickServices->handleFormat($aStick);
-        // var_export($aNewStick[$_iNumber]);exit;
-        return view('stick/lang/detail', ['event' => true, 'data' => $aNewStick[$_iNumber], 'title' => $poemsTitle[$_iTypeID], 'typeid' => $_iTypeID, 'description' => $poemsList[$_iTypeID]['description']]);
+
+        // 轉換 View 為 HTML 字串
+        $view = view('stick/lang/detail', [
+            'event'       => true,
+            'data'        => $aNewStick[$_iNumber],
+            'title'       => $poemsTitle[$_iTypeID],
+            'typeid'      => $_iTypeID,
+            'description' => $poemsList[$_iTypeID]['description']
+        ])->render();
+
+        // 儲存快取 7 天（604800 秒）
+        Cache::put($cacheKey, $view, 604800);
+
+        return $view;
     }
 
     public function indexLang($locale)
     {
         App::setLocale($locale);
+
+        $cacheKey = "poems_index_{$locale}";
+
+        // 如果快取已存在，直接回傳快取內容
+        if (Cache::has($cacheKey)) {
+            return Cache::get($cacheKey);
+        }
+
+        // 取得翻譯資料
         $poemsTitle = trans('poems.poems_title');
-        //暫時只開放月老籤
+
+        // 目前只開放月老籤
         $tmp[2] = $poemsTitle[2];
+
         $poemsList = trans('poems.poems_list');
         $poemsRemark = trans('poems.poems_remark');
-        return view('stick/lang/stick', ['event' => true, 'data' => $tmp, 'remark' => $poemsRemark, 'title' => trans('poems.fortune_poem'), 'stick' => $poemsList]);
+
+        // 轉換 view 為 HTML 字串
+        $view = view('stick/lang/stick', [
+            'event'  => true,
+            'data'   => $tmp,
+            'remark' => $poemsRemark,
+            'title'  => trans('poems.fortune_poem'),
+            'stick'  => $poemsList
+        ])->render();
+
+        // 儲存快取 7 天（604800 秒）
+        Cache::put($cacheKey, $view, 604800);
+
+        return $view;
     }
 
     public function drawLang($locale, $_iTypeID)

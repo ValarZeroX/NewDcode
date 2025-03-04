@@ -1,7 +1,7 @@
 @extends('layouts.lang.main')
 
 @section('title', $data['name'] . ' ' . __('tarot.tarot_card_meanings') . ' - ' . __('tarot.tarot_title_1'))
-@section('description', $data['name'] . __('tarot.tarot_card_meanings') . __('tarot.tarot_title_2') .$data['content'])
+@section('description', $data['name'] . ' - ' . __('tarot.tarot_card_meanings') . ' - ' . Str::limit(strip_tags($data['upright_content']), 150))
 
 @section('main')
 <div class="container">
@@ -30,7 +30,7 @@
                     <div class="card-body">
                         <div class="tarot-showcard">
                             <img src="/images/deck/{{$data['image_key']}}.jpg" class="figure-img img-fluid showcard"
-                                alt="{{$data['name']}}" width="160" height="280">
+                            alt="{{$data['name']}} - {{ __('tarot.tarot_card_meanings') }}" title="{{$data['name']}} - {{ __('tarot.tarot_card_meanings') }}" width="160" height="280">
                         </div>
                         <p><strong>{{ __('tarot.upright_keyword')}} :</strong> @foreach ($data['upright_keyword'] as $value)<span
                                 class="badge rounded-pill bg-info text-dark">{{$value }}</span> @endforeach</P>
@@ -73,15 +73,15 @@
         </div>
     </div>
     <div class="alert alert-warning" role="alert">
-        <p>蝦皮廣告:塔羅入門套組+萊德偉特塔羅牌</p>
+        <p>蝦皮:塔羅入門套組+萊德偉特塔羅牌</p>
         <a class="btn  btn-danger" href="https://s.shopee.tw/7KhM6zUWtH" role="button">NT$838</a>
     </div>
     <div class="alert alert-warning" role="alert">
-        <p>蝦皮廣告:正版 普及版偉特塔羅牌 Universal Waite® TAROT(中文) 歐洲製</p>
+        <p>蝦皮:正版 普及版偉特塔羅牌 Universal Waite® TAROT(中文) 歐洲製</p>
         <a class="btn  btn-danger" href="https://s.shopee.tw/6AVOj38GrQ" role="button">NT$535</a>
     </div>
     <div class="alert alert-warning" role="alert">
-        <p>蝦皮廣告:多款可選 偉特 神諭卡 塔羅 占卜 英文卡牌 算命 塔羅牌 偉特牌 偉特塔羅牌 Waite Tarot 卡牌</p>
+        <p>蝦皮:多款可選 偉特 神諭卡 塔羅 占卜 英文卡牌 算命 塔羅牌 偉特牌 偉特塔羅牌 Waite Tarot 卡牌</p>
         <a class="btn  btn-danger" href="https://s.shopee.tw/AUeNtDV3tG" role="button">NT$150</a>
     </div>
     <div class="alert alert-info" role="alert">

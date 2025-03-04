@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Cache;
 use App\Http\Controllers\Controller;
 use App\Repositories\Tarot\TarotRepositories;
 use App\Services\Tarot\TarotServices;
@@ -108,20 +109,50 @@ class TarotController extends Controller
     public function getAllTarotLang($locale)
     {
         App::setLocale($locale);
+
+        $cacheKey = "tarot_all_{$locale}";
+
+        // 檢查是否已有快取
+        if (Cache::has($cacheKey)) {
+            return Cache::get($cacheKey);
+        }
+
+        // 取得塔羅牌資料
         $meanings = trans('tarot.tarot_card_meanings');
         $aAllTarot = trans('tarot_cards');
         $aNewAllTarot = $this->oTarotServices->formatAllTarot($aAllTarot);
-        return view('tarot/lang/showall', ['event' => true, 'data' => $aNewAllTarot, 'title' => $meanings]);
-    }
 
+        // 轉換 view 為 HTML
+        $view = view('tarot/lang/showall', ['event' => true, 'data' => $aNewAllTarot, 'title' => $meanings])->render();
+
+        // 儲存快取 7 天（604800 秒）
+        Cache::put($cacheKey, $view, 604800);
+
+        return $view;
+    }
     public function getDetailLang($locale, $_iNumber)
     {
         App::setLocale($locale);
+        
+        $cacheKey = "tarot_detail_{$locale}_{$_iNumber}";
+
+        // 檢查是否已有快取
+        if (Cache::has($cacheKey)) {
+            return Cache::get($cacheKey);
+        }
+
+        // 取得塔羅牌資料
         $aAllTarot = trans('tarot_cards');
         $aTarot = [];
         $aTarot[0] = $aAllTarot[$_iNumber];
         $aOneCard = $this->oTarotServices->getOneCard($aTarot);
-        return view('tarot/lang/detail', ['event' => true, 'data' => $aOneCard]);
+
+        $view = view('tarot/lang/detail', ['event' => true, 'data' => $aOneCard])->render();
+
+        // 儲存快取
+        Cache::put($cacheKey, $view, 604800);
+
+        return $view;
     }
 
     public function getShareTarotLang($locale, $_sID, $_sReversed, $_sType)
