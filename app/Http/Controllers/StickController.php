@@ -139,11 +139,23 @@ class StickController extends Controller
         // 取得翻譯資料
         $poemsTitle = trans('poems.poems_title');
         $poemsList = trans('poems.poems_list');
-
+        
         // 根據 TypeID 取得對應的籤詩
         switch ($_iTypeID) {
+            case 1:
+                $aStick = trans('sixtyJiazi');
+                break;
             case 2:
                 $aStick = trans('yue_lao_fortune_poems');
+                break;
+            case 3:
+                $aStick = trans('guanyinOneHundred');
+                break;
+            case 4:
+                $aStick = trans('guanyinTwentyEight');
+                break;
+            case 5:
+                $aStick = trans('GuanShengdijunOneHundred');
                 break;
             default:
                 $aStick = trans('yue_lao_fortune_poems');
@@ -185,8 +197,20 @@ class StickController extends Controller
 
         // 根據 TypeID 取得對應的籤詩
         switch ($_iTypeID) {
+            case 1:
+                $aStick = trans('sixtyJiazi');
+                break;
             case 2:
                 $aStick = trans('yue_lao_fortune_poems');
+                break;
+            case 3:
+                $aStick = trans('guanyinOneHundred');
+                break;
+            case 4:
+                $aStick = trans('guanyinTwentyEight');
+                break;
+            case 5:
+                $aStick = trans('GuanShengdijunOneHundred');
                 break;
             default:
                 $aStick = trans('yue_lao_fortune_poems');
@@ -225,8 +249,11 @@ class StickController extends Controller
         // 取得翻譯資料
         $poemsTitle = trans('poems.poems_title');
 
-        // 目前只開放月老籤
+        $tmp[1] = $poemsTitle[1];
         $tmp[2] = $poemsTitle[2];
+        $tmp[3] = $poemsTitle[3];
+        $tmp[4] = $poemsTitle[4];
+        $tmp[5] = $poemsTitle[5];
 
         $poemsList = trans('poems.poems_list');
         $poemsRemark = trans('poems.poems_remark');

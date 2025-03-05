@@ -40,5 +40,6 @@ return [
     "interpreting_the_poem" => "Interpreting the Poem",
     "poem_message" => "Sincerity brings efficacy. Silently recite your name, date of birth, address, and the question you seek to ask in your heart, then click to interpret the divination.",
     "poem_again" => "The poem is unclear, draw another one.",
-    "poem_home" => "Go to the Poems homepage"
+    "poem_home" => "Go to the Poems homepage",
+    "story" => "Story",
 ];

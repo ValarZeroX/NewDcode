@@ -40,5 +40,6 @@ return [
     "interpreting_the_poem" => "Interprétation du Poème",
     "poem_message" => "La sincérité apporte l'efficacité. Récitez silencieusement votre nom, date de naissance, adresse et la question que vous souhaitez poser dans votre cœur, puis cliquez pour interpréter la divination.",
     "poem_again" => "Le poème est flou, tirez-en un autre.",
-    "poem_home" => "Retour à la page d'accueil des poèmes"
+    "poem_home" => "Retour à la page d'accueil des poèmes",
+    "story" => "Histoire",
 ];

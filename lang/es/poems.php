@@ -40,5 +40,6 @@ return [
     "interpreting_the_poem" => "Interpretando el Poema",
     "poem_message" => "La sinceridad trae eficacia. Recita en silencio tu nombre, fecha de nacimiento, dirección y la pregunta que deseas hacer en tu corazón, luego haz clic para interpretar la adivinación.",
     "poem_again" => "El poema no está claro, saca otro.",
-    "poem_home" => "Ir a la página principal de Poemas"
+    "poem_home" => "Ir a la página principal de Poemas",
+    "story" => "Historia",
 ];

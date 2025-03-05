@@ -40,5 +40,6 @@ return [
     "interpreting_the_poem" => "Interpretieren des Gedichts",
     "poem_message" => "Aufrichtigkeit bringt Wirksamkeit. Rezitiere leise deinen Namen, Geburtsdatum, Adresse und die Frage, die du im Herzen stellen möchtest, und klicke dann, um die Wahrsagung zu interpretieren.",
     "poem_again" => "Das Gedicht ist unklar, ziehe ein anderes.",
-    "poem_home" => "Zurück zur Gedichte-Startseite"
+    "poem_home" => "Zurück zur Gedichte-Startseite",
+    "story" => "Geschichte",
 ];
