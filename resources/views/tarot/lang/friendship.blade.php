@@ -88,6 +88,7 @@
                 <div class="info-box">
                     <hr />
                     @foreach ($data as $key => $value)
+                    @include('../layouts/topads_two')
                                     <div class="well card">
                                         <h2>{{$sub[$key]}} - {{$value['name']}}</h2>
                                         <div class="tarot-showcard @if($value['reversed'] == 1) reversed @endif">

@@ -1,5 +1,5 @@
 <!-- 橫幅廣告 2 -->
-<div class="topads" style="position: relative; min-height: 250px;">
+<div class="topads" style="position: relative;">
      <div class="ad-placeholder"></div>
      <ins class="adsbygoogle"
      style="display:block"
