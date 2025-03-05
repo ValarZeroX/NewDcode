@@ -69,7 +69,6 @@
                         <p><strong>{{ __('tarot.element')}} :</strong> {{$data['element']}}</p>
                         <h2>{{ __('tarot.meaning_1')}}</h2>
                         <p>{!! $data['content'] !!}</p>
-                        @include('../layouts/topads_two')
                         @if($data['reversed'] == 1)
                             <h2>{{ __('tarot.reversed_meaning')}}</h2>
                             <p>{!! $data['reversed_content'] !!}</p>
