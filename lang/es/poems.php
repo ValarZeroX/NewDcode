@@ -42,4 +42,6 @@ return [
     "poem_again" => "El poema no está claro, saca otro.",
     "poem_home" => "Ir a la página principal de Poemas",
     "story" => "Historia",
+    "poem" => "Poema",
+    "poem_description" => "Los poemas de la fortuna son un antiguo método de adivinación que generalmente expresa la buena o mala fortuna en forma de poesía. Los poemas de la fortuna se pueden utilizar para adivinar la fortuna, resolver problemas, elegir la dirección de la vida, entre otros. El contenido de los poemas de la fortuna generalmente está relacionado con la cultura tradicional china, las creencias religiosas, y posee una rica herencia cultural.",
 ];

@@ -42,4 +42,6 @@ return [
     "poem_again" => "Le poème est flou, tirez-en un autre.",
     "poem_home" => "Retour à la page d'accueil des poèmes",
     "story" => "Histoire",
+    "poem" => "Poème",
+    "poem_description" => "Les poèmes de divination sont une ancienne méthode de divination qui exprime généralement la chance et le malheur sous forme de vers. Les poèmes de divination peuvent être utilisés pour la divination, la résolution de problèmes, le choix de la direction de la vie, etc. Le contenu des poèmes de divination est souvent lié à la culture traditionnelle chinoise, aux croyances religieuses, etc., et possède une profonde signification culturelle.",
 ];

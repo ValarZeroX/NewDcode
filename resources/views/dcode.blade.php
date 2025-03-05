@@ -68,6 +68,22 @@
         </div>
       </div>
     </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <div class="image-container card-img-top">
+          <img class="cards_image card-img-top" src="/images/stick/guanyin_twenty_eight.jpg">
+        </div>
+        <div class="card-header text-center">{{ __('poems.poem')}}</div>
+        <div class="card-body">
+          <p class="card-text">{{ __('poems.poem_description')}}</p>
+        </div>
+        <div class="card-footer text-center">
+          <div class="btn-group">
+            <a href="/language/{{ app()->getLocale() }}/stick" class="btn btn-sm btn-outline-secondary" role="button">{{ __('poems.drawing')}}</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <h2 class="mt-5">{{ __('zodiac.zodiac_series')}}</h2>
   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">

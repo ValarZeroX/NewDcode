@@ -42,4 +42,6 @@ return [
     "poem_again" => "The poem is unclear, draw another one.",
     "poem_home" => "Go to the Poems homepage",
     "story" => "Story",
+    "poem" => "Poem",
+    "poem_description" => "Poem sticks are an ancient divination method, typically expressing good and bad fortune in the form of poems. Divination poem sticks can be used for fortune-telling, problem-solving, and choosing life directions. The content of the poem sticks is often related to Chinese traditional culture, religious beliefs, and has a deep cultural background.",
 ];

@@ -42,4 +42,6 @@ return [
     "poem_again" => "Das Gedicht ist unklar, ziehe ein anderes.",
     "poem_home" => "Zurück zur Gedichte-Startseite",
     "story" => "Geschichte",
+    "poem" => "Gedicht",
+    "poem_description" => "Ein Gedichtstäbchen ist eine alte Wahrsagemethode, die oft in Form von Gedichten verwendet wird, um Glück und Unglück vorherzusagen. Gedichtstäbchen können für Wahrsagungen, Problemlösungen, Lebensrichtungsentscheidungen und mehr verwendet werden. Der Inhalt der Gedichte bezieht sich oft auf die chinesische Kultur, religiöse Überzeugungen und hat eine reiche kulturelle Bedeutung.",
 ];
