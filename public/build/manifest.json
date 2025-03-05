@@ -1,78 +1,26 @@
 {
-  "_general-bedba353.js": {
-    "assets": [
-      "assets/material-icons-8265f647.woff2",
-      "assets/material-icons-fd84f88b.woff",
-      "assets/material-icons-outlined-35dca8a7.woff2",
-      "assets/material-icons-outlined-8e94758c.woff",
-      "assets/material-icons-round-c948f126.woff2",
-      "assets/material-icons-round-1c135b15.woff",
-      "assets/material-icons-sharp-d31bfb81.woff2",
-      "assets/material-icons-sharp-fa3888ef.woff",
-      "assets/material-icons-two-tone-1e673ba8.woff2",
-      "assets/material-icons-two-tone-3d34f30a.woff"
-    ],
+  "_general-d76944e5.js": {
     "css": [
-      "assets/general-1b5abbad.css"
+      "assets/general-7c8f4b89.css"
     ],
-    "file": "assets/general-bedba353.js"
+    "file": "assets/general-d76944e5.js"
   },
   "general.css": {
-    "file": "assets/general-1b5abbad.css",
+    "file": "assets/general-7c8f4b89.css",
     "src": "general.css"
   },
-  "node_modules/material-icons/iconfont/material-icons-outlined.woff": {
-    "file": "assets/material-icons-outlined-8e94758c.woff",
-    "src": "node_modules/material-icons/iconfont/material-icons-outlined.woff"
-  },
-  "node_modules/material-icons/iconfont/material-icons-outlined.woff2": {
-    "file": "assets/material-icons-outlined-35dca8a7.woff2",
-    "src": "node_modules/material-icons/iconfont/material-icons-outlined.woff2"
-  },
-  "node_modules/material-icons/iconfont/material-icons-round.woff": {
-    "file": "assets/material-icons-round-1c135b15.woff",
-    "src": "node_modules/material-icons/iconfont/material-icons-round.woff"
-  },
-  "node_modules/material-icons/iconfont/material-icons-round.woff2": {
-    "file": "assets/material-icons-round-c948f126.woff2",
-    "src": "node_modules/material-icons/iconfont/material-icons-round.woff2"
-  },
-  "node_modules/material-icons/iconfont/material-icons-sharp.woff": {
-    "file": "assets/material-icons-sharp-fa3888ef.woff",
-    "src": "node_modules/material-icons/iconfont/material-icons-sharp.woff"
-  },
-  "node_modules/material-icons/iconfont/material-icons-sharp.woff2": {
-    "file": "assets/material-icons-sharp-d31bfb81.woff2",
-    "src": "node_modules/material-icons/iconfont/material-icons-sharp.woff2"
-  },
-  "node_modules/material-icons/iconfont/material-icons-two-tone.woff": {
-    "file": "assets/material-icons-two-tone-3d34f30a.woff",
-    "src": "node_modules/material-icons/iconfont/material-icons-two-tone.woff"
-  },
-  "node_modules/material-icons/iconfont/material-icons-two-tone.woff2": {
-    "file": "assets/material-icons-two-tone-1e673ba8.woff2",
-    "src": "node_modules/material-icons/iconfont/material-icons-two-tone.woff2"
-  },
-  "node_modules/material-icons/iconfont/material-icons.woff": {
-    "file": "assets/material-icons-fd84f88b.woff",
-    "src": "node_modules/material-icons/iconfont/material-icons.woff"
-  },
-  "node_modules/material-icons/iconfont/material-icons.woff2": {
-    "file": "assets/material-icons-8265f647.woff2",
-    "src": "node_modules/material-icons/iconfont/material-icons.woff2"
-  },
   "resources/js/app.js": {
-    "file": "assets/app-2c17f005.js",
+    "file": "assets/app-6f59a516.js",
     "imports": [
-      "_general-bedba353.js"
+      "_general-d76944e5.js"
     ],
     "isEntry": true,
     "src": "resources/js/app.js"
   },
   "resources/js/zodiac.js": {
-    "file": "assets/zodiac-8beaea6c.js",
+    "file": "assets/zodiac-f9c7e46e.js",
     "imports": [
-      "_general-bedba353.js"
+      "_general-d76944e5.js"
     ],
     "isEntry": true,
     "src": "resources/js/zodiac.js"

@@ -135,7 +135,7 @@ a {
     background-clip: border-box;
     border: 1px solid rgba(26, 54, 126, 0.125);
     display: block;
-    min-height: 600px;
+    // min-height: 600px;
     // border-radius: 15px;
 
     p {
@@ -227,7 +227,6 @@ a {
     float: left;
     margin: 10px;
 }
-
 
 
 /*
@@ -525,4 +524,16 @@ $max: 22;
 
 .custom-container {
     min-height: 800px !important; /* 根据内容调整高度 */
+}
+
+.img-container {
+    width: 100%;
+    height: 200px; /* 設定固定高度 */
+    overflow: hidden;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 保持圖片比例並填滿 */
 }
