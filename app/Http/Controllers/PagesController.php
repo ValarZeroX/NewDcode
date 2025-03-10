@@ -25,7 +25,7 @@ class PagesController extends Controller
             '/language/zh-hants/tarot/sharetarot/',
         ];
 
-        set_time_limit(300);
+        set_time_limit(600);
         SitemapGenerator::create(config('app.url'))
         ->hasCrawled(function (Url $url) use ($languages, $excludedPaths) {
             $baseUrl = rtrim($url->url, '/'); // 確保 URL 沒有多餘的 `/`
