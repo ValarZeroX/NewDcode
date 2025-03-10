@@ -24,8 +24,8 @@ class PagesController extends Controller
             '/language/zh-hant/tarot/sharetarot/',
             '/language/zh-hants/tarot/sharetarot/',
         ];
-
-        set_time_limit(600);
+        // dd(config('app.url'));
+        // set_time_limit(600);
         SitemapGenerator::create(config('app.url'))
         ->hasCrawled(function (Url $url) use ($languages, $excludedPaths) {
             $baseUrl = rtrim($url->url, '/'); // 確保 URL 沒有多餘的 `/`
@@ -53,6 +53,19 @@ class PagesController extends Controller
             return $newUrl;
         })
         ->writeToFile($sitemapPath);
+        // $path = public_path('sitemap.xml');
+        // SitemapGenerator::create(config('app.url'))
+        //     ->hasCrawled(function (Url $url) use ($excludedPaths) {
+        //         // 排除指定的路径
+        //         foreach ($excludedPaths as $excludedPath) {
+        //             if (strpos($url->url, $excludedPath) !== false) {
+        //                 return;
+        //             }
+        //         }
+
+        //         return $url;
+        //     })
+        //     ->writeToFile($path);
     }
 
     public function sitemap()

@@ -20,7 +20,7 @@ Route::redirect('/', '/language/zh-hant', 301);
 //     return view('index');
 // });
 
-Route::get('/makeSitemap', [PagesController::class, 'makeSitemap']);
+// Route::get('/makeSitemap', [PagesController::class, 'makeSitemap']);
 Route::get('/sitemap.xml', [PagesController::class, 'sitemap']);
 
 Route::prefix('language')->group(function () {
