@@ -23,7 +23,7 @@
     <link rel="alternate" hreflang="fr" href="https://dcode.tw/language/fr" />
     <link rel="alternate" hreflang="jp" href="https://dcode.tw/language/jp" />
     <link rel="alternate" hreflang="ko" href="https://dcode.tw/language/ko" />
-    <link rel="alternate" hreflang="x-default" href="https://dcode.tw/language/zh-hant" />
+    <link rel="alternate" hreflang="x-default" href="https://dcode.tw" />
 </head>
 
 <body>
