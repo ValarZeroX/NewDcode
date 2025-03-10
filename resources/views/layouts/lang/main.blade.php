@@ -14,6 +14,16 @@
     <meta name="csrf-token" content="{{ csrf_token() }}" />
     @yield('og_meta')
     <title>@yield('title')</title>
+    <!-- hreflang 設定 -->
+    <link rel="alternate" hreflang="zh-Hant" href="https://dcode.tw/language/zh-hant" />
+    <link rel="alternate" hreflang="zh-Hans" href="https://dcode.tw/language/zh-hans" />
+    <link rel="alternate" hreflang="en" href="https://dcode.tw/language/en" />
+    <link rel="alternate" hreflang="de" href="https://dcode.tw/language/de" />
+    <link rel="alternate" hreflang="es" href="https://dcode.tw/language/es" />
+    <link rel="alternate" hreflang="fr" href="https://dcode.tw/language/fr" />
+    <link rel="alternate" hreflang="jp" href="https://dcode.tw/language/jp" />
+    <link rel="alternate" hreflang="ko" href="https://dcode.tw/language/ko" />
+    <link rel="alternate" hreflang="x-default" href="https://dcode.tw/language/zh-hant" />
 </head>
 
 <body>
